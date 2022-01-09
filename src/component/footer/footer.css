@@ -1,0 +1,124 @@
+.footermob_cnt {
+  color: #dadada;
+  background: #950024;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+
+.footermob_cnt img {
+  width: 46.83px;
+  height: 50px;
+}
+
+.footermob_cnt h3 {
+  color: white !important;
+  margin-top: 30px;
+  font-family: Noto Serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0em;
+}
+
+.footermob_cnt ul {
+  padding: 0;
+}
+
+.footermob_cnt ul li {
+  margin-bottom: 18px;
+  list-style: none;
+}
+
+.footermob_cnt ul li a {
+  color: white;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.footermob_cnt div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 0 50px 30px 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: auto;
+  border-bottom: solid white thin;
+}
+
+.footermob_cnt div img {
+  height: 25.208633422851562px;
+  width: 25.208633422851562px;
+  border-radius: 0px;
+}
+
+.footermob_cnt pre {
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+#address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0 10px 30px 10px;
+  border-bottom: solid white thin;
+  margin-top: 30px;
+}
+
+#address img {
+  padding-top: 5px;
+  -webkit-box-flex: 0.1;
+      -ms-flex: 0.1;
+          flex: 0.1;
+  height: 32px;
+  width: 32px;
+  border-radius: 0px;
+}
+
+#address p {
+  -webkit-box-flex: 0.85;
+      -ms-flex: 0.85;
+          flex: 0.85;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: underline;
+}
+/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,50 @@
+.headermob_cnt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 13px 0 13px;
+  position: sticky;
+  height: 61px;
+  left: -1px;
+  right: 1px;
+  top: 0px;
+  background: #ffffff;
+  box-shadow: 2px 2px 15px rgba(95, 93, 93, 0.3);
+}
+.hmbl{
+  display: flex;
+  align-items: center;
+}
+.hmbr>button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100px; 
+    height: 32px;
+    padding: 0px 42px;
+    background: #FFC046;
+    border: solid rgba(0, 0, 0, 0.13) thin ;
+}
+.hlogo {
+  display: flex;
+  padding: 0 9px 0 16px;
+  align-items: center;
+  img {
+    width: 29px;
+    height: 31px;
+  }
+  span{
+      margin-left:10px;
+      p{
+      font-family: Noto Serif;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 12px;
+      letter-spacing: 0.02em;
+      text-align: left;
+      font-size: 9px;
+          margin-top:-2px;
+      }
+  }
+}
