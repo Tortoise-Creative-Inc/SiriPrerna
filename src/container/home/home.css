@@ -14,6 +14,23 @@
   text-align: center;
 }
 
+#atop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#atop div {
+  background-repeat: no-repeat;
+  background-position-y: 131px;
+}
+
 #a1 {
   margin-top: -120px;
   display: -ms-grid;
@@ -125,7 +142,7 @@
   line-height: 27px;
 }
 
-#a3 #a3_d {
+#a3 #a3_a {
   margin-top: 30px;
   display: -ms-grid;
   display: grid;
@@ -133,18 +150,18 @@
       grid-template-columns: 1fr 1fr;
 }
 
-#a3 #a3_d div {
+#a3 #a3_a div {
   height: 366px;
 }
 
-#a3 #a3_d div img {
+#a3 #a3_a div img {
   height: inherit;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-#a3 #a3_d div span {
+#a3 #a3_a div span {
   position: absolute;
   z-index: 4;
   color: rgba(192, 192, 192, 0.795);
@@ -152,7 +169,7 @@
   left: 10px;
 }
 
-#a3 #a3_d div span h4 {
+#a3 #a3_a div span h4 {
   font-family: Nunito Sans;
   font-style: normal;
   font-weight: normal;
@@ -160,7 +177,7 @@
   line-height: 22px;
 }
 
-#a3 #a3_d div span p {
+#a3 #a3_a div span p {
   padding-right: 10px;
   margin-top: 10px;
   font-family: Nunito Sans;
@@ -168,6 +185,65 @@
   font-weight: 600;
   font-size: 8.96326px;
   line-height: 12px;
+}
+
+#a3_b {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 37px 20px 22px 20px;
+}
+
+#a3_b h4 {
+  margin-bottom: 14px;
+  font-family: Noto Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+}
+
+#a3_b div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 600;
+  height: 200px;
+}
+
+#a3_b div span {
+  min-width: 225px;
+  margin-right: 20px;
+  padding: 11.4px 27px 11.4px 39px;
+  border: solid rgba(0, 0, 0, 0.171) thin;
+  min-height: 110px;
+  -webkit-box-shadow: 3.672px 3.672px 18.36px rgba(0, 0, 0, 0.25);
+          box-shadow: 3.672px 3.672px 18.36px rgba(0, 0, 0, 0.25);
+}
+
+#a3_b div span h6 {
+  text-align: left;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+#a3_b div span p {
+  margin-top: 20px;
+  color: #595656;
+  font-size: 12px;
+  line-height: 16px;
+  max-width: 320px;
 }
 
 #overlay {

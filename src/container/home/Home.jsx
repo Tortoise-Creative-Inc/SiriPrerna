@@ -1,14 +1,19 @@
 import React from 'react'
 import temp from '../../assets/home/a1_images/temp_home_img.png'
+import bgc from '../../assets/home/a1_images/Bgc.svg'
 import './home.css'
 import { a1 ,homepins} from './constants'
 
 export const Home = () => {
     return (
         <div className="home_cnt">
-            <div>
+            <div id="atop">
                 <h1> We are an <span style={{color:'#FFC046'}}>Orphanage</span> striving to <br /> shape young mind for <br /> excellence.</h1>
+                <div style={{backgroundImage:`url(${bgc})`}}>
                 <img src={temp} alt="" />
+                {/* <img src={bgc} alt="" /> */}
+                </div>
+
             </div>
             <div id="a1">
                 {a1.map(e=>(
@@ -23,7 +28,7 @@ export const Home = () => {
             </div>   
             {homepins.map(e=>(
             <div key={e.key}>
-                <Knowmore 
+                <HomePins 
                     title={e.title}
                     tp={e.tp}
                     img={e.img}
@@ -32,6 +37,8 @@ export const Home = () => {
                     pins={e.pins}
                     founder={e.founder}
                     founders={e.founders}
+                    review={e.review}
+                    reviews={e.reviews}
                 /> 
             </div>
             ))} 
@@ -40,7 +47,7 @@ export const Home = () => {
     )
 }
 
-const Knowmore= ({title,tp,img,desc,link,founder,founders,pins}) => {
+const HomePins= ({title,tp,img,desc,link,founder,founders,pins,review,reviews,}) => {
     const overlay = (n)=>{
         if(n%2===0)return "linear-gradient(180deg, rgba(149, 0, 36, 0.3) 33.85%, rgba(0, 0, 0, 0.87) 100%)"
         else return "linear-gradient(180deg, rgba(0, 0, 0, 0.3) 33.85%, rgba(0, 0, 0, 0.87) 100%)"
@@ -61,7 +68,7 @@ const Knowmore= ({title,tp,img,desc,link,founder,founders,pins}) => {
         {founder && 
         <div id="a3">
             <h4>Meet Our Founders</h4>
-            <div id = "a3_d">
+            <div id = "a3_a">
             {founders.map(e=>(
                 <div key={e.key}>
                 <img src={e.img} alt="" />
@@ -74,6 +81,19 @@ const Knowmore= ({title,tp,img,desc,link,founder,founders,pins}) => {
             ))}
             </div>
         </div>
+        }
+        {review&& 
+         <div id='a3_b'>
+             <h4>What people are saying...</h4>
+             <div>
+             {reviews.map(e=>(
+                 <span key={e.key}>
+                <h6>{e.content}</h6>
+                <p>{e.author}</p>
+               </span>
+            ))}
+            </div>
+         </div> 
         }
     </div>
     )

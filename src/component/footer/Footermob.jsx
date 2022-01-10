@@ -1,8 +1,8 @@
 import React from 'react'
-import logo from '../../assets/Logo_white.svg'
-import map from '../../assets/map.svg'
-import Message from '../../assets/Message.svg'
-import WhatsApp from '../../assets/WhatsApp.svg'
+import logo from '../../assets/footer/Logo_white.svg'
+import map from '../../assets/footer/map.svg'
+import Message from '../../assets/footer/Message.svg'
+import WhatsApp from '../../assets/footer/WhatsApp.svg'
 import './footer.css'
 import { Link } from 'react-router-dom'
 import {navlinks,icons} from "./constants"

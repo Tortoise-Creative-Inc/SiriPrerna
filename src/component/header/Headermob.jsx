@@ -1,6 +1,6 @@
 import React from 'react'
-import Logo from "../../assets/Logo.svg"
-import Menu from "../../assets/Menu_icon.svg"
+import Logo from "../../assets/header/Logo.svg"
+import Menu from "../../assets/header/Menu_icon.svg"
 import './header.css'
 export const Headermob = () => {
     return (

@@ -1,7 +1,7 @@
-import fb from '../../assets/fb.svg'
-import insta from '../../assets/insta.svg'
-import linkdin from '../../assets/linkdin.svg'
-import youtube from '../../assets/youtube.svg'
+import fb from '../../assets/footer/fb.svg'
+import insta from '../../assets/footer/insta.svg'
+import linkdin from '../../assets/footer/linkdin.svg'
+import youtube from '../../assets/footer/youtube.svg'
 
 
 export const navlinks =[

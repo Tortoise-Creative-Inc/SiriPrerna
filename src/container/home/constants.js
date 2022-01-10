@@ -59,15 +59,13 @@ export const homepins = [
       {
         key: 1,
         name: "A.Prasad Raju",
-        position:
-          "Chairman and Managing Trustee M.A. Dist Judge (Retd)",
+        position: "Chairman and Managing Trustee M.A. Dist Judge (Retd)",
         img: p1,
       },
       {
         key: 2,
         name: "Prof. B. Indira",
-        position:
-          "Co-Chairman and Doctor  H.O.D. at Kurnool Medical College",
+        position: "Co-Chairman and Doctor  H.O.D. at Kurnool Medical College",
         img: p2,
       },
       {
@@ -87,6 +85,24 @@ export const homepins = [
   },
   {
     key: 4,
+    review: true,
+    reviews: [
+      {
+        key: 1,
+        content:
+          "This home is uniquely positioned as a place for orphan boys to be nurturned with global thoughts.",
+        author:
+          "- Mr. Jayaramulu L, http://jayaramulu.com Diplomat UN vissionary",
+      },
+      {
+        key: 2,
+        content: "lorem ipsum dolor sit amet, consectetur adip",
+        author: "temp",
+      },
+    ],
+  },
+  {
+    key: 5,
     pins: true,
     title: "Get Involved With Us!",
     tp: "Individuals and families ",
@@ -95,7 +111,7 @@ export const homepins = [
     link: "h",
   },
   {
-    key: 5,
+    key: 6,
     pins: true,
     title: "",
     tp: "Corporates",
