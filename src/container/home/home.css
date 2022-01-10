@@ -76,8 +76,8 @@
   padding: 17px;
   padding-bottom: 40px;
   text-align: center;
-  -webkit-box-shadow: 2px 2px 15px rgba(95, 93, 93, 0.3);
-          box-shadow: 2px 2px 15px rgba(95, 93, 93, 0.3);
+  -webkit-box-shadow: 2px 2px 7px rgba(187, 187, 187, 0.233);
+          box-shadow: 2px 2px 7px rgba(187, 187, 187, 0.233);
 }
 
 #a2 h4 {
@@ -101,14 +101,84 @@
   letter-spacing: 0em;
   text-align: left;
   color: gray;
-  margin-bottom: 30px;
 }
 
-#a2 a {
+#a2 div > a {
+  margin-top: 50px;
   color: #630600;
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
+}
+
+#a3 {
+  padding: 30px 0 30px 0;
+}
+
+#a3 h4 {
+  text-align: center;
+  font-family: Noto Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+#a3 #a3_d {
+  margin-top: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+#a3 #a3_d div {
+  height: 366px;
+}
+
+#a3 #a3_d div img {
+  height: inherit;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#a3 #a3_d div span {
+  position: absolute;
+  z-index: 4;
+  color: rgba(192, 192, 192, 0.795);
+  top: 78%;
+  left: 10px;
+}
+
+#a3 #a3_d div span h4 {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+#a3 #a3_d div span p {
+  padding-right: 10px;
+  margin-top: 10px;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8.96326px;
+  line-height: 12px;
+}
+
+#overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  cursor: pointer;
 }
 /*# sourceMappingURL=home.css.map */

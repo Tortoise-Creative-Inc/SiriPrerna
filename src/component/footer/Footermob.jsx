@@ -20,9 +20,6 @@ export const Footermob = () => {
                 {icons.map(e=>(
                     <a href={`${e.to}`} key={e.icon}><img src={e.icon} alt={e.alt} /></a>
                 ))}
-
-               
-
             </div>
 
             <h3>Address</h3>
