@@ -1,0 +1,114 @@
+.home_cnt div {
+  position: relative;
+}
+
+.home_cnt div h1 {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  font-family: Noto Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+}
+
+#a1 {
+  margin-top: -120px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.8fr;
+      grid-template-columns: 1fr 1.8fr;
+  grid-column-gap: 50px;
+  place-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ffc046;
+  padding: 20px 40px 20px 40px;
+  font-family: Nunito Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+#a1 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 130px;
+}
+
+#a1 div span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90px;
+  padding: 10px;
+}
+
+#a1 div span h6 {
+  margin-left: 10px;
+  font-size: 19px;
+}
+
+#a2 {
+  padding: 17px;
+  padding-bottom: 40px;
+  text-align: center;
+  -webkit-box-shadow: 2px 2px 15px rgba(95, 93, 93, 0.3);
+          box-shadow: 2px 2px 15px rgba(95, 93, 93, 0.3);
+}
+
+#a2 h4 {
+  margin: 20px 0 30px 0;
+  font-family: Noto Serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+#a2 p {
+  padding: 6px;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: gray;
+  margin-bottom: 30px;
+}
+
+#a2 a {
+  color: #630600;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
+/*# sourceMappingURL=home.css.map */

@@ -1,30 +1,27 @@
 import React from 'react'
 import logo from '../../assets/Logo_white.svg'
-import fb from '../../assets/fb.svg'
-import insta from '../../assets/insta.svg'
-import linkdin from '../../assets/linkdin.svg'
-import youtube from '../../assets/youtube.svg'
 import map from '../../assets/map.svg'
 import Message from '../../assets/Message.svg'
 import WhatsApp from '../../assets/WhatsApp.svg'
 import './footer.css'
-
+import { Link } from 'react-router-dom'
+import {navlinks,icons} from "./constants"
+ 
 export const Footermob = () => {
+
     return (
         <div className="footermob_cnt">
             <img src={logo} alt="" />
             <h3>Prerna Children's Home</h3>
             <ul>
-                <li><a href="#">Why Us</a></li>
-                <li><a href="#">Our Kids</a></li>
-                <li><a href="#">Engage</a></li>
-                <li><a href="#">Donate</a></li>
+                {navlinks.map(e=>(<li key={e.title} ><Link to={`${e.to}`}>{e.title}</Link></li>))}
             </ul>
             <div>
-                <img src={fb} alt="" />
-                <img src={insta} alt="" />
-                <img src={linkdin} alt="" />
-                <img src={youtube} alt="" />
+                {icons.map(e=>(
+                    <a href={`${e.to}`} key={e.icon}><img src={e.icon} alt={e.alt} /></a>
+                ))}
+
+               
 
             </div>
 
