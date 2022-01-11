@@ -4,31 +4,45 @@ import Logo from "../../assets/header/Logo.svg"
 import Menu from "../../assets/header/Menu_icon.svg"
 import pencil from "../../assets/header/pencil.svg"
 import whatsapp from "../../assets/header/WhatsApp.svg"
+import Home from "../../assets/header/icons/Home.svg"
+import Engage from "../../assets/header/icons/Engage.svg"
+import Kids from "../../assets/header/icons/Kids.svg"
+import Why from "../../assets/header/icons/Why.svg"
+
 import './header.css'
+import NavMobile from './NavMobile/NavMobile'
 export const Headermob = () => {
 
     const nav=[
         {
             title: "Home",
-            to:"/"
+            to:"/",
+            delay:".20",
+            icon:Home,
         },
         {
             title: "Why us",
-            to:"/whyus"
+            to:"/whyus",
+            delay:".25",
+            icon:Why
         },
         {
             title: "Our kids",
-            to:"/ourkids"
+            to:"/ourkids",
+            delay:".30",
+            icon:Kids
         },
         {
             title: "Engage",
-            to:"/engage"
+            to:"/engage",
+            delay:".35",
+            icon:Engage
         },
     ]
     return (
         <div className="headermob_cnt">
             <div className="hmbl">
-                <img src={Menu} alt="" />
+                <NavMobile items={nav}/>
             <div className="hlogo">
             <img src={Logo} alt="" />
             <span>
