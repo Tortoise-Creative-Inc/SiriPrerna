@@ -11,7 +11,6 @@ export const Home = () => {
                 <h1> We are an <span style={{color:'#FFC046'}}>Orphanage</span> striving to <br /> shape young mind for <br /> excellence.</h1>
                 <div style={{backgroundImage:`url(${bgc})`}}>
                 <img src={temp} alt="" />
-                {/* <img src={bgc} alt="" /> */}
                 </div>
 
             </div>

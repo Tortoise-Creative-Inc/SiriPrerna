@@ -3,6 +3,7 @@ import { NavLink, useLocation } from 'react-router-dom'
 import Logo from "../../assets/header/Logo.svg"
 import Menu from "../../assets/header/Menu_icon.svg"
 import pencil from "../../assets/header/pencil.svg"
+import whatsapp from "../../assets/header/WhatsApp.svg"
 import './header.css'
 export const Headermob = () => {
 
@@ -45,7 +46,11 @@ export const Headermob = () => {
                 </ul>
             </div>
             <div className="hmbr">
-                <button>Donate</button>
+                <button>DONATE</button>
+                <span>
+                    <img src={whatsapp} alt="" />
+                    <p>+91 94419 22022</p>
+                </span>
             </div>
            
         </div>
