@@ -257,4 +257,42 @@
   z-index: 2;
   cursor: pointer;
 }
+
+@media (min-width: 640px) {
+  .home_cnt > div > h1 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    text-align: left;
+    padding-left: 10%;
+    font-size: 34px;
+    font-style: normal;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  #atop div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 440px;
+    margin-left: auto;
+    background-size: 560px;
+    background-position-y: 80px;
+  }
+  #a1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #a3_a {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr 1fr 1fr !important;
+  }
+  #a3 #a3_a div {
+    height: inherit;
+  }
+}
 /*# sourceMappingURL=home.css.map */

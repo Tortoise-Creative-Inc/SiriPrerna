@@ -206,3 +206,40 @@
   z-index: 2;
   cursor: pointer;
 }
+
+@media (min-width: 640px){
+  .home_cnt>div>h1{
+   box-sizing: border-box;
+   text-align: left;
+   padding-left: 10%;
+   font-size: 34px;
+   font-style: normal;
+   line-height: 37px;
+   letter-spacing: 0em;
+   text-align: left;
+   
+  }
+ #atop{
+   div{
+     display: flex;
+     justify-content: flex-end;
+     width: 440px;
+     margin-left:auto;
+     background-size: 560px;
+     background-position-y: 80px;
+
+   }
+ }
+ #a1{
+   display: flex;
+ }
+ #a3_a{
+   grid-template-columns: 1fr 1fr 1fr 1fr !important;
+ }
+
+#a3 #a3_a div {
+  height: inherit;
+}
+ 
+
+}

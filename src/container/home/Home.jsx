@@ -17,7 +17,7 @@ export const Home = () => {
             </div>
             <div id="a1">
                 {a1.map(e=>(
-                <div key={e.desc}>
+                    <div key={e.desc}>
                     <span>
                     <img src={e.icon} alt="" />
                     <h6>{e.no}</h6>
@@ -27,7 +27,7 @@ export const Home = () => {
                 ))}
             </div>   
             {homepins.map(e=>(
-            <div key={e.key}>
+                <div key={e.key}>
                 <HomePins 
                     title={e.title}
                     tp={e.tp}
@@ -39,7 +39,7 @@ export const Home = () => {
                     founders={e.founders}
                     review={e.review}
                     reviews={e.reviews}
-                /> 
+                    /> 
             </div>
             ))} 
         </div>
@@ -49,11 +49,12 @@ export const Home = () => {
 
 const HomePins= ({title,tp,img,desc,link,founder,founders,pins,review,reviews,}) => {
     const overlay = (n)=>{
+        
         if(n%2===0)return "linear-gradient(180deg, rgba(149, 0, 36, 0.3) 33.85%, rgba(0, 0, 0, 0.87) 100%)"
         else return "linear-gradient(180deg, rgba(0, 0, 0, 0.3) 33.85%, rgba(0, 0, 0, 0.87) 100%)"
     }
     return(
-    <div>
+        <div>
         {pins&&
             <div id="a2">
             {title && <h4>{title}</h4>}
@@ -63,7 +64,6 @@ const HomePins= ({title,tp,img,desc,link,founder,founders,pins,review,reviews,})
             <div style={{marginTop:"50px"}}>
             {link && <a href={link}>Know more</a>}
             </div>
-           
         </div>}
         {founder && 
         <div id="a3">
