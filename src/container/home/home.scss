@@ -24,6 +24,52 @@
     background-position-y: 131px;
   }
 }
+#a0 {
+  margin-top:10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  div {
+    img {
+      height: inherit;
+      width: 100%;
+      object-fit: cover;
+    }
+    span {
+      position: absolute;
+      z-index: 4;
+      color: rgba(192, 192, 192, 0.795);
+      bottom: 3%;
+      right: 9%;
+      padding: 10px;
+      h4 {
+        font-family: Nunito Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+      }
+      p {
+        padding-right: 10px;
+        margin-top: 10px;
+        font-family: Nunito Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 8.96326px;
+        line-height: 12px;
+      }
+    }
+  }
+}
+.kids{
+  padding-bottom: 20px;
+  .desklink{
+    margin-top: 20px;
+    text-align: center;
+    a{
+      color:#630600;
+    }
+  }
+}
 #a1 {
   margin-top: -120px;
   display: grid;
@@ -99,6 +145,9 @@
     font-size: 16px;
   }
 }
+#a2_a {
+  margin-top: 20px;
+}
 
 #a3 {
   padding: 30px 0 30px 0;
@@ -171,13 +220,13 @@
     font-family: Nunito Sans;
     font-style: normal;
     font-weight: 600;
-    height:200px;
+    height: 200px;
     span {
       min-width: 225px;
       margin-right: 20px;
       padding: 11.4px 27px 11.4px 39px;
       border: solid rgba(0, 0, 0, 0.171) thin;
-      min-height:110px;
+      min-height: 110px;
       box-shadow: 3.672px 3.672px 18.36px rgba(0, 0, 0, 0.25);
       h6 {
         text-align: left;
@@ -195,6 +244,7 @@
   }
 }
 
+
 #overlay {
   position: absolute;
   width: 100%;
@@ -206,40 +256,125 @@
   z-index: 2;
   cursor: pointer;
 }
-
-@media (min-width: 650px){
-  .home_cnt>div>h1{
-   box-sizing: border-box;
-   text-align: left;
-   padding-left: 10%;
-   font-size: 34px;
-   font-style: normal;
-   line-height: 37px;
-   letter-spacing: 0em;
-   text-align: left;
-   
-  }
- #atop{
-   div{
-     display: flex;
-     justify-content: flex-end;
-     width: 440px;
-     margin-left:auto;
-     background-size: 560px;
-     background-position-y: 80px;
-
-   }
- }
- #a1{
-   display: flex;
- }
- #a3_a{
-   grid-template-columns: 1fr 1fr 1fr 1fr !important;
- }
-
-#a3 #a3_a div {
-  height: inherit;
+.desktop {
+  display: none;
 }
- 
 
+@media screen and (min-width: 650px) {
+  .home_cnt {
+    h4 {
+      font-size: 25px !important;
+      line-height: 65px !important;
+    }
+  }
+  .home_cnt > div > h1 {
+    box-sizing: border-box;
+    text-align: left;
+    padding-left: 10%;
+    font-size: 34px;
+    font-style: normal;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  #atop {
+    div {
+      display: flex;
+      justify-content: flex-end;
+      width: 440px;
+      margin-left: auto;
+      background-size: 560px;
+      background-position-y: 80px;
+    }
+  }
+  #a0 {
+    grid-template-columns: 1fr 1fr 1fr 1fr !important;
+    margin: auto;
+  }
+  #a1 {
+    display: flex;
+  }
+  #a2_inner {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    h4 {
+      top: 0;
+      position: absolute;
+    }
+    #top_desc {
+      display: none;
+    }
+  }
+  #a2_a {
+    padding-top: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    p {
+      width: 40vw;
+    }
+    div {
+      a {
+        display: none;
+      }
+    }
+    img {
+      width: 40vw;
+    }
+  }
+
+  #a3_a {
+    grid-template-columns: 1fr 1fr 1fr 1fr !important;
+    margin: auto;
+  }
+
+  #a3 #a3_a div {
+    height: inherit;
+  }
+
+  .desktop {
+    display: inline;
+  }
+  .desklink {
+    position: absolute !important;
+    top: 45px;
+    margin-top: 0 !important;
+    right: 6vw;
+    a {
+      box-sizing: border-box;
+      // color: black !important;
+      border-radius: 3px;
+      font-size: 14px !important;
+      text-decoration: none !important;
+      border: solid #630600 thin;
+      padding: 3px 7px 3px 7px;
+      display: inline !important;
+    }
+  }
+  .kids {
+    h4 {
+      position: absolute;
+      z-index: 6;
+      left: 9%;
+      bottom: 25%;
+      color: white;
+      font-size: 35px !important;
+    }
+    .desklink {
+      position: absolute !important;
+      left: 9%;
+      bottom: 20%;
+      right: auto;
+      top: unset;
+      z-index: 4;
+      a {
+        border-radius: none;
+        border: white solid thin;
+        color: white;
+        padding: 5px 10px 5px 10px;
+        background-color: rgba(99, 6, 0, 1);
+      }
+    }
+  }
 }

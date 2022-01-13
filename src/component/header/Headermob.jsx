@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
-import { NavLink, useLocation } from 'react-router-dom'
+import React from 'react'
+import {  NavLink, useLocation, useNavigate } from 'react-router-dom'
 import Logo from "../../assets/header/Logo.svg"
-import Menu from "../../assets/header/Menu_icon.svg"
 import pencil from "../../assets/header/pencil.svg"
 import whatsapp from "../../assets/header/WhatsApp.svg"
 import Home from "../../assets/header/icons/Home.svg"
@@ -12,6 +11,7 @@ import Why from "../../assets/header/icons/Why.svg"
 import './header.css'
 import NavMobile from './NavMobile/NavMobile'
 export const Headermob = () => {
+  const Navigate = useNavigate();
 
     const nav=[
         {
@@ -44,7 +44,7 @@ export const Headermob = () => {
             <div className="hmbl">
                 <NavMobile items={nav}/>
             <div className="hlogo">
-            <img src={Logo} alt="" />
+            <img src={Logo} alt="" onClick={()=>Navigate('/')}/>
             <span>
                 <p>Prerna</p>
                 <p>Children's</p>
@@ -73,7 +73,6 @@ export const Headermob = () => {
 
 const Navoptions =(e)=>{
     const isActive = useLocation()
-    console.log(isActive)
     return (
         <li key={e.title}>
         <NavLink to={e.to}>{e.title}</NavLink>

@@ -37,12 +37,12 @@ export const Footermob = () => {
             Prerna Children's home, Gopi Gopal Deva Nilayam, Dwarakamayi Colony,
             Behind IDPL Colony, Bowenpally, Balanagar Mandal, Hyderabad City,
             Telangana State, India. 500037
-        <pre>
+          </p>
+        {/* <pre>
             <br />
             <br />
         &copy; 2019-2021 Prerna Children's Home All right reserved
-      </pre>
-          </p>
+      </pre> */}
         </span>
       </div>
       <div id="ftr_contacts">

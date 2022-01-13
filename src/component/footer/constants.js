@@ -7,15 +7,15 @@ import youtube from '../../assets/footer/youtube.svg'
 export const navlinks =[
     {
         title:"Why Us",
-        to:"",
+        to:"/whyus",
     },
     {
         title:"Our Kids",
-        to:"",
+        to:"/ourkids",
     },
     {
         title:"Engage",
-        to:"",
+        to:"engage",
     },
     {
         title:"Donate",
