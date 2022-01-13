@@ -17,25 +17,25 @@ export const Headermob = () => {
         {
             title: "Home",
             to:"/",
-            delay:".20",
+            delay:".10",
             icon:Home,
         },
         {
             title: "Why us",
             to:"/whyus",
-            delay:".25",
+            delay:".12",
             icon:Why
         },
         {
-            title: "Our kids",
+            title: "Our Kids",
             to:"/ourkids",
-            delay:".30",
+            delay:".14",
             icon:Kids
         },
         {
             title: "Engage",
             to:"/engage",
-            delay:".35",
+            delay:".16",
             icon:Engage
         },
     ]
