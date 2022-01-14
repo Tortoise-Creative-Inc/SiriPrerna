@@ -43,8 +43,8 @@ export const Headermob = () => {
         <div className="headermob_cnt">
             <div className="hmbl">
                 <NavMobile items={nav}/>
-            <div className="hlogo">
-            <img src={Logo} alt="" onClick={()=>Navigate('/')}/>
+            <div className="hlogo" onClick={()=>Navigate('/')}>
+            <img src={Logo} alt="" />
             <span>
                 <p>Prerna</p>
                 <p>Children's</p>

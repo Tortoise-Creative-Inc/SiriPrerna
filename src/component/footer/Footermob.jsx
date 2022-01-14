@@ -74,12 +74,12 @@ export const Footermob = () => {
               alt=""
               style={{ height: "28px", width: "28.67px", marginRight: "16px" }}
             />
-            <p>siri.nonprofit@gmail.com </p>
+            <p >siri.nonprofit@gmail.com </p>
           </li>
         </ul>
       </div>
 
-      <pre>
+      <pre style={{marginTop:"16px",fontSize:"8px",lineHeight:"9px"}}>
         &copy; 2019-2021
         <br />
         Prerna Children's Home

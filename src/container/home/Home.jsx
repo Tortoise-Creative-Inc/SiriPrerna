@@ -74,8 +74,8 @@ const HomePins = ({
               <div key={e.key} className={e.class}>
                 <img src={e.img} alt="" />
                 <div id="overlay" style={{ background: overlay(e.key) }}></div>
-                <span >
-                  <h5 >{e.name}</h5>
+                <span  className="desktop" >
+                  <h5>{e.name}</h5>
                 </span>
               </div>
             ))}
