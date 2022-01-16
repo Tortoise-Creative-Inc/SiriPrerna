@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
 import { Link } from 'react-router-dom';
 import styles from "./NavMobile.module.scss";
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
@@ -12,12 +12,14 @@ const Contact = [
         title: "Phone No.",
         content: "+91 94419 22022",
         icon: <LocalPhoneIcon />,
+        href:"tel:9441922022",
         delay: ".18",
     },
     {
         title: "WhatsApp No.",
         content: "+91 94419 22022",
         icon: <WhatsAppIcon />,
+        href:"https://wa.me/9441922022",
         delay: ".20",
 
     },
@@ -26,16 +28,17 @@ const Contact = [
         content: "siri.nonprofit@gmail.com ",
         icon: <MailOutlineIcon />,
         delay: ".22",
+        href:"mailto:siri.nonprofit@gmail.com"
     }
 ];
 
-const Navoption = (e, isMobile, closeMobileMenu) => {
+const Navoption = (e, isMobile, closeMobileMenu, Open) => {
     const animateFrom = { opacity: 0, x: -100 }
     const animateTo = { opacity: 1, x: 0 }
     return (
         <motion.li
             initial={animateFrom}
-            animate={animateTo}
+            animate={Open?animateTo:animateFrom}
             transition={{ delay: e.delay }}
             key={e.title}
             className={styles.li}>
@@ -44,42 +47,42 @@ const Navoption = (e, isMobile, closeMobileMenu) => {
     )
 }
 
-const Navlinks = ({ items, isMobile, closeMobileMenu }) => {
+const Navlinks = ({ items, isMobile, closeMobileMenu,Open }) => {
     const animateFrom = { opacity: 0, x: -100 }
     const animateTo = { opacity: 1, x: 0 }
     return (
 
         < >
+        
           <motion.div
                 initial={animateFrom}
-                animate={animateTo}
-                transition={{ delay: .05 }}
+                animate={Open?animateTo:animateFrom}
+                transition={{delay:0.07,ease:"easeInOut" }}
                 className={styles.HamMenu}>
                 <ul className={styles.ul}>
-                    {items.map(e => (Navoption(e, isMobile, closeMobileMenu)))}
+                    {items.map(e => (Navoption(e, isMobile, closeMobileMenu,Open)))}
                 </ul>
                 <ul className={styles.ulContact}>
                     {Contact.map((x, index) => (
                         <motion.li
                             initial={animateFrom}
-                            animate={animateTo}
+                            animate={Open?animateTo:animateFrom}
                             transition={{ delay: x.delay }}
                             className={styles.li} key={index}>
-                            <div className={styles.Contact}>{x.icon}<span className={styles.span}>{x.content}</span></div>
+                            <a className={styles.Link} href={x.href}>{x.icon}<span className={styles.span}>{x.content}</span></a>
                         </motion.li>
                     ))}
                     <Link className={styles.logolink} to="/"><motion.img
                         initial={animateFrom}
-                     animate={animateTo}
+                     animate={Open?animateTo:animateFrom}
                         transition={{ delay: .24 }}
                         id={styles.logo} src={Logo} alt="Logo" /><motion.span
                             initial={animateFrom}
-                            animate={animateTo}
+                            animate={Open?animateTo:animateFrom}
                             transition={{ delay:.24 }}
                             className={styles.spanlogo}> Prerna Children’s Home </motion.span></Link>
                 </ul>
             </motion.div>
-           
         </>
     )
 

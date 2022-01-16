@@ -7,6 +7,7 @@ import { WhyUs } from './container/WhyUs/WhyUs';
 import { Ourkids } from './container/OurKids/Ourkids';
 import { Engage } from './container/Engage/Engage';
 import { useEffect, useState } from 'react';
+import Footer from './component/footer/Footer';
 
 
 function App() {
@@ -32,7 +33,7 @@ function App() {
         <Route path="/ourkids"  element={<Ourkids ismobile={ismobile}/>} />
         <Route path="/engage"  element={<Engage ismobile={ismobile}/>} />   
       </Routes>
-      <Footermob/>     
+      <Footermob />     
     </div>
   );
 }

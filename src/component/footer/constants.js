@@ -15,7 +15,7 @@ export const navlinks =[
     },
     {
         title:"Engage",
-        to:"engage",
+        to:"/engage",
     },
     {
         title:"Donate",

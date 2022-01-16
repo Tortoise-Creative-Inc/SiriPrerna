@@ -17,7 +17,8 @@ const NavMobile = ({ items }) => {
     return (
         <nav className={x.MoblieNav}>
             {HamburgerIcon}
-            {open && <Navlinks items={items} isMobile={true} closeMobileMenu={closeMobileMenu}  />}
+             <Navlinks items={items} isMobile={true} closeMobileMenu={closeMobileMenu} Open={open}  /
+>
         </nav>
     )
 

@@ -3,7 +3,7 @@ import logo from "../../assets/footer/Logo_white.svg";
 import map from "../../assets/footer/map.svg";
 import Message from "../../assets/footer/Message.svg";
 import WhatsApp from "../../assets/footer/WhatsApp.svg";
-import "./footer.css";
+import "./footer.scss";
 import { Link } from "react-router-dom";
 import { navlinks, icons } from "./constants";
 
