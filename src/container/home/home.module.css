@@ -1,0 +1,258 @@
+.sec1 {
+  position: relative;
+}
+.sec1 > p {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0em;
+  color: rgba(117, 117, 117, 1);
+  width: 100%;
+}
+.sec1 > p > img {
+  opacity: 78%;
+  height: 12px;
+}
+#heading {
+  position: absolute;
+  width: 100%;
+  padding: 0 5vw;
+  top: 6vw;
+  text-align: left;
+}
+#heading > h1 {
+  font-weight: 500;
+  font-size: max(min(4vw, 60px), 21px);
+  line-height: max(min(5vw, 64px), 25px);
+}
+
+#heading > h1 > span {
+  color: #ffc046;
+}
+.sec1_img {
+  width: 60vw;
+  margin-left: auto;
+  background-size: 57vw;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.sec1_img > img {
+  width: inherit;
+  object-fit: contain;
+}
+.sec2 {
+  position: relative;
+  z-index: 1;
+  margin-top: min(-17vw, -185px);
+  background-color: #ffc046;
+  display: grid;
+  justify-content: space-evenly;
+  padding: max(3vw, 30px) max(5vw, 20px);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  filter: drop-shadow(2px 2px 15px rgba(95, 93, 93, 0.3));
+}
+.sec2 > div > span {
+  display: flex;
+  gap: 1.5vw;
+  align-items: baseline;
+  justify-content: left;
+  font-weight: 550;
+  font-size: max(min(4vw, 60px), 24px);
+  line-height: min(5vw, 64px);
+}
+.sec2 > div > span > img {
+  height: max(min(3vw, 56px), 32px);
+  object-fit: contain;
+}
+/* .sec2 > div:nth-child(even) > p {width:100%} */
+.sec2 > div > p {
+  width: 70%;
+  /* margin: auto; */
+  text-align: left;
+  padding: 0.6vw 0.2vw;
+  font-weight: 600;
+  font-family: Nunito Sans;
+  font-size: max(min(1.3vw, 50px), 12px);
+}
+.collage_cnt {
+  position: relative;
+}
+.collage {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.collage > div,
+.collage > div > div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.collage > div > div > img {
+  width: inherit;
+  object-fit: contain;
+}
+#overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.2) 43.75%,
+    rgba(0, 0, 0, 0.87) 100%
+  );
+  z-index: 2;
+}
+#kid{
+ text-shadow: 0 1px 0 black;
+  position: absolute;
+  color: rgba(224, 223, 223, 0.562);
+  bottom: 3%;
+  font-size: max(min(1.7vw, 40px),9px);
+  right:8%;
+}
+#founder{
+ text-shadow: 0 1px 0 black;
+  position: absolute;
+  color: rgba(255, 255, 255, 1);
+  font-family: Nunito Sans;
+  font-style: normal;
+  top: 76%;
+  left:10%;
+}
+#founder>h5{
+  font-size:max( min(1.7vw, 40px),16px);
+  text-shadow:0 0 15px black;
+font-weight: 500;
+margin-bottom: min(2vw, 20px);
+}
+#founder>span>p{
+  font-size: max(min(1.3vw, 40px),9px);
+  font-weight: 500;
+}
+.collage > div:nth-child(even)>div > #overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(149, 0, 36, 0.16) 55.73%,
+    rgba(0, 0, 0, 0.87) 100%
+  );
+}
+.deskview {
+  color: white;
+  position: absolute;
+  bottom: 20%;
+  z-index: 3;
+  padding: 0 5vw;
+}
+.deskview > h2 {
+  opacity: 80%;
+  font-size: min(4vw, 60px);
+  font-weight: 500;
+  margin-bottom: min(2vw, 20px);
+  text-align: left;
+  text-shadow:0 0 15px black;
+}
+.deskview > p {
+  font-family: Nunito Sans;
+  font-size: min(1.7vw, 40px);
+  font-weight: 500;
+  /* line-height: min(2vw, 40px); */
+  color: rgba(231, 231, 231, 0.808);
+  text-align: left;
+  margin-bottom:4vw;
+}
+.deskview > a {
+  opacity: 80%;
+  color: white;
+  text-decoration: none;
+  border: solid white thin;
+  padding:10px 42px;
+  background: rgba(99, 6, 0, 1);
+}
+.deskview>a:hover {
+  opacity:1;
+}
+.sec4{
+  padding: 40px 5vw;
+  position: relative;
+}
+.sec4>div>h2{
+  padding-bottom: 40px;
+  font-family: Noto Serif;  
+  font-size: min(4vw, 60px);
+
+}
+.sec4>div>aside{
+  position: relative;
+  background-color:white;
+  border: solid black thin;
+  width:fit-content;
+  padding: 40px
+}
+
+/*////////////////////////////> mob components </////////////////////////////*/
+.clg_mob_header,
+.clg_mob_footer {
+  padding: 25px 0;
+  text-align: center;
+}
+.clg_mob_header > h2 {
+  font-family: Noto Serif;
+  font-weight: normal;
+}
+.clg_mob_footer > a {
+  color: rgba(99, 6, 0, 1);
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
+/*////////////////////////////> mob css </////////////////////////////*/
+
+@media (max-width: 650px) {
+  #heading {
+    padding: unset;
+    text-align: center;
+    margin: auto;
+  }
+  .sec1_img {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    background-position: center min(30vw, 150px);
+    background-size: min(90vw, 500px);
+    /* background-position: ; */
+  }
+  .sec2 {
+    /* margin-top: -30vw; */
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 40px;
+  }
+  .sec2 > div > span {
+    justify-content: center;
+    gap: 18px;
+    align-items: center;
+  }
+  .sec2 > div > p {
+    margin-top: 10px;
+    margin: auto;
+    text-align: center;
+  }
+  .sec2 > div:nth-child(even) > p {
+    width: 100%;
+  }
+  .sec2 > div {
+    margin-right: 20px;
+  }
+  /* #founder{
+    
+  } */
+}

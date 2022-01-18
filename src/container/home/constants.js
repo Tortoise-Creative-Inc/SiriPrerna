@@ -1,167 +1,103 @@
-import person from "../../assets/home/person.png";
-import calendar from "../../assets/home/calendar.svg";
-import plant from "../../assets/home/plant.svg";
-import group from "../../assets/home/group.svg";
-import dem from "../../assets/home/a2_images/a2dem.png";
-import dem2 from "../../assets/home/a2_images/dem2.png";
-import dem3 from "../../assets/home/a2_images/dem3.png";
-import dem4 from "../../assets/home/a2_images/dem4.png";
-import p1 from "../../assets/home/a3_images/p1.png";
-import p2 from "../../assets/home/a3_images/p2.png";
-import p3 from "../../assets/home/a3_images/p3.png";
-import p4 from "../../assets/home/a3_images/p4.png";
-import a0p1 from "../../assets/home/a0_images/p1.png";
-import a0p2 from "../../assets/home/a0_images/p2.png";
-import a0p3 from "../../assets/home/a0_images/p3.png";
-import a0p4 from "../../assets/home/a0_images/p4.png";
+import sicn1 from "../../assets/home/sec2/icon1.svg";
+import sicn1_2 from "../../assets/home/sec2/icon1_2.png";
+import sicn2 from "../../assets/home/sec2/icon2.svg";
+import sicn3 from "../../assets/home/sec2/icon3.svg";
+import sicn4 from "../../assets/home/sec2/icon4.svg";
+import k1 from "../../assets/home/sec3/kids/k1.png";
+import k2 from "../../assets/home/sec3/kids/k2.png";
+import k3 from "../../assets/home/sec3/kids/k3.png";
+import k4 from "../../assets/home/sec3/kids/k4.png";
+import f1 from "../../assets/home/sec3/founders/f1.png";
+import f2 from "../../assets/home/sec3/founders/f2.png";
+import f3 from "../../assets/home/sec3/founders/f3.png";
+import f4 from "../../assets/home/sec3/founders/f4.png";
 
-export const a1 = [
+export const sec2 = [
   {
-    icon: person,
-    no: "30",
-    desc: "Kids under our shelter",
-  },
-
-  {
-    icon: calendar,
-    no: "2019",
-    desc: "Established in June at Balanagar, Hyd, India",
+    key: "1",
+    icon: sicn1,
+    icon2: sicn1_2,
+    text1: "30",
+    text2: "Kids under our shelter",
   },
   {
-    icon: plant,
-    no: "100+",
-    desc: "Plants planted by our kids",
+    key: "2",
+    icon: sicn2,
+    text1: "2019",
+    text2: "Established in June at Balanagar, Hyd, India",
   },
   {
-    icon: group,
-    no: "3640",
-    desc: "Visitors so far",
+    key: "3",
+    icon: sicn3,
+    text1: "100+",
+    text2: "Plants planted by our kids",
+  },
+  {
+    key: "4",
+    icon: sicn4,
+    text1: "3640",
+    text2: "Visitors so far",
   },
 ];
 
-export const homepins = [
+export const kidsclg = [
   {
-    key: 1,
-    kid: true,
-    link: "/ourkids",
-    kids: [
-      {
-        key: 1,
-        name: "kidname yr old",
-        img: a0p1,
-      },
-      {
-        key: 2,
-        name: "kidname yr old",
-        img: a0p2,
-      },
-      {
-        key: 3,
-        name: "kidname yr old", 
-        img: a0p3,
-      },
-      {
-        key: 4,
-        name: "kidname yr old",
-        img: a0p4,
-        class: "desktop"
-      },
-    ],
+    key: "1",
+    name: "Chintu",
+    age: "13 yrs",
+    img: k1,
+    ignore: false,
   },
   {
-    key: 2,
-    pins: true,
-    pin: [
-      {
-        key: 1,
-        title: "Why is Prerna different ?",
-        tp: "",
-        img: dem,
-        desc: "Prerna aims to provide children with the best care and facilities they deserve.",
-        link: "/whyus",
-      },
-      {
-        key: 2,
-        class:"desktop",
-        img: dem4,
-        desc: "Prerna aims to provide children with the best care and facilities they deserve.",
-        link: "/whyus",
-        desklink:"desklink"
-      },
-    ],
+    key: "2",
+    name: "Sainath",
+    age: "13 yrs",
+    img: k2,
+    ignore: false,
   },
+  {
+    key: "3",
+    name: "Mokshith",
+    age: "13 yrs",
+    img: k3,
+    ignore: false,
+  },
+  {
+    key: "4",
+    name: "Mokshith",
+    age: "13 yrs",
+    img: k4,
+    ignore: true,
+  },
+];
 
+export  const founders = [
   {
-    key: 3,
-    founder: true,
-    founders: [
-      {
-        key: 1,
-        name: "A.Prasad Raju",
-        position: "Chairman and Managing Trustee M.A. Dist Judge (Retd)",
-        img: p1,
-      },
-      {
-        key: 2,
-        name: "Prof. B. Indira",
-        position: "Co-Chairman and Doctor  H.O.D. at Kurnool Medical College",
-        img: p2,
-      },
-      {
-        key: 3,
-        name: "A.Vamsee Krishna",
-        position:
-          "Co-Manager  IIT Kharagpur alumnus CEO - HappilyEver Matrimony",
-        img: p3,
-      },
-      {
-        key: 4,
-        name: "Prashanth Akki",
-        position: "Co-Manager BITS-PILANI alumnus",
-        img: p4,
-      },
-    ],
-  },
-
-  {
-    key: 4,
-    review: true,
-    reviews: [
-      {
-        key: 1,
-        content:
-          "This home is uniquely positioned as a place for orphan boys to be nurturned with global thoughts.",
-        author:
-          "- Mr. Jayaramulu L, http://jayaramulu.com Diplomat UN vissionary",
-      },
-      {
-        key: 2,
-        content: "lorem ipsum dolor sit amet, consectetur adip",
-        author: "temp",
-      },
-    ],
+    key: "1",
+    name: "A.Prasad Raju",
+    img: f1,
+    h1: "Chairman and Managing Trustee",
+    h2: "M.A. Dist Judge (Retd)",
   },
   {
-    key: 5,
-    pins: true,
-    pin: [
-      {
-        key: 1,
-        title: "Get Involved With Us!",
-        tp: "Individuals and families ",
-        img: dem2,
-        ddesc: "Individuals and families can help the children by spending time with them, tutoring them and donating goods and money.",
-        link: "/engage",
-      },
-      {
-        key: 2,
-        title: "",
-        tp: "Corporates",
-        img: dem3,
-        ddesc: "Companies can help children by enrolling in CSR programs, matching funds, donating IT equipment, etc.",
-        desklink:"desklink",
-        link: "/engage",
-      },
-    ],
+    key: "2",
+    name: "Prof. B. Indira",
+    img: f2,
+    h1: "Co-Chairman and Doctor",
+    h2: "H.O.D. at Kurnool Medical College,",
+  },
+  {
+    key: "3",
+    name: "A.Vamsee Krishna",
+    img: f3,
+    h1: "IIT Kharagpur alumnus",
+    h2: "CEO - HappilyEver Matrimony",
+  },
+  {
+    key: "4",
+    name: "Prashanth Akki",
+    img: f4,
+    h1: "BITS-PILANI alumnus",
+    h2: "",
   },
 ];

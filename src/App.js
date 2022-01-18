@@ -11,12 +11,12 @@ import Footer from './component/footer/Footer';
 
 
 function App() {
-  const [ismobile,setismobile] = useState(true)
+  const [ismobile,setismobile] = useState()
 
   useEffect(() => {
     const Ismobile = ()=>{
-      if(window.innerWidth<=360)setismobile(true);
-      else if(window.innerWidth>360) setismobile(false); 
+      if(window.innerWidth<=650)setismobile(true);
+      else if(window.innerWidth>650) setismobile(false); 
     };
     window.addEventListener('resize',Ismobile)
     return () => {
@@ -28,7 +28,7 @@ function App() {
     <div className="App">
       <Headermob/>
       <Routes>
-        <Route path="/"  element={<Home/>} />
+        <Route path="/"  element={<Home ismobile={ismobile}/>} />
         <Route path="/whyus"  element={<WhyUs ismobile={ismobile}/>} />
         <Route path="/ourkids"  element={<Ourkids ismobile={ismobile}/>} />
         <Route path="/engage"  element={<Engage ismobile={ismobile}/>} />   
