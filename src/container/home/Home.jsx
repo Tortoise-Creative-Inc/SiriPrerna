@@ -66,7 +66,29 @@ export const Home = ({ ismobile }) => {
           desc={true}
           to=""
         />
-        <Collage
+      </section>
+      <section className={s.sec4}>
+        <div className><h2>What are people saying.....</h2></div>
+        {!ismobile &&<div id={s.dr}>
+          <aside>
+            <h5>This home is uniquely positioned as a<br />place for orphan boys to be nurturned<br />with global thoughts.</h5>
+            <p>- Mr. Jayaramulu L,<br />Diplomat UN vissionary</p>
+          </aside>
+          <aside style={{margin:"-4.5% 0px 0 20%",zIndex:"1"}}>
+            <h5>Visit place like this. God resides here <br /> and no where else. Amazing. Kids <br /> taken care by wonderful people.</h5>
+            <p>- Mr. Krishna Rao, Well-wisher</p>
+          </aside>
+          <aside style={{margin:"-4.5% 0px 0 40%",zIndex:"2"}}>
+            <h5>Lovely kids, Hygienic environment and <br /> friendly staff.</h5>
+            <p> - Mrs. Ashwini, Well-wisher</p>
+          </aside>
+          <aside style={{margin:"-4.5% 0px 0 60%",zIndex:"3"}}>
+            <h5>The kids are very talented and <br /> disciplined.</h5>
+            <p>- Mrs. M. Keerthana, Well-wisher</p>
+          </aside>
+        </div>}
+      </section>
+      <Collage
           ismobile={ismobile}
           mobsetting=" 1fr 1fr"
           founder={true}
@@ -75,28 +97,6 @@ export const Home = ({ ismobile }) => {
           desc={false}
           to=""
         />
-      </section>
-      <section className={s.sec4}>
-        <div className><h2>What are people saying.....</h2></div>
-        <div>
-          <aside>
-            <h5>This home is uniquely positioned as a<br />place for orphan boys to be nurturned<br />with global thoughts.</h5>
-            <p>- Mr. Jayaramulu L,<br />Diplomat UN vissionary</p>
-          </aside>
-          <aside style={{margin:"-2.3% 0px 0 20%",zIndex:"1"}}>
-            <h5>This home is uniquely positioned as a<br />place for orphan boys to be nurturned<br />with global thoughts.</h5>
-            <p>- Mr. Jayaramulu L,<br />Diplomat UN vissionary</p>
-          </aside>
-          <aside style={{margin:"-2.3% 0px 0 40%",zIndex:"2"}}>
-            <h5>This home is uniquely positioned as a<br />place for orphan boys to be nurturned<br />with global thoughts.</h5>
-            <p>- Mr. Jayaramulu L,<br />Diplomat UN vissionary</p>
-          </aside>
-          <aside style={{margin:"-2.3% 0px 0 60%",zIndex:"3"}}>
-            <h5>This home is uniquely positioned as a<br />place for orphan boys to be nurturned<br />with global thoughts.</h5>
-            <p>- Mr. Jayaramulu L,<br />Diplomat UN vissionary</p>
-          </aside>
-        </div>
-      </section>
     </div>
   );
 };
