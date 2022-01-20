@@ -1,3 +1,7 @@
+.cnt{
+  overflow: hidden;
+  
+}
 .sec1 {
   position: relative;
 }
@@ -188,6 +192,7 @@
 .sec4 > div > h2 {
   padding-bottom: 7vw;
   font-family: Noto Serif;
+  font-weight:500;
   font-size:max(min(4vw, 60px),22px);
 }
 #dr{
@@ -235,6 +240,33 @@
   font-weight: normal;
   font-size: 16px;
 }
+#tr{display:none;}
+.slider{
+  border: solid rgba(0, 0, 0, 0.144) thin;
+  background-color:white;
+  width: 90%;
+  margin: 30px auto 70px;
+  max-width: 400px;
+  height: 180px;
+  padding: 20px 42px;
+  text-align: left;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+}
+.slider>h5{
+   color: rgba(89, 86, 86, 1);
+  font-size: max(0.8vw,16px);
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 600;
+}
+.slider>p{
+  margin-top: 10px;
+  color: rgba(89, 86, 86, 1);
+  font-size: max(0.8vw,13px);
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 600;
+}
 /*////////////////////////////> mob css </////////////////////////////*/
 
 @media (max-width: 650px) {
@@ -277,15 +309,21 @@
     font-family: Noto Serif;
     text-align: center;
   }
-  /* #founder{
-    
-  } */
+  .sec3{
+    filter: drop-shadow(2px 2px 15px rgba(95, 93, 93, 0.3));
+  }
+  .sec4{
+    background-color:white;
+    border: solid rgba(0, 0, 0, 0.082) thin; 
+    padding-bottom: 0px;
+    filter: drop-shadow(2px 2px 15px rgba(95, 93, 93, 0.3));
+
+  }
+
 }
 @media (max-width:900px) {
 
 #dr{display: none;}
-.sec4{
-  border: solid black;
-}
+#tr{display: unset}
 
 }

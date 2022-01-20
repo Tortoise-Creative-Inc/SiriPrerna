@@ -1,0 +1,110 @@
+.container {
+  background-color: white;
+  padding: 40px;
+  padding-bottom: unset;
+  background-position: center;
+  background-position-y: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 1000px;
+}
+.heading {
+  height: 200px;
+  padding: 40px;
+  text-align: left;
+}
+.heading > h1 {
+  font-family: Noto Serif;
+  font-size: max(min(4vw, 60px), 28px);
+  line-height: max(min(5vw, 64px), 79px);
+  font-style: normal;
+  font-weight: 500;
+}
+.heading > p {
+  color: rgba(89, 86, 86, 1);
+  font-family: Nunito Sans;
+  font-size: max(min(1.7vw, 40px), 16px);
+  line-height: max(min(5vw, 64px), 25px);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.kidprofile {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgba(149, 14, 47, 0.31);
+}
+
+.kidprofile:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.kidprofile > img {
+  max-height: 280px;
+  object-fit: contain;
+}
+.kidprofile > span {
+  width: 40%;
+  font-family: Gaegu;
+  font-weight: 700;
+  min-width: 100px;
+  letter-spacing: 0em;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.kidprofile > span > h6 {
+  font-size: max(min(1.7vw, 40px), 16px);
+  line-height: max(min(5vw, 56px), 29px);
+  
+}
+
+.kidprofile > span > p {
+  font-size: max(min(1.7vw, 40px), 16px);
+  line-height: max(min(5vw, 36px), 29px);
+  color: rgba(89, 86, 86, 1);
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0;
+    padding-bottom: 60px;
+    background-image: unset !important;
+  }
+  .heading {
+    text-align: center;
+    height: fit-content;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .list {
+    width: 100%;
+    display: grid;
+    grid-row-gap: 30px;
+  }
+  .kidprofile {
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    background-color: white;
+    filter: drop-shadow(2px 2px 15px rgba(95, 93, 93, 0.3));
+    width: 90%;
+    margin: auto;
+    flex-direction: column !important;
+    align-items: center;
+    border-bottom: none;
+  }
+  .kidprofile > img {
+    width: 100%;
+  }
+  .kidprofile > span {
+    width: 100%;
+    text-align: center;
+  }
+}

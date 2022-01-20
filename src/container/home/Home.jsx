@@ -7,6 +7,8 @@ import loc from "../../assets/home/loc.svg";
 import s from "./home.module.css";
 import { sec2, kidsclg, founders } from "./constants";
 import { Link } from "react-router-dom";
+// requires a loader
+import { Carousel } from "react-responsive-carousel";
 
 export const Home = ({ ismobile }) => {
   return (
@@ -67,36 +69,100 @@ export const Home = ({ ismobile }) => {
           to=""
         />
       </section>
+
       <section className={s.sec4}>
-        <div className><h2>What are people saying.....</h2></div>
-        {!ismobile &&<div id={s.dr}>
-          <aside>
-            <h5>This home is uniquely positioned as a<br />place for orphan boys to be nurturned<br />with global thoughts.</h5>
-            <p>- Mr. Jayaramulu L,<br />Diplomat UN vissionary</p>
-          </aside>
-          <aside style={{margin:"-4.5% 0px 0 20%",zIndex:"1"}}>
-            <h5>Visit place like this. God resides here <br /> and no where else. Amazing. Kids <br /> taken care by wonderful people.</h5>
-            <p>- Mr. Krishna Rao, Well-wisher</p>
-          </aside>
-          <aside style={{margin:"-4.5% 0px 0 40%",zIndex:"2"}}>
-            <h5>Lovely kids, Hygienic environment and <br /> friendly staff.</h5>
-            <p> - Mrs. Ashwini, Well-wisher</p>
-          </aside>
-          <aside style={{margin:"-4.5% 0px 0 60%",zIndex:"3"}}>
-            <h5>The kids are very talented and <br /> disciplined.</h5>
-            <p>- Mrs. M. Keerthana, Well-wisher</p>
-          </aside>
-        </div>}
+        <div className>
+          <h2>What are people saying.....</h2>
+        </div>
+        {!ismobile &&(
+          <div id={s.dr}>
+            <aside>
+              <h5>
+                This home is uniquely positioned as a<br />
+                place for orphan boys to be nurturned
+                <br />
+                with global thoughts.
+              </h5>
+              <p>
+                - Mr. Jayaramulu L,
+                <br />
+                Diplomat UN vissionary
+              </p>
+            </aside>
+            <aside style={{ margin: "-4.5% 0px 0 20%", zIndex: "1" }}>
+              <h5>
+                Visit place like this. God resides here <br /> and no where
+                else. Amazing. Kids <br /> taken care by wonderful people.
+              </h5>
+              <p>- Mr. Krishna Rao,<br /> Well-wisher</p>
+            </aside>
+            <aside style={{ margin: "-4.5% 0px 0 40%", zIndex: "2" }}>
+              <h5>
+                Lovely kids, Hygienic environment and <br /> friendly staff.
+              </h5>
+              <p> - Mrs. Ashwini,<br /> Well-wisher</p>
+            </aside>
+            <aside style={{ margin: "-4.5% 0px 0 60%", zIndex: "3" }}>
+              <h5>
+                The kids are very talented and <br /> disciplined.
+              </h5>
+              <p>- Mrs. M. Keerthana,<br /> Well-wisher</p>
+            </aside>
+          </div>
+        )}
+        <div id={s.tr}>
+        <Carousel
+        autoPlay={true}
+        infiniteLoop={true}
+        interval={4000}
+        stopOnHover={true}
+        showStatus={false}
+      >
+        <div className={s.slider}>
+          <h5>
+            This home is uniquely positioned as a
+            place for orphan boys to be nurturned
+            with global thoughts.
+          </h5>
+          <p>
+            - Mr. Jayaramulu L,
+            <br />
+            Diplomat UN vissionary
+          </p>
+        </div>
+        <div className={s.slider}>
+          <h5>
+            Visit place like this. God resides here  and no where else.
+            Amazing. Kids taken care by wonderful people.
+          </h5>
+          <p>- Mr. Krishna Rao, Well-wisher</p>
+        </div>
+        <div className={s.slider}>
+          <h5>
+            Lovely kids, Hygienic environment and friendly staff.
+          </h5>
+          <p> - Mrs. Ashwini, Well-wisher</p>
+        </div>
+        <div className={s.slider}>
+          <h5>
+            The kids are very talented and disciplined.
+          </h5>
+          <p>- Mrs. M. Keerthana, Well-wisher</p>
+        </div>
+      </Carousel>
+        </div>
       </section>
+      
       <Collage
-          ismobile={ismobile}
-          mobsetting=" 1fr 1fr"
-          founder={true}
-          db={founders}
-          title="Meet Our Founders"
-          desc={false}
-          to=""
-        />
+        ismobile={ismobile}
+        mobsetting=" 1fr 1fr"
+        founder={true}
+        db={founders}
+        title="Meet Our Founders"
+        desc={false}
+        to=""
+      />
+      {/* <SimpleSlider/> */}
     </div>
   );
 };
@@ -142,7 +208,11 @@ const Collage = ({
               <div>
                 <img src={e.img} alt="" />
                 <div id={s.overlay}>
-                  {!ismobile && kids && <p id={s.kid}>{e.name}, {e.age}</p>}
+                  {!ismobile && kids && (
+                    <p id={s.kid}>
+                      {e.name}, {e.age}
+                    </p>
+                  )}
                   {founder && (
                     <div id={s.founder}>
                       <h5>{e.name}</h5>
@@ -164,7 +234,7 @@ const Collage = ({
         </div>
       )}
       {!ismobile && (
-        <div className={s.deskview} style={{bottom:founder&&"30%"}}>
+        <div className={s.deskview} style={{ bottom: founder && "30%" }}>
           <h2>{title}</h2>
           {desc && (
             <p>
@@ -172,7 +242,7 @@ const Collage = ({
               happily living in our care.
             </p>
           )}
-         {!founder && <Link to={to}>Know more</Link>}
+          {!founder && <Link to={to}>Know more</Link>}
         </div>
       )}
     </div>
