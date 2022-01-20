@@ -4,8 +4,10 @@ import bg2 from "../../assets/home/sec1/bg2.svg";
 import bgc from "../../assets/home/sec1/bgc.svg";
 import bgc2 from "../../assets/home/sec1/bgc2.svg";
 import loc from "../../assets/home/loc.svg";
+import i1 from "../../assets/home/sec5/i1.png";
+import i2 from "../../assets/home/sec5/i2.png";
 import s from "./home.module.css";
-import { sec2, kidsclg, founders } from "./constants";
+import { sec2, kidsclg, founders,sec5_1, sec5_2 } from "./constants";
 import { Link } from "react-router-dom";
 // requires a loader
 import { Carousel } from "react-responsive-carousel";
@@ -58,6 +60,12 @@ export const Home = ({ ismobile }) => {
           </div>
         ))}
       </section>
+
+
+     {/* <Pins ismobile={ismobile} e={sec5_1}/> */}
+
+
+
       <section className={s.sec3}>
         <Collage
           ismobile={ismobile}
@@ -71,7 +79,7 @@ export const Home = ({ ismobile }) => {
       </section>
 
       <section className={s.sec4}>
-        <div className>
+        <div className={s.head}>
           <h2>What are people saying.....</h2>
         </div>
         {!ismobile &&(
@@ -117,6 +125,7 @@ export const Home = ({ ismobile }) => {
         interval={4000}
         stopOnHover={true}
         showStatus={false}
+        showThumbs={false}        
       >
         <div className={s.slider}>
           <h5>
@@ -162,7 +171,7 @@ export const Home = ({ ismobile }) => {
         desc={false}
         to=""
       />
-      {/* <SimpleSlider/> */}
+    <Pins ismobile={ismobile} e={sec5_2} show={true}/>
     </div>
   );
 };
@@ -178,18 +187,14 @@ const Collage = ({
   db,
 }) => {
   const dfault = "1fr 1fr 1fr 1fr";
-  // const [grid, setgrid] = useState(dfault)
   function setting() {
     if (ismobile) {
       if (mobsetting) {
-        console.log("mobsetting");
         return mobsetting;
       } else {
-        console.log("default");
         return dfault;
       }
     } else {
-      console.log("default");
       return dfault;
     }
   }
@@ -248,3 +253,30 @@ const Collage = ({
     </div>
   );
 };
+
+const Pins =({ismobile,e,show})=>{
+  return(
+    <section className={s.sec5}>
+    <div className={s.sec5_head}>
+      <h2>{e.heading} {!ismobile&&<br />} {e.heading&&e.heading1}</h2>
+      {!ismobile&&<Link to={e.to}>Know more</Link>}
+    </div>
+    <div className={s.sec5_img}>
+      <span>
+        {(e.subheading1&&!ismobile)||<h5>{e.subheading1}</h5>}
+        <img src={e.img1} alt="" />
+        {!ismobile &&<p>{e.desc1}</p>}
+        {ismobile && <div> <Link to={e.to}>Know more</Link></div>}
+      </span>
+      {show&&<span>
+        {(e.subheading2&&!ismobile)||<h5>{e.subheading2}</h5>}
+        <img src={e.img2} alt="" />
+        {!ismobile &&<p>{e.desc2}</p>}
+        {ismobile && <div> <Link to={e.to}>Know more</Link></div>}
+      </span> }
+    </div>
+
+
+  </section>
+  )
+}
