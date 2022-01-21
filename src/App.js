@@ -13,11 +13,12 @@ import Footer from './component/footer/Footer';
 function App() {
   const [ismobile,setismobile] = useState()
 
+const Ismobile = ()=>{
+    if(window.innerWidth<=650)setismobile(true);
+    else if(window.innerWidth>650) setismobile(false); 
+  };
   useEffect(() => {
-    const Ismobile = ()=>{
-      if(window.innerWidth<=650)setismobile(true);
-      else if(window.innerWidth>650) setismobile(false); 
-    };
+    Ismobile();
     window.addEventListener('resize',Ismobile)
     return () => {
       window.removeEventListener('resize',Ismobile)

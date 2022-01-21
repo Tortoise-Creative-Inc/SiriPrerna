@@ -11,6 +11,10 @@ import f1 from "../../assets/home/sec3/founders/f1.png";
 import f2 from "../../assets/home/sec3/founders/f2.png";
 import f3 from "../../assets/home/sec3/founders/f3.png";
 import f4 from "../../assets/home/sec3/founders/f4.png";
+import i1 from "../../assets/home/sec5/i1.png";
+import i2 from "../../assets/home/sec5/i2.png";
+import i3 from "../../assets/home/sec5/i3.png";
+import i4 from "../../assets/home/sec5/i4.png";
 
 export const sec2 = [
   {
@@ -101,3 +105,25 @@ export  const founders = [
     h2: "",
   },
 ];
+export const sec5_1={
+  heading:'Why is Prerna',
+  heading1:'different?',
+  to: "",
+  img1:i1,
+  subheading1:false,
+  desc1:'Prerna aims to provide children with the best care and facilities they deserve.',
+  img2:i2,
+  subheading2:false,
+  desc2:'At Prerna, we believe in shaping our kids to be independent, aware and inspirational citizens.',
+};
+export const sec5_2={
+  heading:'Why is Prerna different?',
+  heading1:false,
+  to: "",
+  img1:i3,
+  desc1:'Individuals and families can help the children by spending time with them, tutoring them and donating goods and money.',
+  subheading1:'Individuals and families ',
+  img2:i4,
+  subheading2:'Corporates',
+  desc2:'Companies can help children by enrolling in CSR programs, matching funds, donating IT equipment, etc.',
+};

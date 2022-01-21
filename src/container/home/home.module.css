@@ -1,3 +1,7 @@
+.cnt{
+  overflow: hidden;
+  
+}
 .sec1 {
   position: relative;
 }
@@ -60,7 +64,7 @@
   display: flex;
   gap: 1.5vw;
   align-items: baseline;
-  justify-content: left;
+  justify-content: center;
   font-weight: 550;
   font-size: max(min(4vw, 60px), 24px);
   line-height: min(5vw, 64px);
@@ -72,8 +76,8 @@
 /* .sec2 > div:nth-child(even) > p {width:100%} */
 .sec2 > div > p {
   width: 70%;
-  /* margin: auto; */
-  text-align: left;
+  margin: auto;
+  text-align: center;
   padding: 0.6vw 0.2vw;
   font-weight: 600;
   font-family: Nunito Sans;
@@ -111,34 +115,34 @@
   );
   z-index: 2;
 }
-#kid{
- text-shadow: 0 1px 0 black;
+#kid {
+  text-shadow: 0 1px 0 black;
   position: absolute;
   color: rgba(224, 223, 223, 0.562);
   bottom: 3%;
-  font-size: max(min(1.7vw, 40px),9px);
-  right:8%;
+  font-size: max(min(1.7vw, 40px), 9px);
+  right: 8%;
 }
-#founder{
- text-shadow: 0 1px 0 black;
+#founder {
+  text-shadow: 0 1px 0 black;
   position: absolute;
   color: rgba(255, 255, 255, 1);
   font-family: Nunito Sans;
   font-style: normal;
   top: 76%;
-  left:10%;
+  left: 10%;
 }
-#founder>h5{
-  font-size:max( min(1.7vw, 40px),16px);
-  text-shadow:0 0 15px black;
-font-weight: 500;
-margin-bottom: min(2vw, 20px);
+#founder > h5 {
+  font-size: max(min(1.7vw, 40px), 16px);
+  text-shadow: 0 0 15px black;
+  font-weight: 500;
+  margin-bottom: min(2vw, 20px);
 }
-#founder>span>p{
-  font-size: max(min(1.3vw, 40px),9px);
+#founder > span > p {
+  font-size: max(min(1.3vw, 40px), 9px);
   font-weight: 500;
 }
-.collage > div:nth-child(even)>div > #overlay {
+.collage > div:nth-child(even) > div > #overlay {
   background: linear-gradient(
     180deg,
     rgba(149, 0, 36, 0.16) 55.73%,
@@ -158,7 +162,7 @@ margin-bottom: min(2vw, 20px);
   font-weight: 500;
   margin-bottom: min(2vw, 20px);
   text-align: left;
-  text-shadow:0 0 15px black;
+  text-shadow: 0 0 15px black;
 }
 .deskview > p {
   font-family: Nunito Sans;
@@ -167,37 +171,100 @@ margin-bottom: min(2vw, 20px);
   /* line-height: min(2vw, 40px); */
   color: rgba(231, 231, 231, 0.808);
   text-align: left;
-  margin-bottom:4vw;
+  margin-bottom: 4vw;
 }
-.deskview > a {
+.deskview > a,.sec5_head>a {
   opacity: 80%;
   color: white;
   text-decoration: none;
   border: solid white thin;
-  padding:10px 42px;
+  padding: 10px 42px;
   background: rgba(99, 6, 0, 1);
 }
-.deskview>a:hover {
-  opacity:1;
+.deskview > a:hover {
+  opacity: 1;
 }
-.sec4{
-  padding: 40px 5vw;
+.sec4 {
+  padding: 40px  5vw 80px;
+  margin: auto;
   position: relative;
 }
-.sec4>div>h2{
-  padding-bottom: 40px;
-  font-family: Noto Serif;  
-  font-size: min(4vw, 60px);
-
+.head>h2 {
+  padding-bottom: 7vw;
+  font-family: Noto Serif;
+  font-weight:500;
+  font-size:max(min(4vw, 60px),22px);
 }
-.sec4>div>aside{
+#dr{
+  width: 82%;
+  margin: auto;
+}
+#dr> aside {
+  width:23vw;
+  min-width: 270px;
+  height:max(8vw,100px);
   position: relative;
+  background-color: white;
+  border: solid rgba(0, 0, 0, 0.123) thin;
+  padding: 3vw;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+}
+#dr>aside > h5 {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-size: max(1.2vw,14px);
+  font-weight: 600;
+}
+#dr> aside > p {
+  margin-top:10px;
+  color: rgba(89, 86, 86, 1);
+  font-size: max(0.8vw,12px);
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 600;
+}
+.sec5{
+  padding:5vw 9vw ;
+}
+.sec5_head{
+  display:flex;
+ align-items: center;
+ justify-content:space-between;
+}
+.sec5_head>h2{
+  font-size: max(min(4vw, 60px),20px);
+  font-weight: 500;
+}
+.sec5_head>h2>br{
+  display:none;
+}
+.sec5_head>a{
+  font-weight: 600;
+  border-radius: 6px;
   background-color:white;
-  border: solid black thin;
-  width:fit-content;
-  padding: 40px
+  color: rgba(99, 6, 0, 1);
+  border-color:rgba(99, 6, 0, 1); ;
+}
+.sec5_img{
+  margin-top: 4vw;
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+}
+.sec5_img>span{
+  width:100%;
+  max-width: 700px;
 }
 
+.sec5_img>span>img{
+  width: inherit;
+  object-fit: contain;
+}
+.sec5_img>span>p{
+  padding: 1vw;
+  font-size: max(min(1.7vw, 19px),16px);
+  font-family: Nunito Sans;
+}
 /*////////////////////////////> mob components </////////////////////////////*/
 .clg_mob_header,
 .clg_mob_footer {
@@ -214,6 +281,33 @@ margin-bottom: min(2vw, 20px);
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
+}
+#tr{display:none;}
+.slider{
+  border: solid rgba(0, 0, 0, 0.144) thin;
+  background-color:white;
+  width: 90%;
+  margin: 30px auto 70px;
+  max-width: 400px;
+  height: 180px;
+  padding: 20px 42px;
+  text-align: left;
+ box-shadow: 2px 2px 15px rgba(95, 93, 93, 0.3);
+}
+.slider>h5{
+   color: rgba(89, 86, 86, 1);
+  font-size: max(0.8vw,16px);
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 600;
+}
+.slider>p{
+  margin-top: 10px;
+  color: rgba(89, 86, 86, 1);
+  font-size: max(0.8vw,13px);
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 600;
 }
 /*////////////////////////////> mob css </////////////////////////////*/
 
@@ -252,7 +346,59 @@ margin-bottom: min(2vw, 20px);
   .sec2 > div {
     margin-right: 20px;
   }
-  /* #founder{
-    
-  } */
+  .sec4 > div > h2 {
+    font-weight: 500;
+    font-family: Noto Serif;
+    text-align: center;
+  }
+  .sec3{
+    filter: drop-shadow(2px 2px 15px rgba(95, 93, 93, 0.3));
+  }
+  .sec4{
+    background-color:white;
+    border: solid rgba(0, 0, 0, 0.082) thin; 
+    padding-bottom: 0px;
+    filter: drop-shadow(2px 2px 15px rgba(95, 93, 93, 0.3));
+
+  }
+  .sec5{
+    box-shadow: 2px 2px 15px rgba(95, 93, 93, 0.3);
+  }
+  .sec5_head{
+    justify-content:center;
+  }
+  .sec5_img{
+    flex-direction: column;
+  }
+  .sec5_img>span{
+    margin-top:10px;
+  }
+  .sec5_img>span>p{
+    color: rgba(89, 86, 86, 1);
+  }
+  .sec5_img>span>div{
+    text-align: center;
+    padding:30px 0;
+  }
+  .sec5_img>span>div>a{
+    color: rgba(99, 6, 0, 1);
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  }
+  .sec5_img>span>h5{
+    font-family: Nunito Sans;
+font-style: normal;
+font-weight: 590;
+font-size: 18px;
+line-height: 55px;
+  }
+
+}
+@media (max-width:900px) {
+
+#dr{display: none;}
+#tr{display: unset}
+
 }

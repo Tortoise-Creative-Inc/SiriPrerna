@@ -1,11 +1,12 @@
 import React from 'react'
-import s from './ourkids.module.scss'
+import s from './ourkids.module.css'
 import kid1 from '../../assets/Ourkids/kid1.png'
+import bg1 from '../../assets/Ourkids/bg1.png'
 import { kidsdb } from './constants'
 
 export const Ourkids = () => {
     return (
-        <div className={s.container}>
+        <div className={s.container} style={{ backgroundImage:`url(${bg1})`}}>
             <div className={s.heading}>
                 <h1>Let's meet our Kids</h1>
                 <p>The kids are in the 8-14 year age range. </p>
@@ -20,7 +21,7 @@ export const Ourkids = () => {
                     img={kid.img}
                     />
                 ))}
-            </div>
+            </div> 
                         
         </div>
     )

@@ -4,9 +4,13 @@ import bg2 from "../../assets/home/sec1/bg2.svg";
 import bgc from "../../assets/home/sec1/bgc.svg";
 import bgc2 from "../../assets/home/sec1/bgc2.svg";
 import loc from "../../assets/home/loc.svg";
+import i1 from "../../assets/home/sec5/i1.png";
+import i2 from "../../assets/home/sec5/i2.png";
 import s from "./home.module.css";
-import { sec2, kidsclg, founders } from "./constants";
+import { sec2, kidsclg, founders,sec5_1, sec5_2 } from "./constants";
 import { Link } from "react-router-dom";
+// requires a loader
+import { Carousel } from "react-responsive-carousel";
 
 export const Home = ({ ismobile }) => {
   return (
@@ -56,6 +60,12 @@ export const Home = ({ ismobile }) => {
           </div>
         ))}
       </section>
+
+
+     {/* <Pins ismobile={ismobile} e={sec5_1}/> */}
+
+
+
       <section className={s.sec3}>
         <Collage
           ismobile={ismobile}
@@ -66,37 +76,102 @@ export const Home = ({ ismobile }) => {
           desc={true}
           to=""
         />
-        <Collage
-          ismobile={ismobile}
-          mobsetting=" 1fr 1fr"
-          founder={true}
-          db={founders}
-          title="Meet Our Founders"
-          desc={false}
-          to=""
-        />
       </section>
+
       <section className={s.sec4}>
-        <div className><h2>What are people saying.....</h2></div>
-        <div>
-          <aside>
-            <h5>This home is uniquely positioned as a<br />place for orphan boys to be nurturned<br />with global thoughts.</h5>
-            <p>- Mr. Jayaramulu L,<br />Diplomat UN vissionary</p>
-          </aside>
-          <aside style={{margin:"-2.3% 0px 0 20%",zIndex:"1"}}>
-            <h5>This home is uniquely positioned as a<br />place for orphan boys to be nurturned<br />with global thoughts.</h5>
-            <p>- Mr. Jayaramulu L,<br />Diplomat UN vissionary</p>
-          </aside>
-          <aside style={{margin:"-2.3% 0px 0 40%",zIndex:"2"}}>
-            <h5>This home is uniquely positioned as a<br />place for orphan boys to be nurturned<br />with global thoughts.</h5>
-            <p>- Mr. Jayaramulu L,<br />Diplomat UN vissionary</p>
-          </aside>
-          <aside style={{margin:"-2.3% 0px 0 60%",zIndex:"3"}}>
-            <h5>This home is uniquely positioned as a<br />place for orphan boys to be nurturned<br />with global thoughts.</h5>
-            <p>- Mr. Jayaramulu L,<br />Diplomat UN vissionary</p>
-          </aside>
+        <div className={s.head}>
+          <h2>What are people saying.....</h2>
+        </div>
+        {!ismobile &&(
+          <div id={s.dr}>
+            <aside>
+              <h5>
+                This home is uniquely positioned as a<br />
+                place for orphan boys to be nurturned
+                <br />
+                with global thoughts.
+              </h5>
+              <p>
+                - Mr. Jayaramulu L,
+                <br />
+                Diplomat UN vissionary
+              </p>
+            </aside>
+            <aside style={{ margin: "-4.5% 0px 0 20%", zIndex: "1" }}>
+              <h5>
+                Visit place like this. God resides here <br /> and no where
+                else. Amazing. Kids <br /> taken care by wonderful people.
+              </h5>
+              <p>- Mr. Krishna Rao,<br /> Well-wisher</p>
+            </aside>
+            <aside style={{ margin: "-4.5% 0px 0 40%", zIndex: "2" }}>
+              <h5>
+                Lovely kids, Hygienic environment and <br /> friendly staff.
+              </h5>
+              <p> - Mrs. Ashwini,<br /> Well-wisher</p>
+            </aside>
+            <aside style={{ margin: "-4.5% 0px 0 60%", zIndex: "3" }}>
+              <h5>
+                The kids are very talented and <br /> disciplined.
+              </h5>
+              <p>- Mrs. M. Keerthana,<br /> Well-wisher</p>
+            </aside>
+          </div>
+        )}
+        <div id={s.tr}>
+        <Carousel
+        autoPlay={true}
+        infiniteLoop={true}
+        interval={4000}
+        stopOnHover={true}
+        showStatus={false}
+        showThumbs={false}        
+      >
+        <div className={s.slider}>
+          <h5>
+            This home is uniquely positioned as a
+            place for orphan boys to be nurturned
+            with global thoughts.
+          </h5>
+          <p>
+            - Mr. Jayaramulu L,
+            <br />
+            Diplomat UN vissionary
+          </p>
+        </div>
+        <div className={s.slider}>
+          <h5>
+            Visit place like this. God resides here  and no where else.
+            Amazing. Kids taken care by wonderful people.
+          </h5>
+          <p>- Mr. Krishna Rao, Well-wisher</p>
+        </div>
+        <div className={s.slider}>
+          <h5>
+            Lovely kids, Hygienic environment and friendly staff.
+          </h5>
+          <p> - Mrs. Ashwini, Well-wisher</p>
+        </div>
+        <div className={s.slider}>
+          <h5>
+            The kids are very talented and disciplined.
+          </h5>
+          <p>- Mrs. M. Keerthana, Well-wisher</p>
+        </div>
+      </Carousel>
         </div>
       </section>
+      
+      <Collage
+        ismobile={ismobile}
+        mobsetting=" 1fr 1fr"
+        founder={true}
+        db={founders}
+        title="Meet Our Founders"
+        desc={false}
+        to=""
+      />
+    <Pins ismobile={ismobile} e={sec5_2} show={true}/>
     </div>
   );
 };
@@ -112,18 +187,14 @@ const Collage = ({
   db,
 }) => {
   const dfault = "1fr 1fr 1fr 1fr";
-  // const [grid, setgrid] = useState(dfault)
   function setting() {
     if (ismobile) {
       if (mobsetting) {
-        console.log("mobsetting");
         return mobsetting;
       } else {
-        console.log("default");
         return dfault;
       }
     } else {
-      console.log("default");
       return dfault;
     }
   }
@@ -142,7 +213,11 @@ const Collage = ({
               <div>
                 <img src={e.img} alt="" />
                 <div id={s.overlay}>
-                  {!ismobile && kids && <p id={s.kid}>{e.name}, {e.age}</p>}
+                  {!ismobile && kids && (
+                    <p id={s.kid}>
+                      {e.name}, {e.age}
+                    </p>
+                  )}
                   {founder && (
                     <div id={s.founder}>
                       <h5>{e.name}</h5>
@@ -164,7 +239,7 @@ const Collage = ({
         </div>
       )}
       {!ismobile && (
-        <div className={s.deskview} style={{bottom:founder&&"30%"}}>
+        <div className={s.deskview} style={{ bottom: founder && "30%" }}>
           <h2>{title}</h2>
           {desc && (
             <p>
@@ -172,9 +247,36 @@ const Collage = ({
               happily living in our care.
             </p>
           )}
-         {!founder && <Link to={to}>Know more</Link>}
+          {!founder && <Link to={to}>Know more</Link>}
         </div>
       )}
     </div>
   );
 };
+
+const Pins =({ismobile,e,show})=>{
+  return(
+    <section className={s.sec5}>
+    <div className={s.sec5_head}>
+      <h2>{e.heading} {!ismobile&&<br />} {e.heading&&e.heading1}</h2>
+      {!ismobile&&<Link to={e.to}>Know more</Link>}
+    </div>
+    <div className={s.sec5_img}>
+      <span>
+        {(e.subheading1&&!ismobile)||<h5>{e.subheading1}</h5>}
+        <img src={e.img1} alt="" />
+        {!ismobile &&<p>{e.desc1}</p>}
+        {ismobile && <div> <Link to={e.to}>Know more</Link></div>}
+      </span>
+      {show&&<span>
+        {(e.subheading2&&!ismobile)||<h5>{e.subheading2}</h5>}
+        <img src={e.img2} alt="" />
+        {!ismobile &&<p>{e.desc2}</p>}
+        {ismobile && <div> <Link to={e.to}>Know more</Link></div>}
+      </span> }
+    </div>
+
+
+  </section>
+  )
+}
