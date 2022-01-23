@@ -1,6 +1,5 @@
 import React from 'react'
 import s from './ourkids.module.css'
-import kid1 from '../../assets/Ourkids/kid1.png'
 import bg1 from '../../assets/Ourkids/bg1.png'
 import { kidsdb } from './constants'
 
@@ -29,7 +28,7 @@ export const Ourkids = () => {
 
 const Kids = ({name,age,about,img}) =>{
     return (
-    <div className={s.kidprofile}>
+        <div className={s.kidprofile}>
         <img src={img} alt="" />
         <span>
             <h6>{name}, {age}</h6>
