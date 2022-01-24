@@ -19,7 +19,7 @@ export const kidsdb=[
     },
     {
         key: '3',
-        name: 'Ajay Krishna',
+        name: 'Ajayk Krishna',
         age:'12',
         about:'He loves to play football and his favorite subject is physics. He is a caring and funny child.',
         img:kid3,
