@@ -74,7 +74,7 @@ export const Home = ({ ismobile }) => {
           db={kidsclg}
           title="Meet Our Kids"
           desc={true}
-          to=""
+          to="/Ourkids"
         />
       </section>
 

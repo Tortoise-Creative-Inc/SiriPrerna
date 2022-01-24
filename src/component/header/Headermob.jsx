@@ -7,7 +7,6 @@ import Home from "../../assets/header/icons/Home.svg"
 import Engage from "../../assets/header/icons/Engage.svg"
 import Kids from "../../assets/header/icons/Kids.svg"
 import Why from "../../assets/header/icons/Why.svg"
-import Donate from "../../assets/header/icons/Donate.svg"
 import './header.css'
 import NavMobile from './NavMobile/NavMobile'
 export const Headermob = () => {
@@ -17,32 +16,26 @@ export const Headermob = () => {
         {
             title: "Home",
             to:"/",
-            delay:".19",
+            delay:".10",
             icon:Home,
         },
         {
             title: "Why us",
             to:"/whyus",
-            delay:".21",
+            delay:".12",
             icon:Why
         },
         {
             title: "Our Kids",
             to:"/ourkids",
-            delay:".23",
+            delay:".14",
             icon:Kids
         },
         {
             title: "Engage",
             to:"/engage",
-            delay:".25",
+            delay:".16",
             icon:Engage
-        },
-        {
-            title: "Donate",
-            to:"/",
-            delay:".27",
-            icon:Donate
         },
     ]
     return (
@@ -66,7 +59,7 @@ export const Headermob = () => {
                 </ul>
             </div>
             <div className="hmbr">
-                <a target="_blank"  href="https://pmny.in/Xrz1Hou3Rfau" > <button>DONATE</button ></a>
+                <a target="_blank" href="https://pmny.in/Xrz1Hou3Rfau" > <button>DONATE</button ></a>
                 <span>
                     <img src={whatsapp} alt="" />
                     <p>+91 94419 22022</p>
@@ -80,11 +73,9 @@ export const Headermob = () => {
 const Navoptions =(e)=>{
     const isActive = useLocation()
     return (
-        <div key={e.title}>
-       {e.title!="Donate" && <li >
+        <li key={e.title}>
         <NavLink to={e.to}>{e.title}</NavLink>
         {(isActive.pathname===e.to) && <img src={pencil} alt="" />}
-    </li>}
-    </div>
+    </li>
     )
 }

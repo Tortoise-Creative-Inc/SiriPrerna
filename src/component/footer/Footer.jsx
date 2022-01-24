@@ -126,7 +126,6 @@ const Footer = () => {
       window.removeEventListener("resize", Tablet);
     };
   }, [tab]);
-  console.log(tab);
 
   return (
     <>

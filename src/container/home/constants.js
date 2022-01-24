@@ -108,7 +108,7 @@ export  const founders = [
 export const sec5_1={
   heading:'Why is Prerna',
   heading1:'different?',
-  to: "",
+  to: "WhyUs",
   img1:i1,
   subheading1:false,
   desc1:'Prerna aims to provide children with the best care and facilities they deserve.',
@@ -119,7 +119,7 @@ export const sec5_1={
 export const sec5_2={
   heading:'Why is Prerna different?',
   heading1:false,
-  to: "",
+  to: "WhyUs",
   img1:i3,
   desc1:'Individuals and families can help the children by spending time with them, tutoring them and donating goods and money.',
   subheading1:'Individuals and families ',
