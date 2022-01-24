@@ -19,7 +19,7 @@ export const Home = ({ ismobile }) => {
         <div id={s.heading}>
           {ismobile ? (
             <h1>
-              We are an <span>Orphanage</span>striving to
+              We are an <span>Orphanage</span> striving to
               <br />
               shape young minds for
               <br />
