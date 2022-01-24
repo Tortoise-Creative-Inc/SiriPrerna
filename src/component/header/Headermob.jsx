@@ -66,7 +66,7 @@ export const Headermob = () => {
                 </ul>
             </div>
             <div className="hmbr">
-                <button>DONATE</button>
+                <a target="_blank"  href="https://pmny.in/Xrz1Hou3Rfau" > <button>DONATE</button ></a>
                 <span>
                     <img src={whatsapp} alt="" />
                     <p>+91 94419 22022</p>
