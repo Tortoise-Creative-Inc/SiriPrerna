@@ -55,9 +55,10 @@
     z-index: 10;
     background-color: white;
     width: 250px;
-    gap: 150px;
+    // gap: 5vh;
+    gap:clamp(50px, 5vh, 150px);
     justify-content: space-between;
-    -webkit-scrollbar: auto;
+    overflow-y: auto;
     .icon {
         width: 20px;
         height: 20px;
