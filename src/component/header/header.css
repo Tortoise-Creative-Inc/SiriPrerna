@@ -29,8 +29,10 @@
   -ms-flex-align: center;
   align-items: center;
 }
-
-.hmbr>button {
+.hmbr>a{
+  text-decoration: none;
+}
+.hmbr>a>button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,7 +55,7 @@
   cursor: pointer;
 }
 
-.hmbr>button:hover {
+.hmbr>a>button:hover {
   -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.24);
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.24);
 }
