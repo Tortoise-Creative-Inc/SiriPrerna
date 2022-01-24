@@ -61,11 +61,6 @@ export const Home = ({ ismobile }) => {
         ))}
       </section>
 
-
-     {/* <Pins ismobile={ismobile} e={sec5_1}/> */}
-
-
-
       <section className={s.sec3}>
         <Collage
           ismobile={ismobile}
@@ -77,6 +72,18 @@ export const Home = ({ ismobile }) => {
           to="/Ourkids"
         />
       </section>
+
+     <Pins ismobile={ismobile} e={sec5_1}/>
+
+     <Collage
+        ismobile={ismobile}
+        mobsetting=" 1fr 1fr"
+        founder={true}
+        db={founders}
+        title="Meet Our Founders"
+        desc={false}
+        to=""
+      />
 
       <section className={s.sec4}>
         <div className={s.head}>
@@ -162,15 +169,7 @@ export const Home = ({ ismobile }) => {
         </div>
       </section>
       
-      <Collage
-        ismobile={ismobile}
-        mobsetting=" 1fr 1fr"
-        founder={true}
-        db={founders}
-        title="Meet Our Founders"
-        desc={false}
-        to=""
-      />
+      
     <Pins ismobile={ismobile} e={sec5_2} show={true}/>
     </div>
   );
@@ -268,7 +267,7 @@ const Pins =({ismobile,e,show})=>{
         {!ismobile &&<p>{e.desc1}</p>}
         {ismobile && <div> <Link to={e.to}>Know more</Link></div>}
       </span>
-      {show&&<span>
+      {(show || !ismobile)&&<span>
         {(e.subheading2&&!ismobile)||<h5>{e.subheading2}</h5>}
         <img src={e.img2} alt="" />
         {!ismobile &&<p>{e.desc2}</p>}
