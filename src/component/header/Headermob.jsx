@@ -7,6 +7,7 @@ import Home from "../../assets/header/icons/Home.svg"
 import Engage from "../../assets/header/icons/Engage.svg"
 import Kids from "../../assets/header/icons/Kids.svg"
 import Why from "../../assets/header/icons/Why.svg"
+import Donate from "../../assets/header/icons/Donate.svg"
 import './header.css'
 import NavMobile from './NavMobile/NavMobile'
 export const Headermob = () => {
@@ -16,26 +17,32 @@ export const Headermob = () => {
         {
             title: "Home",
             to:"/",
-            delay:".10",
+            delay:".19",
             icon:Home,
         },
         {
             title: "Why us",
             to:"/whyus",
-            delay:".12",
+            delay:".21",
             icon:Why
         },
         {
             title: "Our Kids",
             to:"/ourkids",
-            delay:".14",
+            delay:".23",
             icon:Kids
         },
         {
             title: "Engage",
             to:"/engage",
-            delay:".16",
+            delay:".25",
             icon:Engage
+        },
+        {
+            title: "Donate",
+            to:"/",
+            delay:".27",
+            icon:Donate
         },
     ]
     return (
@@ -73,9 +80,11 @@ export const Headermob = () => {
 const Navoptions =(e)=>{
     const isActive = useLocation()
     return (
-        <li key={e.title}>
+        <div key={e.title}>
+       {e.title!="Donate" && <li >
         <NavLink to={e.to}>{e.title}</NavLink>
         {(isActive.pathname===e.to) && <img src={pencil} alt="" />}
-    </li>
+    </li>}
+    </div>
     )
 }

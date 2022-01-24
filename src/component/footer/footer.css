@@ -91,7 +91,6 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: auto;
-  border-bottom: solid white thin;
 }
 
 #ftr_links div img {
@@ -119,7 +118,6 @@
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 0 10px 30px 10px;
-  border-bottom: solid white thin;
   margin-top: 30px;
 }
 

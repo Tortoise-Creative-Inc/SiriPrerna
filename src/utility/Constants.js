@@ -62,7 +62,7 @@ export const CONTACT = [
         id: 1,
         title: "Phone No.",
         content: "+91 94419 22022",
-        Icon: <LocalPhoneIcon />,
+        Icon: <LocalPhoneIcon/>,
         to: "tel:9441922022",
         delay: ".18",
     },
