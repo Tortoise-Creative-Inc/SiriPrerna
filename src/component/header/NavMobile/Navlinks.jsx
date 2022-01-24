@@ -33,7 +33,7 @@ const Contact = [
 ];
 
 const Navoption = (e, isMobile, closeMobileMenu, Open) => {
-    const animateFrom = { opacity: 0, x: -102 }
+    const animateFrom = { opacity: 0, x: -400 }
     const animateTo = { opacity: 1, x: 0 }
     return (
         <motion.li
