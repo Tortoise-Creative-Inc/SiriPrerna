@@ -1,8 +1,12 @@
 .MoblieNav {
     display: flex;
     align-items: center;
+    @media(min-width:901px){
+        display:none;
+    }
     
 }
+
 
 .Menu,.MenuOpen {
     display: flex;
