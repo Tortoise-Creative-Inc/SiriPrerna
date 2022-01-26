@@ -259,7 +259,7 @@ const Pins =({ismobile,e,show})=>{
       <span>
         {(e.subheading1&&!ismobile)||<h5><b>{e.subheading1}</b></h5>}
         <img src={e.img1} alt="" />
-        {!ismobile &&<p> <b>{e.bh}</b> {e.desc1}</p>}
+        {(!ismobile || !show) &&<p> <b>{e.bh}</b> {e.desc1}</p>}
         {ismobile && <div> <Link to={e.to}>Know more</Link></div>}
       </span>
       {(show || !ismobile)&&<span>

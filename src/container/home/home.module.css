@@ -369,14 +369,14 @@
     filter: drop-shadow(2px 2px 15px rgba(95, 93, 93, 0.3));
   }
   .sec4{
-    padding-top:unset ;
+    padding:unset ;
     background-color:white;
     border: solid rgba(0, 0, 0, 0.082) thin; 
-    padding-bottom: 0px;
     filter: drop-shadow(2px 2px 15px rgba(95, 93, 93, 0.3));
 
   }
   .sec5{
+    padding: 5vw 6vw;
     box-shadow: 2px 2px 15px rgba(95, 93, 93, 0.3);
   }
   .sec5_head{
