@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import bg from "../../assets/home/sec1/bg.svg";
 import bg2 from "../../assets/home/sec1/bg2.svg";
 import bgc from "../../assets/home/sec1/bgc.svg";
 import bgc2 from "../../assets/home/sec1/bgc2.svg";
 import loc from "../../assets/home/loc.svg";
-import i1 from "../../assets/home/sec5/i1.png";
-import i2 from "../../assets/home/sec5/i2.png";
 import s from "./home.module.css";
 import { sec2, kidsclg, founders,sec5_1, sec5_2 } from "./constants";
 import { Link } from "react-router-dom";
@@ -19,7 +17,7 @@ export const Home = ({ ismobile }) => {
         <div id={s.heading}>
           {ismobile ? (
             <h1>
-              We are an <span>Orphanage</span> striving to
+              We are an <span>orphanage</span> striving to
               <br />
               shape young minds for
               <br />
@@ -27,7 +25,7 @@ export const Home = ({ ismobile }) => {
             </h1>
           ) : (
             <h1>
-              We are an <span>Orphanage</span>
+              We are an <span>orphanage</span>
               <br />
               striving to shape young <br /> minds for excellence.
             </h1>
@@ -54,7 +52,7 @@ export const Home = ({ ismobile }) => {
                 src={ismobile ? (e.icon2 ? e.icon2 : e.icon) : e.icon}
                 alt=""
               />{" "}
-              {e.text1}
+              <p>{e.text1}</p>
             </span>
             <p>{e.text2}</p>
           </div>
@@ -67,7 +65,7 @@ export const Home = ({ ismobile }) => {
           mobsetting=" 1fr 1fr 1fr"
           kids={true}
           db={kidsclg}
-          title="Meet Our Kids"
+          title="Meet our kids"
           desc={true}
           to="/Ourkids"
         />
@@ -87,7 +85,7 @@ export const Home = ({ ismobile }) => {
 
       <section className={s.sec4}>
         <div className={s.head}>
-          <h2>What are people saying.....</h2>
+          <h2>What are people saying...</h2>
         </div>
         {!ismobile &&(
           <div id={s.dr}>
@@ -127,7 +125,7 @@ export const Home = ({ ismobile }) => {
         )}
         <div id={s.tr}>
         <Carousel
-        autoPlay={true}
+        // autoPlay={true}
         infiniteLoop={true}
         interval={4000}
         stopOnHover={true}
@@ -136,9 +134,7 @@ export const Home = ({ ismobile }) => {
       >
         <div className={s.slider}>
           <h5>
-            This home is uniquely positioned as a
-            place for orphan boys to be nurturned
-            with global thoughts.
+            This home is uniquely positioned as a place for orphan boys to be nurturned with global thoughts.
           </h5>
           <p>
             - Mr. Jayaramulu L,
@@ -148,8 +144,7 @@ export const Home = ({ ismobile }) => {
         </div>
         <div className={s.slider}>
           <h5>
-            Visit place like this. God resides here  and no where else.
-            Amazing. Kids taken care by wonderful people.
+            Visit place like this. God resides here  and no where else. Amazing. Kids taken care by wonderful people.
           </h5>
           <p>- Mr. Krishna Rao, Well-wisher</p>
         </div>
@@ -257,23 +252,24 @@ const Pins =({ismobile,e,show})=>{
   return(
     <section className={s.sec5}>
     <div className={s.sec5_head}>
-      <h2>{e.heading} {!ismobile&&<br />} {e.heading&&e.heading1}</h2>
+      <h2>{e.heading} {!ismobile&&<br />} {e.heading1&&e.heading1}</h2>
       {!ismobile&&<Link to={e.to}>Know more</Link>}
     </div>
     <div className={s.sec5_img}>
       <span>
-        {(e.subheading1&&!ismobile)||<h5>{e.subheading1}</h5>}
+        {(e.subheading1&&!ismobile)||<h5><b>{e.subheading1}</b></h5>}
         <img src={e.img1} alt="" />
-        {!ismobile &&<p>{e.desc1}</p>}
+        {!ismobile &&<p> <b>{e.bh}</b> {e.desc1}</p>}
         {ismobile && <div> <Link to={e.to}>Know more</Link></div>}
       </span>
       {(show || !ismobile)&&<span>
-        {(e.subheading2&&!ismobile)||<h5>{e.subheading2}</h5>}
+        {(e.subheading2&&!ismobile)||<h5><b>{e.subheading2}</b></h5>}
         <img src={e.img2} alt="" />
-        {!ismobile &&<p>{e.desc2}</p>}
+        {!ismobile &&<p><b>{e.bh2}</b> {e.desc2}</p>}
         {ismobile && <div> <Link to={e.to}>Know more</Link></div>}
       </span> }
     </div>
+
 
 
   </section>

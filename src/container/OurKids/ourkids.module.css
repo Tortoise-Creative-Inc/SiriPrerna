@@ -1,30 +1,32 @@
 .container {
   background-color: white;
-  padding: 40px;
+  padding: 30px min(13vw ,236px);
   padding-bottom: unset;
   background-position: center;
-  background-position-y: 20px;
+  background-position-y: 5vw;
   background-repeat: no-repeat;
   background-size: contain;
-  background-size: 1000px;
+  background-size: 70vw;
 }
 .heading {
   height: 200px;
-  padding: 40px;
+  padding: 40px 0;
   text-align: left;
+  margin-bottom:8vw;
 }
 .heading > h1 {
   font-family: Noto Serif;
-  font-size: max(min(4vw, 60px), 28px);
-  line-height: max(min(5vw, 64px), 79px);
+  font-size: max(min(4vw, 48px), 28px);
+  line-height: max(min(5vw, 52px), 79px);
+  margin: 1em 0;
   font-style: normal;
   font-weight: 500;
 }
 .heading > p {
   color: rgba(89, 86, 86, 1);
   font-family: Nunito Sans;
-  font-size: max(min(1.7vw, 40px), 16px);
-  line-height: max(min(5vw, 64px), 25px);
+  font-size: max(min(1.7vw, 28px), 16px);
+  line-height: max(min(5vw, 30px), 25px);
   font-style: normal;
   font-weight: 400;
 }
@@ -37,6 +39,7 @@
 .kidprofile {
   display: flex;
   justify-content: center;
+  gap: 4vw;
   border-bottom: 1px solid rgba(149, 14, 47, 0.31);
 }
 
@@ -44,12 +47,11 @@
   flex-direction: row-reverse;
 }
 .kidprofile > img {
-  max-height: 280px;
+ height:clamp(280px,20vw,410px);
   object-fit: contain;
 }
 .kidprofile > span {
-  width: 40%;
-  font-family: Gaegu;
+  width: 60ch;
   font-weight: 700;
   min-width: 100px;
   letter-spacing: 0em;
@@ -59,14 +61,16 @@
   justify-content: center;
 }
 .kidprofile > span > h6 {
-  font-size: max(min(1.7vw, 40px), 16px);
-  line-height: max(min(5vw, 56px), 29px);
+  font-family: Gaegu;
+  font-size: max(min(1.7vw, 34px), 16px);
+  margin: max( 1.6em , 0px) 0;
   
 }
 
 .kidprofile > span > p {
-  font-size: max(min(1.7vw, 40px), 16px);
-  line-height: max(min(5vw, 36px), 29px);
+  font-family: Gaegu;
+  font-size: max(min(1.7vw, 34px), 16px);
+  line-height: max(min(5vw, 1.3em), 29px);
   color: rgba(89, 86, 86, 1);
 }
 
@@ -93,6 +97,7 @@
     box-sizing: border-box;
     border-radius: 10px;
     padding: 20px 20px 20px 20px;
+    gap: unset;
     background-color: white;
     filter: drop-shadow(2px 2px 15px rgba(95, 93, 93, 0.3));
     width: 90%;
@@ -101,9 +106,13 @@
     align-items: center;
     border-bottom: none;
   }
-  .kidprofile{
+  .kidprofile:first-child,.kidprofile:nth-child(2){
     animation: popout 2s ease-in;
     -webkit-animation: popout 1s ease;
+}
+
+.kidprofile > span > h6 {
+  margin: 6px 0;
 }
 @keyframes popout {
     from{transform:scale(0); opacity: 0;}

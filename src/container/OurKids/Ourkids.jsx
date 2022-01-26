@@ -7,7 +7,7 @@ export const Ourkids = () => {
     return (
         <div className={s.container} style={{ backgroundImage:`url(${bg1})`}}>
             <div className={s.heading}>
-                <h1>Let's meet our Kids</h1>
+                <h1>Let's meet our kids</h1>
                 <p>The kids are in the 8-14 year age range. </p>
             </div>
             <div className={s.list}>
