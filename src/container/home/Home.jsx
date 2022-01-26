@@ -233,7 +233,7 @@ const Collage = ({
         </div>
       )}
       {!ismobile && (
-        <div className={s.deskview} style={{ bottom: founder && "30%" }}>
+        <div className={s.deskview} style={{ bottom: founder && "30%" ,padding: founder && "0 min(8vw ,54px)"}}>
           <h2>{title}</h2>
           {desc && (
             <p>

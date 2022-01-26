@@ -159,7 +159,7 @@
   position: absolute;
   bottom: 16.5%;
   z-index: 3;
-  padding: 0 min(8vw ,48px);
+  padding: 0 min(8vw ,154px);
 }
 .deskview > h2 {
   font-family: Noto Serif;
