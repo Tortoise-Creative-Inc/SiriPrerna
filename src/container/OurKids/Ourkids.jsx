@@ -1,6 +1,7 @@
 import React from 'react'
 import s from './ourkids.module.css'
 import bg1 from '../../assets/Ourkids/bg1.png'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { kidsdb } from './constants'
 
 export const Ourkids = () => {
@@ -29,7 +30,7 @@ export const Ourkids = () => {
 const Kids = ({name,age,about,img}) =>{
     return (
         <div className={s.kidprofile}>
-        <img src={img} alt="" />
+        <LazyLoadImage src={img} alt="" />
         <span>
             <h6>{name}, {age}</h6>
             <p>{about}</p>

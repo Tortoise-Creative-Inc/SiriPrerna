@@ -129,3 +129,38 @@ export const sec5_2={
   desc2:'can help children by enrolling in CSR programs, matching funds, donating IT equipment, etc.',
   bh2:'Companies',
 };
+
+export const mobslides = [
+  {
+    key:1,
+    heading:'  This home is uniquely positioned as a place for orphan boys to be nurturned with global thoughts.',
+    author:' - Mr. Jayaramulu L, Diplomat UN vissionary',
+    to:'',
+    margin:false,
+    width:'29ch'
+  },
+  {
+    key:2,
+    heading:' Visit place like this. God resides here and no where else. Amazing. Kids taken care by wonderful people.',
+    author:'- Mr. Krishna Rao, Well-wisher',
+    to:'',
+    margin:'-4.5% 0px 0 20%',
+    width:'30ch'
+  },
+  {
+    key:3,
+    heading:' Lovely kids, Hygienic environment and friendly staff.',
+    author:'- Mrs. Ashwini, Well-wisher',
+    to:'',
+    margin:'-4.5% 0px 0 40%',
+    width:'34ch'
+  },
+  {
+    key:4,
+    heading:'The kids are very talented and disciplined.',
+    author:'- Mrs. M. Keerthana, Well-wisher',
+    to:'',
+    margin:'-4.5% 0px 0 60%',
+    width:'25ch'
+  },
+]
