@@ -1,12 +1,11 @@
+import { useEffect, useState } from 'react';
 import './App.css';
 import { Headermob } from './component/header/Headermob';
-import { Footermob } from './component/footer/Footermob';
 import { Route, Routes } from 'react-router-dom';
 import { Home } from './container/home/Home';
-import { WhyUs } from './container/WhyUs/WhyUs';
+import WhyUs  from './container/WhyUs/WhyUs';
 import { Ourkids } from './container/OurKids/Ourkids';
 import { Engage } from './container/Engage/Engage';
-import { useEffect, useState } from 'react';
 import Footer from './component/footer/Footer';
 
 

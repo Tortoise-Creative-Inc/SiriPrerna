@@ -65,7 +65,7 @@
     overflow: hidden;
     height: 0;
     max-height: 0;
-    transition: 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     box-sizing:border-box;
     
 }
@@ -74,7 +74,7 @@
     transform: translateY(0px);
     padding:10px 0;
     padding-left:10px;
-    height:fit-content;
+    height:150px;
     max-height: 200px;
     transition: all 0.5s ease-in-out;
     background: #910122;

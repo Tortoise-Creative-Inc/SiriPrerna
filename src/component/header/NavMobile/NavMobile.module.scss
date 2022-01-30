@@ -17,12 +17,15 @@
         cursor: pointer;
     }
 }
+.MenuOpen{
+    gap:0;
+}
 
 #Icon1,
 #Icon2,
 #Icon3 {
     color: black;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.5s ease-in-out;
     margin: -9px 0;
     padding: 0;
     width: 25px !important;
@@ -31,7 +34,7 @@
 
 // Animation
 .MenuOpen > #Icon1 {
-    transform: rotate(45deg) translate(5.5px, 6.5px);
+    transform: rotate(45deg) translate(4px, 4.5px);
 }
 .MenuOpen > #Icon2 {
     transform: translateX(-50px);

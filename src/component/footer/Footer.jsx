@@ -94,14 +94,12 @@ const Column_tab = ({tab}) => {
         Label="Contact Us"
         Text={
           <p className={clsx(styles.p, { [styles.mob]: tab })}>
-            {" "}
             +91 94419 22022
           </p>
         }
         Text2={
           <p className={clsx(styles.p, { [styles.mob]: tab })}>
-            {" "}
-            siri.nonprofit@gmail.com
+           siri.nonprofit@gmail.com
           </p>
         }
         to="https://wa.me/9441922022"

@@ -1,10 +1,12 @@
 .cnt {
   overflow: hidden;
 }
+
 .sec1 {
   position: relative;
 }
-.sec1 > p {
+
+.sec1>p {
   position: absolute;
   top: 1%;
   text-align: center;
@@ -17,10 +19,12 @@
   color: rgba(117, 117, 117, 1);
   width: 100%;
 }
-.sec1 > p > img {
+
+.sec1>p>img {
   opacity: 78%;
   height: 1em;
 }
+
 #heading {
   position: absolute;
   width: 100%;
@@ -29,13 +33,14 @@
   top: 6vw;
   text-align: left;
 }
-#heading > h1 {
+
+#heading>h1 {
   font-weight: 570;
   font-size: max(min(4vw, 64px), 18px);
   line-height: max(min(5.2vw, 78px), 25px);
 }
 
-#heading > h1 > span {
+#heading>h1>span {
   color: #ffc046;
 }
 
@@ -46,10 +51,12 @@
   background-position: right;
   background-repeat: no-repeat;
 }
-.sec1_img > img {
+
+.sec1_img>img {
   width: inherit;
   object-fit: contain;
 }
+
 .sec2 {
   position: relative;
   z-index: 1;
@@ -61,7 +68,8 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   filter: drop-shadow(2px 2px 15px rgba(95, 93, 93, 0.3));
 }
-.sec2 > div > span {
+
+.sec2>div>span {
   display: flex;
   gap: 1.5vw;
   align-items: baseline;
@@ -77,7 +85,8 @@
   height: max(min(4vw, 1em), 32px);
   object-fit: contain;
 }
-.sec2 > div > p {
+
+.sec2>div>p {
   width: 12ch;
   margin: auto;
   text-align: center;
@@ -95,20 +104,24 @@
 .collage_cnt {
   position: relative;
 }
+
 .collage {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-.collage > div,
-.collage > div > div {
+
+.collage>div,
+.collage>div>div {
   position: relative;
   width: 100%;
   height: 100%;
 }
-.collage > div > div > img {
+
+.collage>div>div>img {
   width: inherit;
   object-fit: contain;
 }
+
 #overlay {
   position: absolute;
   width: 100%;
@@ -117,13 +130,12 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.2) 43.75%,
-    rgba(0, 0, 0, 0.87) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(0, 0, 0, 0.2) 43.75%,
+      rgba(0, 0, 0, 0.87) 100%);
   z-index: 2;
 }
+
 #kid {
   text-shadow: 0 1px 0 black;
   position: absolute;
@@ -132,6 +144,7 @@
   font-size: max(min(1.27vw, 24px), 12px);
   right: 8%;
 }
+
 #founder {
   text-shadow: 0 1px 0 black;
   position: absolute;
@@ -141,23 +154,25 @@
   top: 76%;
   left: 10%;
 }
-#founder > h5 {
+
+#founder>h5 {
   font-size: max(min(1.7vw, 40px), 16px);
   text-shadow: 0 0 15px black;
   font-weight: 500;
   margin-bottom: min(2vw, 20px);
 }
-#founder > span > p {
+
+#founder>span>p {
   font-size: max(min(1.3vw, 40px), 9px);
   font-weight: 500;
 }
-.collage > div:nth-child(even) > div > #overlay {
-  background: linear-gradient(
-    180deg,
-    rgba(149, 0, 36, 0.16) 55.73%,
-    rgba(0, 0, 0, 0.87) 100%
-  );
+
+.collage>div:nth-child(even)>div>#overlay {
+  background: linear-gradient(180deg,
+      rgba(149, 0, 36, 0.16) 55.73%,
+      rgba(0, 0, 0, 0.87) 100%);
 }
+
 .deskview {
   color: white;
   position: absolute;
@@ -165,7 +180,8 @@
   z-index: 3;
   padding: 0 min(8vw, 154px);
 }
-.deskview > h2 {
+
+.deskview>h2 {
   font-family: Noto Serif;
   font-size: max(min(2.48vw, 48px), 24px);
   line-height: 2.3em;
@@ -173,7 +189,8 @@
   /* margin-bottom: min(2vw, 30px); */
   text-align: left;
 }
-.deskview > p {
+
+.deskview>p {
   font-family: Nunito Sans;
   font-size: max(min(1.27vw, 24px), 14px);
   font-weight: 500;
@@ -191,12 +208,14 @@
   padding: 8px 46px;
   background: rgba(99, 6, 0, 1);
 }
-.deskview > a:hover {
+
+.deskview>a:hover {
   opacity: 1;
 }
+
 .sec4 {
   padding: 40px 5vw max(min(133px, 8vw), 20px);
-  box-shadow: 4px 4px 15px rgba(95, 93, 93, 0.3);
+  box-shadow: 2px 2px 15px rgb(95 93 93 / 30%);
   margin: auto;
   position: relative;
 }
@@ -290,12 +309,14 @@
   padding: 25px 0;
   text-align: center;
 }
-.clg_mob_header > h2 {
+
+.clg_mob_header>h2 {
   font-size: 20px;
   font-family: Noto Serif;
   font-weight: normal;
 }
-.clg_mob_footer > a {
+
+.clg_mob_footer>a {
   color: rgba(99, 6, 0, 1);
   font-family: Poppins;
   font-style: normal;
@@ -331,6 +352,7 @@
   font-style: normal;
   font-weight: 600;
 }
+
 /*////////////////////////////> mob css </////////////////////////////*/
 
 @media (max-width: 650px) {
@@ -348,27 +370,32 @@
     background-size: min(90vw, 500px);
     /* background-position: ; */
   }
+
   .sec2 {
     margin-top: min(-17vw, -196px);
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 40px;
   }
-  .sec2 > div {
+
+  .sec2>div {
     margin-right: 20px;
   }
-  .sec2 > div > span {
+
+  .sec2>div>span {
     justify-content: center;
     gap: 10px;
     font-weight: 600;
     align-items: center;
   }
-  .sec2 > div > p {
+
+  .sec2>div>p {
     margin-top: 10px;
     padding-top: 6px;
     margin: auto;
     text-align: center;
   }
-  .sec4 > div > h2 {
+
+  .sec4>div>h2 {
     font-weight: 500;
     font-family: Noto Serif;
     text-align: center;
