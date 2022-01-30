@@ -30,6 +30,34 @@
     padding: 0;
     width: 25px !important;
 }
+.underlay,.navopen{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg,rgba(0, 0, 0, 0.2) 43.75%,rgba(0, 0, 0, 0.87) 100%);
+    z-index: 4;    
+    opacity: 0;
+    visibility: hidden;
+}
+
+.underlay{
+    animation:fadeOut 400ms ease-in forwards;
+}
+.navopen{
+    animation:fadeIn 400ms ease-in forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; visibility: hidden; }
+    100% { opacity: 1; visibility: visible;}
+}
+@keyframes fadeOut {
+    0% { opacity: 1; visibility: visible;}
+    100% { opacity: 0; visibility: hidden; }
+}
+
 // .Mui-SvgIcon{}
 
 // Animation

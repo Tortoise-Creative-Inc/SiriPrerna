@@ -4,6 +4,7 @@
 
 .sec1 {
   position: relative;
+  min-height: 40vw;
 }
 
 .sec1>p {
@@ -103,6 +104,7 @@
 }
 .collage_cnt {
   position: relative;
+  min-height: 0vw;
 }
 
 .collage {
@@ -368,7 +370,7 @@
     margin: auto;
     background-position: center min(30vw, 150px);
     background-size: min(90vw, 500px);
-    /* background-position: ; */
+    
   }
 
   .sec2 {
@@ -400,14 +402,10 @@
     font-family: Noto Serif;
     text-align: center;
   }
-  .sec3 {
-    filter: drop-shadow(2px 2px 15px rgba(95, 93, 93, 0.3));
-  }
   .sec4 {
     padding: unset;
     background-color: white;
     border: solid rgba(0, 0, 0, 0.082) thin;
-    filter: drop-shadow(2px 2px 15px rgba(95, 93, 93, 0.3));
   }
   .sec5 {
     padding: 5vw 6vw;

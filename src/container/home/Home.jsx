@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import s from "./home.module.css";
 import 'react-lazy-load-image-component/src/effects/blur.css';
@@ -9,8 +8,6 @@ import bgc from "../../assets/home/sec1/bgc.svg";
 import bgc2 from "../../assets/home/sec1/bgc2.svg";
 import loc from "../../assets/home/loc.svg";
 import { sec2, kidsclg, founders,sec5_1, sec5_2,mobslides } from "./constants";
-
-
 import { Collage } from "../../component/home/Collage";
 import { Pins } from "../../component/home/Pins";
 import { Descslides, Slides } from "../../component/home/Slides";
@@ -18,7 +15,6 @@ import { Descslides, Slides } from "../../component/home/Slides";
 export const Home = ({ ismobile }) => {
   return (
     <div className={s.cnt}>
-      {/* <LazyLoadImage src={bg} alt="fdf"/> */}
       <section className={s.sec1}>
         <div id={s.heading}>
           {ismobile ? (

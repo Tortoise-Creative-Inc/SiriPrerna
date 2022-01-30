@@ -3,6 +3,7 @@ import s from './ourkids.module.css'
 import bg1 from '../../assets/Ourkids/bg1.png'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { kidsdb } from './constants'
+import { Fade, Slide } from 'react-reveal';
 
 export const Ourkids = () => {
     return (
@@ -29,6 +30,7 @@ export const Ourkids = () => {
 
 const Kids = ({name,age,about,img}) =>{
     return (
+        <Slide bottom>
         <div className={s.kidprofile}>
         <LazyLoadImage src={img} alt="" />
         <span>
@@ -36,6 +38,7 @@ const Kids = ({name,age,about,img}) =>{
             <p>{about}</p>
         </span>
     </div>
+    </Slide>
     )
 }
 

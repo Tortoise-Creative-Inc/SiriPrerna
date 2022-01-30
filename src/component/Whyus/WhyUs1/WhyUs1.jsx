@@ -4,6 +4,7 @@ import One from "../../../assets/WhyUs/1.png";
 import { PAGE1 } from "../../../container/WhyUs/Constants";
 import PageTop from "../PageTop/PageTop";
 import bulb from "../../../assets/WhyUs/Bulb.svg"
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const WhyUs1 = ({ isMOBILE }) => {
   return (
@@ -22,7 +23,7 @@ const WhyUs1 = ({ isMOBILE }) => {
         {PAGE1.map((e) => (
           <div className={styles.item} key={e.id}>
             <div className={styles.item_head}>
-              <img className={styles.img} src={e.img} alt="" />
+              <LazyLoadImage className={styles.img} src={e.img} alt="" />
             </div>
             <div className={styles.item_body}>
               <h3 className={styles.title}>{e.title}</h3>

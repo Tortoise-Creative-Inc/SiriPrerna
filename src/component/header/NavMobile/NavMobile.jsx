@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import x from "./NavMobile.module.scss"
 import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
 import Navlinks from './Navlinks';
+import clsx from 'clsx';
 
 
 const NavMobile = ({ items }) => {
@@ -15,11 +15,13 @@ const NavMobile = ({ items }) => {
     const closeMobileMenu = () => setOpen(false);
     
     return (
-        <nav className={x.MoblieNav}>
+        <>
+        <div className={open?x.navopen:x.underlay} onClick={closeMobileMenu}  ></div>
+        <nav className={x.MoblieNav} >
             {HamburgerIcon}
-             <Navlinks items={items} isMobile={true} closeMobileMenu={closeMobileMenu} Open={open}  /
->
+             <Navlinks items={items} isMobile={true} closeMobileMenu={closeMobileMenu} Open={open}  />
         </nav>
+        </>
     )
 
 
