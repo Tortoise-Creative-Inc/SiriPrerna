@@ -1,8 +1,9 @@
 import React from "react";
 import styles from "./WhyUs1.module.css";
 import One from "../../../assets/WhyUs/1.png";
-import { PAGE1 } from "../Constants";
-import PageTop from "../../../component/Whyus/PageTop/PageTop";
+import { PAGE1 } from "../../../container/WhyUs/Constants";
+import PageTop from "../PageTop/PageTop";
+import bulb from "../../../assets/WhyUs/Bulb.svg"
 
 const WhyUs1 = ({ isMOBILE }) => {
   return (
@@ -14,6 +15,7 @@ const WhyUs1 = ({ isMOBILE }) => {
         Heading2="to become self-reliant, aware and inspiring"
         Heading3="citizens."
         Heading_mob="Raising self-reliant Kids"
+        Vector={bulb}
         className={styles.head}
       />
       <div className={styles.body}>

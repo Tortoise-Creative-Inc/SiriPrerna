@@ -3,6 +3,7 @@ import PageTop from "../../../component/Whyus/PageTop/PageTop";
 import styles from "./WhyUs2.module.css";
 import Two from "../../../assets/WhyUs/2.png";
 import The_socially from "../../../assets/WhyUs/The_socially.png";
+import hand from "../../../assets/WhyUs/hand.svg"
 
 const WhyUs2 = ({ isMOBILE }) => {
   return (
@@ -14,6 +15,7 @@ const WhyUs2 = ({ isMOBILE }) => {
         Heading2="opportunites for its children in the outside"
         Heading3="world."
         Heading_mob="Impact outside campus"
+        Vector={hand}
         className={styles.head}
       />
       <div className={styles.body}>
