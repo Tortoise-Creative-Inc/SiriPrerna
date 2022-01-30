@@ -38,6 +38,7 @@
 #heading > h1 > span {
   color: #ffc046;
 }
+
 .sec1_img {
   width: 60vw;
   margin-left: auto;
@@ -52,7 +53,7 @@
 .sec2 {
   position: relative;
   z-index: 1;
-  margin-top: min(-17vw, -185px);
+  margin-top: min(-17vw, -12vw);
   background-color: #ffc046;
   display: grid;
   justify-content: space-evenly;
@@ -282,9 +283,7 @@
   font-size: max(min(1.4vw, 28px), 18px);
   color: #000;
 }
-.sec1 {
-  min-height: 90vh;
-}
+
 /*////////////////////////////> mob components </////////////////////////////*/
 .clg_mob_header,
 .clg_mob_footer {
@@ -350,7 +349,7 @@
     /* background-position: ; */
   }
   .sec2 {
-    margin-top: min(-17vw, -136px);
+    margin-top: min(-17vw, -196px);
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 40px;
   }
@@ -433,4 +432,10 @@
   #tr {
     display: unset;
   }
+}
+@media (max-width:450px) {
+  .sec2 {
+    margin-top: min(-17vw, -168px);
+  }
+  
 }
