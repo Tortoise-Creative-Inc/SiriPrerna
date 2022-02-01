@@ -69,7 +69,7 @@ export const kidsdb=[
   img: kid6,
   name: "Chintu",
   age: "15",
-  about: "Chintu loves to cook! His favourite subjects are Englisha and Telgu "
+  about: "Chintu loves to cook! His favourite subjects are English and Telugu."
  },
  {
   key: 7,
@@ -83,7 +83,7 @@ export const kidsdb=[
   img: kid8,
   name: "Durgesh",
   age: "12",
-  about: "Durgesh loves to play badminston. His favourite subject is mathematics "
+  about: "Durgesh loves to play badminton. His favourite subject is mathematics."
  },
  {
   key: 9,
@@ -95,23 +95,23 @@ export const kidsdb=[
  {
   key: 10,
   img: kid10,
-  name: "Yum Ganesh",
+  name: "M. Ganesh",
   age: "12",
-  about: "Yum Ganesh is a polite and kind boy. His favourite subject is Telgu. "
+  about: "M. Ganesh is a polite and kind boy. His favourite subject is Telugu. "
  },
  {
   key: 11,
   img: kid11,
   name: "Kamlesh",
   age: "12",
-  about: "Kamlesh is a calm and quite boy. He loves to play games! His favourite subject is Hindi "
+  about: "Kamlesh is a calm and quite boy. He loves to play games! His favourite subject is Hindi."
  },
  {
   key: 12,
   img: kid12,
   name: "Sai Kartik",
   age: "10",
-  about: "He loves to play football and his favourite subject is Telgu, "
+  about: "He loves to play football and his favourite subject is Telugu."
  },
  {
   key: 13,
@@ -125,7 +125,7 @@ export const kidsdb=[
   img: kid14,
   name: "Mokshit",
   age: "9",
-  about: "Mokshit loves to study. In his free time, he loves to watch the T.V. and play games and skate "
+  about: "Mokshit loves to study. In his free time, he loves to watch the T.V. and play games and skate."
  },
  {
   key: 15,
@@ -146,21 +146,21 @@ export const kidsdb=[
   img: kid17,
   name: "Padu",
   age: "14",
-  about: "Padu loves to play cricket. His likes to study Telgu."
+  about: "Padu loves to play cricket. He likes to study Telugu."
  },
  {
   key: 18,
   img: kid18,
   name: "Raja",
   age: "11",
-  about: "Raja loves to act and do impersations!"
+  about: "Raja loves to act and do impersonation!"
  },
  {
   key: 19,
   img: kid19,
   name: "Ravi",
   age: "12",
-  about: "Ravi is fluent in English and Telgu. His favourite subject is Mathematics.He likes to play badminton and cricket."
+  about: "Ravi is fluent in English and Telugu. His favourite subject is Mathematics. He likes to play badminton and cricket."
  },
  {
   key: 20,
@@ -188,7 +188,7 @@ export const kidsdb=[
   img: kid23,
   name: "Shiva",
   age: "7",
-  about: "Shiva loves to study Telgu. His favourite activities include skating and playing carrom."
+  about: "Shiva loves to study Telugu. His favourite activities include skating and playing carrom."
  },
  {
   key: 24,
@@ -202,14 +202,14 @@ export const kidsdb=[
   img: kid25,
   name: "Sunny",
   age: "14",
-  about: "Sunny loves to study. His favourite subjects are English and Mathematics"
+  about: "Sunny loves to study. His favourite subjects are English and Mathematics."
  },
  {
   key: 26,
   img: kid26,
   name: "Suresh",
   age: "8",
-  about: "Suresh enjoys playing carrom. His favourite subjects are Telgu and Mathematics "
+  about: "Suresh enjoys playing carrom. His favourite subjects are Telugu and Mathematics."
  },
  {
   key: 27,

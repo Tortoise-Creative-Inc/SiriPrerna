@@ -9,7 +9,9 @@ import Kids from "../../assets/header/icons/Kids.svg"
 import Why from "../../assets/header/icons/Why.svg"
 import './header.css'
 import NavMobile from './NavMobile/NavMobile'
-export const Headermob = () => {
+
+
+export const Headermob = ({ ismobile}) => {
   const Navigate = useNavigate();
 
     const nav=[
@@ -59,11 +61,15 @@ export const Headermob = () => {
                 </ul>
             </div>
             <div className="hmbr">
-                <a target="_blank" href="https://pmny.in/Xrz1Hou3Rfau" > <button>DONATE</button ></a>
-                <span>
+                <a href="https://pmny.in/Xrz1Hou3Rfau" > <button>DONATE</button ></a>
+               {!ismobile && 
+                   <span>
+                       <a href="this is a">
                     <img src={whatsapp} alt="" />
                     <p>+91 94419 22022</p>
+                    </a>
                 </span>
+                }
             </div>
            
         </div>

@@ -48,28 +48,28 @@ export const kidsclg = [
   {
     key: "1",
     name: "Chintu",
-    age: "13 yrs",
+    age: "15 yrs",
     img: k1,
     ignore: false,
   },
   {
     key: "2",
-    name: "Sainath",
-    age: "13 yrs",
+    name: "Sai Nath",
+    age: "7 yrs",
     img: k2,
     ignore: false,
   },
   {
     key: "3",
-    name: "Mokshith",
+    name: "Bunny",
     age: "13 yrs",
     img: k3,
     ignore: false,
   },
   {
     key: "4",
-    name: "Mokshith",
-    age: "13 yrs",
+    name: "Raja",
+    age: "11 yrs",
     img: k4,
     ignore: true,
   },
@@ -78,7 +78,7 @@ export const kidsclg = [
 export  const founders = [
   {
     key: "1",
-    name: "A.Prasad Raju",
+    name: "A. Prasad Raju",
     img: f1,
     h1: "Chairman and Managing Trustee",
     h2: "M.A. Dist Judge (Retd)",
@@ -92,10 +92,10 @@ export  const founders = [
   },
   {
     key: "3",
-    name: "A.Vamsee Krishna",
+    name: "A. Vamsee Krishna",
     img: f3,
     h1: "IIT Kharagpur alumnus",
-    h2: "CEO - HappilyEver Matrimony",
+    h2: "CEO - HappilyEver.co",
   },
   {
     key: "4",
@@ -108,7 +108,7 @@ export  const founders = [
 export const sec5_1={
   heading:'Why is Prerna',
   heading1:'different?',
-  to: "WhyUs",
+  to: "whyus",
   img1:i1,
   subheading1:false,
   desc1:'Prerna aims to provide children with the best care and facilities they deserve.',
@@ -119,7 +119,7 @@ export const sec5_1={
 export const sec5_2={
   heading:'Get Involved With Us !',
   heading1:false,
-  to: "WhyUs",
+  to: "engage",
   img1:i3,
   desc1:'can help the children by spending time with them, tutoring them and donating goods and money.',
   bh:'Individuals and families',

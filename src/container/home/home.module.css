@@ -1,19 +1,20 @@
 .cnt {
   overflow: hidden;
+  
 }
 
 .sec1 {
   position: relative;
-  min-height: 40vw;
+  margin-top:-10vw;
 }
 
 .sec1>p {
   position: absolute;
-  top: 1%;
+  top: 12%;
   text-align: center;
   font-family: Nunito Sans;
   font-style: normal;
-  font-size: 18px;
+  font-size: clamp(14px, 2vw,18px);
   font-weight: 400;
   line-height: 50px;
   letter-spacing: 0em;
@@ -31,7 +32,7 @@
   width: 100%;
   padding: 0 min(8vw, 154px);
   /* global change */
-  top: 6vw;
+  top: 15vw;
   text-align: left;
 }
 
@@ -46,15 +47,17 @@
 }
 
 .sec1_img {
-  width: 60vw;
+  width: 63vw;
   margin-left: auto;
-  background-size: 57vw;
-  background-position: right;
+  background-size: 54vw;
+  background-position-x: right;
+  background-position-y: 11vw;
   background-repeat: no-repeat;
 }
 
 .sec1_img>img {
   width: inherit;
+  margin-left: 4.7vw;
   object-fit: contain;
 }
 
@@ -296,7 +299,7 @@
   padding-top: 1.5vw;
   font-size: max(min(1.23vw, 24px), 16px);
   font-weight: 600;
-  color: black;
+  color: #000000e3;
   font-family: Nunito Sans;
 }
 .sec5_img > span > p > b {
@@ -362,8 +365,11 @@
     padding: unset;
     text-align: center;
     margin: auto;
+    top: 6vw;
   }
-
+ .sec1{
+   margin-top:unset;
+ }
   .sec1_img {
     width: 100%;
     max-width: 500px;
@@ -371,6 +377,9 @@
     background-position: center min(30vw, 150px);
     background-size: min(90vw, 500px);
     
+  }
+  .sec1_img>img {
+    margin-left: unset;
   }
 
   .sec2 {
@@ -446,9 +455,10 @@
     font-weight: 400;
   }
   #founder > h5,
-  #founder > span > p {
+  #founder > span > p,.sec5_img > span > p{
     font-weight: 400;
   }
+ 
 }
 @media (max-width: 900px) {
   #dr {

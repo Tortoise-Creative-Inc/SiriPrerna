@@ -2,7 +2,7 @@ import React from "react";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import s from "./home.module.css";
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import bg from "../../assets/home/sec1/bg.svg";
+import bg from "../../assets/home/sec1/bg.png";
 import bg2 from "../../assets/home/sec1/bg2.svg";
 import bgc from "../../assets/home/sec1/bgc.svg";
 import bgc2 from "../../assets/home/sec1/bgc2.svg";
@@ -25,7 +25,7 @@ export const Home = ({ ismobile }) => {
         </div>
 
         <div className={s.sec1_img} style={{ backgroundImage: `url(${ismobile ? bgc2 : bgc})` }}>
-          <LazyLoadImage src={ismobile ? bg2 : bg} alt="" />
+          <img loading="eager" src={ismobile ? bg2 : bg} alt="" />
         </div>
 
         {!ismobile && (<p><LazyLoadImage src={loc} alt="" /> Hyderabad, Telangana, India</p>)}
@@ -55,7 +55,7 @@ export const Home = ({ ismobile }) => {
           db={kidsclg}
           title="Meet our kids"
           desc={true}
-          to="/Ourkids"
+          to="ourkids"
         />
       </section>
 
@@ -73,7 +73,7 @@ export const Home = ({ ismobile }) => {
 
       <section className={s.sec4}>
         <div className={s.head}>
-          <h2>What are people saying...</h2>
+          <h2>What people are saying...</h2>
         </div>
         {!ismobile &&(
           <Descslides slides={mobslides}/>

@@ -37,7 +37,7 @@ function App() {
 
   return (
     <div className="App">
-      <Headermob />
+      <Headermob ismobile={ismobile}/>
       <Routes>
         <Route path="/" element={<Home ismobile={ismobile} />} />
         <Route path="/whyus" element={<WhyUs ismobile={ismobile} />} />
