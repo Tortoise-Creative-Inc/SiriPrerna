@@ -26,12 +26,6 @@ const WhyUs3 = ({ isMOBILE }) => {
     swipeToSlide: false,
     responsive: [
       {
-        breakpoint: 500,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-      {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,

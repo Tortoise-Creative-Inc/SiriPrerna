@@ -53,7 +53,7 @@ const Column = () => {
         <h3 className={styles.footer_col_heading}>Contact Us</h3>
         {CONTACT.map(
           (e) =>
-            e.id !== 1 && (
+             (
               <li key={e.id} className={styles.li}>
                 <a className={styles.Link} href={e.to}>
                   {e.Icon}

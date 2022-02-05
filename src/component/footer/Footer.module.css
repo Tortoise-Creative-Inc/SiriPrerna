@@ -58,7 +58,7 @@
   font-style: normal;
   font-weight: normal;
   margin-bottom: clamp(30px, 2.95vw + 0.02em, 60px);
-  font-size: max(min(1.97vw + .01em, 38px), 30px);
+  font-size: max(min(1.563vw + .01em, 21px), 30px);
   line-height: clamp(26px, 2.03vw + 0.02em, 41px);
   letter-spacing: 0.05em;
   color: #ffffff;
