@@ -71,8 +71,9 @@ export const Engage = () => {
 function Donate({head,desc,head2,rs,img,don}){
 
     return(
+        <div>
 
-        <div className={don?s.donate:clsx(s.donat,s.donate)}>
+        <div className={s.donate}>
             
             <img className={s.mainimg} src={img} alt="" />
            <div className={s.desc_don}> 
@@ -81,13 +82,15 @@ function Donate({head,desc,head2,rs,img,don}){
             <p className="">{desc}</p>
             {rs && <p>{rs} </p>}
             </div>
-            {don && <div >
-                <button className={s.d_btn} type="button">
-                    Donate
-                    <img src={v1} alt="" />
-                </button>
-            </div>}
+            
         </div>
+        {don && 
+            <button className={s.d_btn} type="button">
+                Donate
+                <img src={v1} alt="" />
+            </button>
+       }
+      </div>  
 
     )
 }

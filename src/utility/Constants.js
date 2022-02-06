@@ -5,7 +5,7 @@ import Youtube from '../assets/footer/youtube.svg'
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
-
+import React from 'react';
 
 export const NAVLINKS = [
     {

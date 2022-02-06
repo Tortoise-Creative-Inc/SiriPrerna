@@ -13,7 +13,7 @@
     font-family: Noto Serif;
     font-weight: 500;
     //IMPORTANT font-size: clamp(20px, 2.44vw + 0.01em, 48px);
-    font-size: clamp(25px, 2.44vw, 48px);
+    font-size: clamp(40px, 2.44vw, 48px);
     line-height: 65px;
     margin-bottom: 50px;
     //text-align: left;
@@ -145,7 +145,7 @@
 }
 
 .bottom_image>img {
-    // width: clamp(100px, 25vw, 349px);
+     width: clamp(100px, 25vw, 349px);
     width: 272.9px;
     height: 77.61px;
 }
@@ -242,6 +242,12 @@
 
 
 // MEDIA QUERY
+@media (max-width:1135px){
+    .heading{
+        text-align: center;
+        font-size: clamp(25px,3.5vw,40px);
+    }
+}
 @media (max-width:650px) {
     .engage {
         margin-top: 0;
@@ -250,8 +256,7 @@
     }
 
     .heading {
-        text-align: center;
-        font-size: 25px;
+
         margin-bottom: 10px;
     }
 
