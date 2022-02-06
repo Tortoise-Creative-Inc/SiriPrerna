@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Logo from "../../assets/footer/Logo_white.svg";
 import styles from "./Footer.module.css";
 import { ICONS, NAVLINKS } from "../../utility/Constants.js";
@@ -8,8 +8,8 @@ import CopyrightIcon from "@mui/icons-material/Copyright";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import clsx from "clsx";
 import Accordionbtn from "../accordionbtn/Accordionbtn";
+import clsx from "clsx";
 
 const CONTACT = [
   {
@@ -37,50 +37,107 @@ const CONTACT = [
     to: "mailto:siri.nonprofit@gmail.com",
   },
 ];
-const Column = () => {
+const Column = ({ istablet, ismobile }) => {
   return (
     <>
-      <div className={styles.footer_col_1}>
-        <h3 className={styles.footer_col_heading}>Address</h3>
-        <img className={styles.img_m} src={Map} alt="" />
-        <p className={styles.p}>
-          Prerna Children's home, Gopi Gopal Deva Nilayam, Dwarakamayi Colony,
-          Behind IDPL Colony, Bowenpally, Balanagar Mandal, Hyderabad City,
-          Telangana State, India. 500037
-        </p>
-      </div>
-      <div className={styles.footer_col_2}>
-        <h3 className={styles.footer_col_heading}>Contact Us</h3>
-        {CONTACT.map(
-          (e) =>
-             (
-              <li key={e.id} className={styles.li}>
-                <a className={styles.Link} href={e.to}>
-                  {e.Icon}
-                  <p className={styles.list_items}>{e.content}</p>
-                </a>
-              </li>
-            )
+      <div
+        className={clsx(styles.footer_col_1, {
+          [styles.mob]: istablet || ismobile,
+        })}
+      >
+        <h3
+          className={clsx(styles.footer_col_heading, {
+            [styles.mob]: istablet || ismobile,
+          })}
+        >
+          Address
+        </h3>
+        <a
+          className={clsx(styles.Link_address, {
+            [styles.mob]: istablet || ismobile,
+          })}
+          href="https://goo.gl/maps/FPcHhJ94Sa55HCpt6"
+        >
+          <img
+            className={clsx(styles.img_loc, {
+              [styles.mob]: istablet || ismobile,
+            })}
+            src={Map}
+            alt=""
+          />
+          <p className={clsx(styles.p, { [styles.mob]: istablet || ismobile })}>
+            Prerna Children's home,
+            <br /> Gopi Gopal Deva Nilayam,
+            <br /> Dwarakamayi Colony,
+            <br />
+            Behind IDPL Colony, Bowenpally,
+            <br /> Balanagar Mandal,
+            <br /> Hyderabad City, Telangana State, <br />
+            India. 500037
+          </p>
+        </a>
+        {ismobile ? (
+          <></>
+        ) : (
+          <div className={styles.copyright}>
+            <div className={styles.h}>
+              <CopyrightIcon id={styles.copy} />
+              <pre className={styles.pre}>
+                2019-2021 Prerna Children’s Home. All rights reserved.
+              </pre>
+            </div>
+          </div>
         )}
       </div>
-      <div className={styles.copyright}>
-        <CopyrightIcon id={styles.copy} />{" "}
-        <pre className={styles.pre}>
-          2019-2021 Prerna Children’s Home. All rights reserved.
-        </pre>
+      <div
+        className={clsx(styles.footer_col_2, {
+          [styles.mob]: istablet || ismobile,
+        })}
+      >
+        <h3
+          className={clsx(styles.footer_col_heading, {
+            [styles.mob]: istablet || ismobile,
+          })}
+        >
+          Contact Us
+        </h3>
+        {CONTACT.map((e) => (
+          <li
+            key={e.id}
+            className={clsx(styles.contact_li, {
+              [styles.mob]: istablet || ismobile,
+            })}
+          >
+            <a
+              className={clsx(styles.Links, {
+                [styles.mob]: istablet || ismobile,
+              })}
+              href={e.to}
+            >
+              {e.Icon}
+              <p
+                className={clsx(styles.list_items, {
+                  [styles.mob]: istablet || ismobile,
+                })}
+              >
+                {e.content}
+              </p>
+            </a>
+          </li>
+        ))}
       </div>
     </>
   );
 };
 
-const Column_tab = ({tab}) => {
+const Column_Tab = ({ istablet, ismobile }) => {
   return (
     <div className={styles.col_mob}>
       <Accordionbtn
         className={styles.accord}
         Label="Address"
         Text={
-          <p className={clsx(styles.p, { [styles.mob]: tab })}>
+          <p className={clsx(styles.p, { [styles.mob]: istablet || ismobile })}>
             {" "}
             Prerna Children's home, Gopi Gopal Deva Nilayam, Dwarakamayi Colony,
             Behind IDPL Colony, Bowenpally, Balanagar Mandal, Hyderabad City,
@@ -93,13 +150,13 @@ const Column_tab = ({tab}) => {
         className={styles.accord}
         Label="Contact Us"
         Text={
-          <p className={clsx(styles.p, { [styles.mob]: tab })}>
+          <p className={clsx(styles.p, { [styles.mob]: istablet || ismobile })}>
             +91 94419 22022
           </p>
         }
         Text2={
-          <p className={clsx(styles.p, { [styles.mob]: tab })}>
-           siri.nonprofit@gmail.com
+          <p className={clsx(styles.p, { [styles.mob]: istablet || ismobile })}>
+            siri.nonprofit@gmail.com
           </p>
         }
         to="https://wa.me/9441922022"
@@ -110,42 +167,53 @@ const Column_tab = ({tab}) => {
     </div>
   );
 };
-
-const Footer = () => {
-  const [tab, setTab] = useState(false);
-  const Tablet = () => {
-    if (window.innerWidth <= 1200) setTab(true);
-    else if (window.innerWidth > 1200) setTab(false);
-  };
-  useEffect(() => {
-    Tablet();
-    window.addEventListener("resize", Tablet);
-    return () => {
-      window.removeEventListener("resize", Tablet);
-    };
-  }, [tab]);
-
+const Footer = ({ istablet, ismobile }) => {
+  console.log({ [styles.mob]: istablet || ismobile });
   return (
     <>
-      <div className={clsx(styles.footer, { [styles.mob]: tab })}>
-        <div className={clsx(styles.footer_col_info, { [styles.mob]: tab })}>
+      <div
+        className={clsx(styles.footer, { [styles.mob]: istablet || ismobile })}
+      >
+        <div
+          className={clsx(styles.footer_col_info, {
+            [styles.mob]: istablet || ismobile,
+          })}
+        >
           <div className={styles.Logo}>
             <Link className={styles.Logolink} to="/Home">
               <img id={styles.Logo_img} src={Logo} alt="Logo" />{" "}
             </Link>
           </div>
           <div
-            className={clsx(styles.footer_col_info_Main, { [styles.mob]: tab })}
+            className={clsx(styles.footer_col_info_Main, {
+              [styles.mob]: istablet || ismobile,
+            })}
           >
-            <h2 className={clsx(styles.heading, { [styles.mob]: tab })}>
+            <h2
+              className={clsx(styles.heading, {
+                [styles.mob]: istablet || ismobile,
+              })}
+            >
               Prerna Children’s Home
             </h2>
-            <div className={clsx(styles.nav, { [styles.mob]: tab })}>
-              <ul className={clsx(styles.ul, { [styles.mob]: tab })}>
+            <div
+              className={clsx(styles.nav, {
+                [styles.mob]: istablet || ismobile,
+              })}
+            >
+              <ul
+                className={clsx(styles.ul, {
+                  [styles.mob]: istablet || ismobile,
+                })}
+              >
                 {NAVLINKS.map((e) => (
                   <li className={styles.li} key={e.title}>
                     <Link className={styles.Link} to={e.to} alt="">
-                      <h4 className={clsx(styles.Title, { [styles.mob]: tab })}>
+                      <h4
+                        className={clsx(styles.Title, {
+                          [styles.mob]: istablet || ismobile,
+                        })}
+                      >
                         {e.title}
                       </h4>
                     </Link>
@@ -153,11 +221,17 @@ const Footer = () => {
                 ))}
               </ul>
             </div>
-            <div className={clsx(styles.logos, { [styles.mob]: tab })}>
+            <div
+              className={clsx(styles.logos, {
+                [styles.mob]: istablet || ismobile,
+              })}
+            >
               {ICONS.map((x, index) => (
                 <Link key={index} className={styles.Link_logo} to={x.to}>
                   <img
-                    className={clsx(styles.img, { [styles.mob]: tab })}
+                    className={clsx(styles.img, {
+                      [styles.mob]: istablet || ismobile,
+                    })}
                     src={x.Icon}
                     alt={x.alt}
                   />
@@ -166,7 +240,22 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        {tab ? <Column_tab /> : <Column />}
+        {istablet ? (
+          <Column_Tab istablet={istablet} ismobile={ismobile} />
+        ) : (
+          <Column istablet={istablet} ismobile={ismobile} />
+        )}
+
+        {ismobile && (
+          <div className={styles.copyright_m}>
+            <div className={styles.one}>
+              <CopyrightIcon id={styles.copy} />
+              <p className={styles.pre}>2019-2021</p>
+            </div>
+            <p className={styles.pre}> Prerna Children’s Home.</p>
+            <p className={styles.pre}> All rights reserved.</p>
+          </div>
+        )}
       </div>
     </>
   );

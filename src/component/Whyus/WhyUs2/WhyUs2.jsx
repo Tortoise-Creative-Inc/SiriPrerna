@@ -3,8 +3,8 @@ import PageTop from "../../../component/Whyus/PageTop/PageTop";
 import styles from "./WhyUs2.module.css";
 import Two from "../../../assets/WhyUs/2.png";
 import The_socially from "../../../assets/WhyUs/The_socially.png";
-import hand from "../../../assets/WhyUs/hand.svg"
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import hand from "../../../assets/WhyUs/hand.svg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const WhyUs2 = ({ isMOBILE }) => {
   return (
@@ -30,8 +30,12 @@ const WhyUs2 = ({ isMOBILE }) => {
           <p className={styles.desc}>
             The founder of our organization, Sri Prasad Raju, who served for 35
             years as a district court judge, is committed to aid socially
-            deprived children, especially orphans, through the Socially
-            Challenged Children Act.
+            deprived children, especially orphans. This commitment has
+            manifested into the Socially Challenged Children Act 2021. Shri
+            Prasad Raju Garu is the brainchild behind this Act. He envisioned a
+            safe and nurturing space for orphan children and thus put forward
+            this Bill in <strong>The Telangana Assembly</strong> and worked tirelessly for its
+            approval and implementation
           </p>
         </div>
       </div>

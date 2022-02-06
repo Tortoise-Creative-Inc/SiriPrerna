@@ -51,7 +51,7 @@
 
 .desc {
     font-family: Nunito Sans;
-    width:clamp(315px, 26vw + 0.01em,499.2px);
+    width:clamp(315px, 29.948vw + 0.01em,575px);
     font-style: normal;
     font-weight: normal;
     font-size: clamp(15px, 1.250vw + 0.01em,24px);
