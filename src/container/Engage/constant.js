@@ -13,7 +13,8 @@ import p13 from "../../assets/Engage/Image (12).png";
 
 export const INDIVIDUALS = [{
         head: "Contribute cash",
-        desc: "Operational support for the orphanage",
+        desc: "Operational support ",
+        rs: "for the orphanage",
         img: p1,
         don: true
     }, {
@@ -40,7 +41,8 @@ export const INDIVIDUALS = [{
         don: false
     }, {
         head: "Sponsor Infrastructure",
-        desc: "IT and sports equipment, large appliances etc.",
+        desc: "IT and sports equipment",
+        rs: "large appliances etc.",
         img: p6,
         don: false
     },
@@ -48,28 +50,27 @@ export const INDIVIDUALS = [{
 ]
 
 export const CORPORATES = [{
-        head: "Contribute cash",
-        desc: "Operational support for the orphanage",
-        img: p1,
-        don: true
-    }, {
         head: "CSR enrollment",
-        desc: "Gain Tax deductions upto 50%",
+        desc: "Gain Tax deductions",
+        rs: "upto 50%",
         img: p8,
         don: false
     }, {
         head: "Fund matching",
-        desc: "Match half of what individual donors donate.",
+        desc: "Match half of what",
+        rs: "individual donors donate.",
         img: p9,
         don: false
     }, {
         head: "Donate IT equipment ",
-        desc: "New or used computers, speakers, headphones, projector",
+        desc: "New or used computers,",
+        rs: "speakers, headphones, projector.",
         img: p10,
         don: false
     }, {
         head: "Staff training ",
-        desc: "Teach English, computer skills, accounting to our staff.",
+        desc: "Teach English, computer skills,",
+        rs: " accounting to our staff.",
         img: p11,
         don: false
     }, {
@@ -78,10 +79,18 @@ export const CORPORATES = [{
         img: p12,
         don: false
     }, {
-        head: "Sponsor abroad NGO registration (501C3)",
-        desc: "Enables foreign contributions",
+        head: "Sponsor abroad",
+        head2: "NGO registration (501C3)",
+        rs: "Enables foreign contributions",
         img: p13,
         don: false
+    },
+    {
+        head: "Contribute cash",
+        desc: "Operational support",
+        rs: "for the orphanage",
+        img: p1,
+        don: true
     },
 
 ]
