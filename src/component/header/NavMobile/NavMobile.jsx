@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import x from "./NavMobile.module.scss"
 import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
 import Navlinks from './Navlinks';
-import clsx from 'clsx';
 
 
 const NavMobile = ({ items }) => {

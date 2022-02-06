@@ -1,6 +1,4 @@
 import React from "react";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { Link } from "react-router-dom";
 import { Carousel } from "react-responsive-carousel";
 import s from "../../container/home/home.module.css";
 

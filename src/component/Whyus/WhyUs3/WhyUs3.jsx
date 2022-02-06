@@ -8,7 +8,7 @@ import clsx from "clsx";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 
 const WhyUs3 = ({ isMOBILE }) => {
   const settings = {

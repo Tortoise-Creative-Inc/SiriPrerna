@@ -130,7 +130,7 @@ const Column = ({ istablet, ismobile }) => {
   );
 };
 
-const Column_Tab = ({ istablet, ismobile }) => {
+const ColumnTab = ({ istablet, ismobile }) => {
   return (
     <div className={styles.col_mob}>
       <Accordionbtn
@@ -241,7 +241,7 @@ const Footer = ({ istablet, ismobile }) => {
           </div>
         </div>
         {istablet ? (
-          <Column_Tab istablet={istablet} ismobile={ismobile} />
+          <ColumnTab istablet={istablet} ismobile={ismobile} />
         ) : (
           <Column istablet={istablet} ismobile={ismobile} />
         )}
