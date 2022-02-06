@@ -139,7 +139,7 @@ export const kidsdb=[
   img: kid16,
   name: "Nikhil",
   age: "10",
-  about: "Nikhil is a great student and is always ready to help others. But don't be fooled, he loves bananas and will probably take your's."
+  about: "Nikhil is a great student and is always ready to help others. But don't be fooled, he loves bananas and will probably take yours."
  },
  {
   key: 17,
