@@ -25,7 +25,7 @@ const CONTACT = [
     title: "WhatsApp No.",
     content: "+91 94419 22022",
     Icon: <WhatsAppIcon id={styles.Whatsapp} />,
-    to: "https://wa.me/9441922022",
+    to: "https://wa.me/919441922022",
     delay: ".20",
   },
   {
@@ -168,7 +168,7 @@ const ColumnTab = ({ istablet, ismobile }) => {
   );
 };
 const Footer = ({ istablet, ismobile }) => {
-  console.log({ [styles.mob]: istablet || ismobile });
+  // console.log({ [styles.mob]: istablet || ismobile });
   return (
     <>
       <div
