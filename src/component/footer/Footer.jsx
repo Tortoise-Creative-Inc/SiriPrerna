@@ -25,7 +25,7 @@ const CONTACT = [
     title: "WhatsApp No.",
     content: "+91 94419 22022",
     Icon: <WhatsAppIcon id={styles.Whatsapp} />,
-    to: "https://wa.me/9441922022",
+    to: "https://wa.me/919441922022",
     delay: ".20",
   },
   {
@@ -168,7 +168,7 @@ const ColumnTab = ({ istablet, ismobile }) => {
   );
 };
 const Footer = ({ istablet, ismobile }) => {
-  console.log({ [styles.mob]: istablet || ismobile });
+  // console.log({ [styles.mob]: istablet || ismobile });
   return (
     <>
       <div
@@ -250,10 +250,10 @@ const Footer = ({ istablet, ismobile }) => {
           <div className={styles.copyright_m}>
             <div className={styles.one}>
               <CopyrightIcon id={styles.copy} />
-              <p className={styles.pre}>2019-2021</p>
+              <p className={styles.prem}>2019-2021</p>
             </div>
-            <p className={styles.pre}> Prerna Children’s Home.</p>
-            <p className={styles.pre}> All rights reserved.</p>
+            <p className={styles.prem}> Prerna Children’s Home.</p>
+            <p className={styles.prem}> All rights reserved.</p>
           </div>
         )}
       </div>

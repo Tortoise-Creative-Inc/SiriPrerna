@@ -11,10 +11,12 @@ import { sec2, kidsclg, founders,sec5_1, sec5_2,mobslides } from "./constants";
 import { Collage } from "../../component/home/Collage";
 import { Pins } from "../../component/home/Pins";
 import { Descslides, Slides } from "../../component/home/Slides";
+import ScrollToTop from "react-scroll-to-top";
 
 export const Home = ({ ismobile }) => {
   return (
     <div className={s.cnt}>
+       {ismobile && <ScrollToTop smooth className="scroll" />}
       <section className={s.sec1}>
         <div id={s.heading}>
           {ismobile ? (
