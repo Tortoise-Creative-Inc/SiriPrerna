@@ -19,7 +19,7 @@ export const navlinks =[
     },
     {
         title:"Donate",
-        to:"",
+        to:"https://payu.in/pay/4C3C214032599EAC6E35E8BCADBD7A53",
     },
 ]
 

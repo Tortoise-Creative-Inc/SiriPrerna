@@ -7,6 +7,7 @@ import Home from "../../assets/header/icons/Home.svg";
 import Engage from "../../assets/header/icons/Engage.svg";
 import Kids from "../../assets/header/icons/Kids.svg";
 import Why from "../../assets/header/icons/Why.svg";
+import Donate from "../../assets/header/icons/Donate.svg";
 import "./header.css";
 import NavMobile from "./NavMobile/NavMobile";
 
@@ -43,7 +44,7 @@ export const Headermob = ({ ismobile }) => {
       to: "https://pmny.in/Xrz1Hou3Rfau",
       delay: ".18",
       ignore: true,
-      icon: Engage,
+      icon: Donate,
     },
   ];
   return (
@@ -83,11 +84,11 @@ export const Headermob = ({ ismobile }) => {
 const Navoptions = (e) => {
   const isActive = useLocation();
   return (
-    <>
-   {!e.ignore && <li key={e.title}>
+    <div  key={e.title} className="nav_links">
+   {!e.ignore && <li>
       <NavLink to={e.to}>{e.title}</NavLink>
       {isActive.pathname === e.to && <img src={pencil} alt="" />}
     </li>}
-    </>
+    </div>
   );
 };

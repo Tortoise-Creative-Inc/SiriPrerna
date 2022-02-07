@@ -35,7 +35,6 @@ const Contact = [
 const Navoption = (e, isMobile, closeMobileMenu, Open) => {
     const animateFrom = { opacity: 0, x: -400 }
     const animateTo = { opacity: 1, x: 0 }
-    console.log(e.ignore);
     return (
         <motion.li
             initial={animateFrom}
@@ -76,7 +75,7 @@ const Navlinks = ({ items, isMobile, closeMobileMenu, Open }) => {
                             <a className={styles.Link} href={x.href}>{x.icon}<span className={styles.span}>{x.content}</span></a>
                         </motion.li>
                     ))}
-                    <Link className={styles.logolink} to="/"><motion.img
+                    <Link className={styles.logolink} to="/" onClick={() => isMobile && closeMobileMenu()}><motion.img
                         initial={animateFrom}
                         animate={Open ? animateTo : animateFrom}
                         transition={{ delay: .35 }}

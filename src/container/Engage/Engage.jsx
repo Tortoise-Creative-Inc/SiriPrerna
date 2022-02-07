@@ -1,25 +1,31 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import s from "./Engage.module.scss";
-import { INDIVIDUALS, CORPORATES } from "./constant";
-import v1 from "../../assets/Engage/Vector (1).svg";
 import d1 from "../../assets/Engage/Vector.svg";
 import clsx from "clsx";
 import earth from "../../assets/Engage/illus.png";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import ScrollToTop from "react-scroll-to-top";
+import Fade from 'react-reveal/Fade';
+import { Link, Navigate, Outlet, useLocation} from "react-router-dom";
+
 
 export const Engage = ({ ismobile}) => {
-  const [individual, setIndividual] = useState(true);
+  const [individual, setIndividual] = useState(true);  
+  const path = useLocation()
   
   function onIndividualClick() {
-    setIndividual(true);
-  }
-  function onCorporateClick() {
+  if(path.pathname === "/engage/individuals")
+  setIndividual(true);
+  else if(path.pathname === "/engage/corporates")
     setIndividual(false);
+    // Navigate('/individual');
   }
+  useEffect(() => {
+    onIndividualClick();
+   }, [individual]);
+  console.log(path.pathname);
+
   return (
     <div className={s.engage}>
-      {ismobile && <ScrollToTop smooth className="scroll" />}
       <div className={s.headertop}>
         <h1 className={s.heading}>Get Involved With Us !</h1>
         <div className={s.contact_container_mobile}>
@@ -36,8 +42,8 @@ export const Engage = ({ ismobile}) => {
         </div>
 
         <div className={s.engage__subheadings}>
-          <p
-            onClick={onIndividualClick}
+          <Link to="/engage/individuals"
+            onClick={()=>setIndividual(true)}
             className={
               individual
                 ? clsx(s.subheading, s.active_subheading)
@@ -45,9 +51,10 @@ export const Engage = ({ ismobile}) => {
             }
           >
             Individuals
-          </p>
-          <p
-            onClick={onCorporateClick}
+          </Link>
+          
+          <Link to="/engage/corporates"
+            onClick={()=>setIndividual(false)}
             className={
               !individual
                 ? clsx(s.subheading, s.active_subheading)
@@ -55,15 +62,12 @@ export const Engage = ({ ismobile}) => {
             }
           >
             Corporates
-          </p>
+          </Link>
         </div>
       </div>
+  
+      <Outlet/>
 
-      <div className={s.grid}>
-        {individual
-          ? INDIVIDUALS.map((props) => <Donate key={props.head} {...props} />)
-          : CORPORATES.map((props) => <Donate key={props.head} {...props} />)}
-      </div>
       <div className={s.eng_contact}>
         <h2>Contact Us</h2>
         <div className={s.contact_container}>
@@ -92,27 +96,7 @@ export const Engage = ({ ismobile}) => {
   );
 };
 
-function Donate({ head, desc, head2, rs, img, don }) {
-  return (
-    <div>
-      <div className={s.donate}>
-        <img className={s.mainimg} src={img} alt="" />
-        <div className={s.desc_don}>
-          <h6>{head}</h6>
-          {head2 && <h6>{head2}</h6>}
-          <p className="">{desc}</p>
-          {rs && <p>{rs} </p>}
-        </div>
-      </div>
-      {don && (
-        <button className={s.d_btn} type="button">
-          Donate
-          <img src={v1} alt="" />
-        </button>
-      )}
-    </div>
-  );
-}
+
 
 function Contact({ img, details, link, Icon }) {
   return (

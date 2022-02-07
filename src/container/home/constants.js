@@ -3,14 +3,14 @@ import sicn1_2 from "../../assets/home/sec2/icon1_2.png";
 import sicn2 from "../../assets/home/sec2/icon2.svg";
 import sicn3 from "../../assets/home/sec2/icon3.svg";
 import sicn4 from "../../assets/home/sec2/icon4.svg";
-import k1 from "../../assets/home/sec3/kids/k1.png";
-import k2 from "../../assets/home/sec3/kids/k2.png";
-import k3 from "../../assets/home/sec3/kids/k3.png";
-import k4 from "../../assets/home/sec3/kids/k4.png";
-import f1 from "../../assets/home/sec3/founders/f1.png";
-import f2 from "../../assets/home/sec3/founders/f2.png";
-import f3 from "../../assets/home/sec3/founders/f3.png";
-import f4 from "../../assets/home/sec3/founders/f4.png";
+import k1 from "../../assets/home/sec3/kids/k1.webp";
+import k2 from "../../assets/home/sec3/kids/k2.webp";
+import k3 from "../../assets/home/sec3/kids/k3.webp";
+import k4 from "../../assets/home/sec3/kids/k4.webp";
+import f1 from "../../assets/home/sec3/founders/f1.webp";
+import f2 from "../../assets/home/sec3/founders/f2.webp";
+import f3 from "../../assets/home/sec3/founders/f3.webp";
+import f4 from "../../assets/home/sec3/founders/f4.webp";
 import i1 from "../../assets/home/sec5/i1.png";
 import i2 from "../../assets/home/sec5/i2.png";
 import i3 from "../../assets/home/sec5/i3.png";
@@ -88,7 +88,7 @@ export  const founders = [
     name: "Prof. B. Indira",
     img: f2,
     h1: "Co-Chairman and Doctor",
-    h2: "H.O.D. at Kurnool Medical College,",
+    h2: "H.O.D. at Kurnool Medical College",
   },
   {
     key: "3",
@@ -123,19 +123,21 @@ export const sec5_2={
   img1:i3,
   desc1:'can help the children by spending time with them, tutoring them and donating goods and money.',
   bh:'Individuals and families',
+  toi:"/engage/individuals",
   subheading1:'Individuals and families ',
   img2:i4,
   subheading2:'Corporates',
   desc2:'can help children by enrolling in CSR programs, matching funds, donating IT equipment, etc.',
   bh2:'Companies',
+  toc:"/engage/corporates",
 };
 
 export const mobslides = [
   {
     key:1,
     heading:'  This home is uniquely positioned as a place for orphan boys to be nurturned with global thoughts.',
-    author:' - Mr. Jayaramulu L, Diplomat UN vissionary',
-    to:'',
+    author:' - Mr. Jayaramulu L, Diplomat UN vissionary, ',
+    to:'http://jayaramulu.com',
     margin:false,
     width:'29ch'
   },

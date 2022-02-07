@@ -208,6 +208,17 @@ const Footer = ({ istablet, ismobile }) => {
               >
                 {NAVLINKS.map((e) => (
                   <li className={styles.li} key={e.title}>
+                   { e.link?
+                   <a className={styles.Link} href={e.to} >
+                      <h4
+                        className={clsx(styles.Title, {
+                          [styles.mob]: istablet || ismobile,
+                        })}
+                      >
+                        {e.title}
+                      </h4>
+                    </a>
+                    :
                     <Link className={styles.Link} to={e.to} alt="">
                       <h4
                         className={clsx(styles.Title, {
@@ -217,6 +228,7 @@ const Footer = ({ istablet, ismobile }) => {
                         {e.title}
                       </h4>
                     </Link>
+                    }
                   </li>
                 ))}
               </ul>

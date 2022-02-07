@@ -2,10 +2,10 @@ import React from "react";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import s from "./home.module.css";
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import bg from "../../assets/home/sec1/bg.png";
+import bg   from "../../assets/home/sec1/bg.svg";
 import bg2 from "../../assets/home/sec1/bg2.svg";
-import bgc from "../../assets/home/sec1/bgc.svg";
-import bgc2 from "../../assets/home/sec1/bgc2.svg";
+import bgc   from "../../assets/home/sec1/bgc.webp";
+import bgc2 from "../../assets/home/sec1/bgc2.webp";
 import loc from "../../assets/home/loc.svg";
 import { sec2, kidsclg, founders,sec5_1, sec5_2,mobslides } from "./constants";
 import { Collage } from "../../component/home/Collage";
@@ -30,7 +30,7 @@ export const Home = ({ ismobile }) => {
           <img loading="eager" src={ismobile ? bg2 : bg} alt="" />
         </div>
 
-        {!ismobile && (<p><LazyLoadImage src={loc} alt="" /> Hyderabad, Telangana, India</p>)}
+        {!ismobile && (<p><a href="https://goo.gl/maps/A9yJBod3gTNvEmVTA"><LazyLoadImage src={loc} alt="" /> Hyderabad, Telangana, India</a>s</p>)}
 
        </section>
 

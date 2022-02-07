@@ -12,8 +12,8 @@ import "slick-carousel/slick/slick-theme.css";
 
 const WhyUs3 = ({ isMOBILE }) => {
   const settings = {
-    infinite: false,
-    speed: 500,
+    infinite: true,
+    speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,

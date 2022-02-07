@@ -35,7 +35,7 @@ const WhyUs2 = ({ isMOBILE }) => {
             Prasad Raju Garu is the brainchild behind this Act. He envisioned a
             safe and nurturing space for orphan children and thus put forward
             this Bill in <strong>The Telangana Assembly</strong> and worked tirelessly for its
-            approval and implementation
+            approval and implementation.
           </p>
         </div>
       </div>

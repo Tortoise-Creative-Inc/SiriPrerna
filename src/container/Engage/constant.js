@@ -16,81 +16,94 @@ export const INDIVIDUALS = [{
         desc: "Operational support ",
         rs: "for the orphanage",
         img: p1,
-        don: true
+        don: true,
+        to:'https://payu.in/pay/4C3C214032599EAC6E35E8BCADBD7A53',
     }, {
         head: "Sponsor Meal",
         desc: "Onsite or Remote",
         rs: "₹2000",
         img: p2,
-        don: true
+        don: true,
+        to:'https://payu.in/pay/4C3C214032599EAC6E35E8BCADBD7A53',
     }, {
         head: "Sponsor a child",
         desc: "Child’s six months expenses",
         rs: "₹1000 p/m",
         img: p3,
-        don: true
+        don: true,
+        to:'https://payu.in/pay/4C3C214032599EAC6E35E8BCADBD7A53',
     }, {
         head: "Spend time",
         desc: "with kids",
         img: p4,
-        don: false
+        don: false,
+        to:'https://payu.in/pay/4C3C214032599EAC6E35E8BCADBD7A53',
     }, {
         head: "Buy groceries",
         desc: "Rice, Pulses, Eggs etc.",
         img: p5,
-        don: false
+        don: false,
+        to:'https://payu.in/pay/4C3C214032599EAC6E35E8BCADBD7A53',
     }, {
         head: "Sponsor Infrastructure",
         desc: "IT and sports equipment",
         rs: "large appliances etc.",
         img: p6,
-        don: false
+        don: false,
+        to:'https://payu.in/pay/4C3C214032599EAC6E35E8BCADBD7A53',
     },
 
 ]
 
-export const CORPORATES = [{
-        head: "CSR enrollment",
-        desc: "Gain Tax deductions",
-        rs: "upto 50%",
-        img: p8,
-        don: false
-    }, {
-        head: "Fund matching",
-        desc: "Match half of what",
-        rs: "individual donors donate.",
-        img: p9,
-        don: false
-    }, {
-        head: "Donate IT equipment ",
-        desc: "New or used computers,",
-        rs: "speakers, headphones, projector.",
-        img: p10,
-        don: false
-    }, {
-        head: "Staff training ",
-        desc: "Teach English, computer skills,",
-        rs: " accounting to our staff.",
-        img: p11,
-        don: false
-    }, {
-        head: "Trip with Kids",
-        desc: "Half or full day trips.",
-        img: p12,
-        don: false
-    }, {
-        head: "Sponsor abroad",
-        head2: "NGO registration (501C3)",
-        rs: "Enables foreign contributions",
-        img: p13,
-        don: false
-    },
+export const CORPORATES = [
     {
         head: "Contribute cash",
         desc: "Operational support",
         rs: "for the orphanage",
         img: p1,
-        don: true
+        don: true,
+        to:'https://payu.in/pay/4C3C214032599EAC6E35E8BCADBD7A53',
+    },{
+        head: "CSR enrollment",
+        desc: "Gain Tax deductions",
+        rs: "upto 50%",
+        img: p8,
+        don: false,
+        to:'https://payu.in/pay/4C3C214032599EAC6E35E8BCADBD7A53',
+    }, {
+        head: "Fund matching",
+        desc: "Match half of what",
+        rs: "individual donors donate.",
+        img: p9,
+        don: false,
+        to:'https://payu.in/pay/4C3C214032599EAC6E35E8BCADBD7A53',
     },
-
+     {
+        head: "Donate IT equipment ",
+        desc: "New or used computers,",
+        rs: "speakers, headphones, projector.",
+        img: p10,
+        don: false,
+        to:'https://payu.in/pay/4C3C214032599EAC6E35E8BCADBD7A53',
+    }, {
+        head: "Staff training ",
+        desc: "Teach English, computer skills,",
+        rs: " accounting to our staff.",
+        img: p11,
+        don: false,
+        to:'https://payu.in/pay/4C3C214032599EAC6E35E8BCADBD7A53',
+    }, {
+        head: "Trip with Kids",
+        desc: "Half or full day trips.",
+        img: p12,
+        don: false,
+        to:'https://payu.in/pay/4C3C214032599EAC6E35E8BCADBD7A53',
+    }, {
+        head: "Sponsor abroad",
+        head2: "NGO registration (501C3)",
+        rs: "Enables foreign contributions",
+        img: p13,
+        don: false,
+        to:'https://payu.in/pay/4C3C214032599EAC6E35E8BCADBD7A53',
+    },
 ]

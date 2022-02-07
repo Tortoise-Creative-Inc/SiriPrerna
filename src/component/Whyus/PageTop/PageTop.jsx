@@ -3,7 +3,6 @@ import React from "react";
 import styles from "./PageTop.module.css";
 
 const PageTop = ({ Icon, Heading1,Heading2,Heading3,Heading_mob, className, Vector,ISMobile }) => {
-  console.log(ISMobile);
   return (
     <div className={clsx(className, styles.body)}>
       <img src={Icon} alt="" id={styles.img} />
