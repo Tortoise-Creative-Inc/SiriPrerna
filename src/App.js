@@ -20,7 +20,7 @@ function App() {
   console.log(istablet);
   const Ismobile = () => {
     if (window.innerWidth <= 650) setismobile(true);
-    else setismobile(false);    
+    else setismobile(false);
     console.log(window.innerWidth)
   };
   console.log(ismobile);
@@ -49,7 +49,6 @@ function App() {
         <Route path="/engage" element={<Engage ismobile={ismobile} />} />
       </Routes>
       <Footer ismobile={ismobile} istablet={istablet} />
-      <Footermob />
     </div>
   );
 }

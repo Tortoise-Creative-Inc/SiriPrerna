@@ -250,10 +250,10 @@ const Footer = ({ istablet, ismobile }) => {
           <div className={styles.copyright_m}>
             <div className={styles.one}>
               <CopyrightIcon id={styles.copy} />
-              <p className={styles.pre}>2019-2021</p>
+              <p className={styles.prem}>2019-2021</p>
             </div>
-            <p className={styles.pre}> Prerna Children’s Home.</p>
-            <p className={styles.pre}> All rights reserved.</p>
+            <p className={styles.prem}> Prerna Children’s Home.</p>
+            <p className={styles.prem}> All rights reserved.</p>
           </div>
         )}
       </div>
