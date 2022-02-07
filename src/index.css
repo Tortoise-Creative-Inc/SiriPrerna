@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&family=Noto+Serif&family=Nunito+Sans&family=Poppins&family=Prata&display=swap');
+@import "react-responsive-carousel/lib/styles/carousel.min.css";
+*{
+  margin:0;
+  padding:0;
+}
