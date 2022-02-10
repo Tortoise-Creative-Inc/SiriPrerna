@@ -68,25 +68,26 @@
     .slider {
         display: block;
         margin: 0;
+        /* width: 100%; */
     }
 
     .Items {
-        width: 300px;
-        padding: 20px;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid #000;
-        /* width:max-content; */
-    }
+        width: fit-content !important;
+        padding: 20px!important;
+        align-items: center!important;
+        justify-content: center!important;
+        /* border: 1px solid #000; */
+}
 
     .items_head {
-        width: 90%;
+        width: 100%;
+
     }
 
     .items_body {
         margin: 0 auto;
         margin-top: 20px;
-        width: 90%;
+        width: 100%;
     }
 
     .title {
