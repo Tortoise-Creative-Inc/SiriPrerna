@@ -7,9 +7,9 @@ export const Slides =({slides})=>{
     <div id={s.tr}>
     <Carousel
     autoPlay={true}
-    swipeable={false}
+    // swipeable={false} 
     infiniteLoop={true}
-    interval={2000}
+    interval={5000}
     stopOnHover={true}
     showStatus={false}
     showThumbs={false}        
@@ -20,7 +20,8 @@ export const Slides =({slides})=>{
        {e.heading}
       </h5>
       <p>
-       {e.author}
+       {e.author }
+       {e.to && <a style={{color:"#950024"}} href={e.to}>{e.to}</a>}
       </p>
     </div>
       ))}
@@ -36,7 +37,7 @@ export const Descslides = ({slides}) => {
                 <h5 style={{ width: `${e.width}`}}>
                   {e.heading}
                  </h5>
-                <p>{e.author}</p>
+                <p>{e.author} {e.to&&<a style={{color:"#950024"}} href={e.to}>{e.to}</a>}</p>
               </aside>
                 ))}
              

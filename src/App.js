@@ -7,6 +7,7 @@ import WhyUs from './container/WhyUs/WhyUs';
 import { Ourkids } from './container/OurKids/Ourkids';
 import { Engage } from './container/Engage/Engage';
 import Footer from './component/footer/Footer';
+import { Cards } from './component/engage/Cards';
 
 
 function App() {
@@ -16,13 +17,11 @@ function App() {
     if ((window.innerWidth) <= 1024 && (window.innerWidth > 650)) setIstablet(true);
     else setIstablet(false);
   }
-  console.log(istablet);
   const Ismobile = () => {
     if (window.innerWidth <= 650) setismobile(true);
     else setismobile(false);
-    console.log(window.innerWidth)
+
   };
-  console.log(ismobile);
   useLayoutEffect(() => {
     Ismobile();
     window.addEventListener('resize', Ismobile)
@@ -45,7 +44,11 @@ function App() {
         <Route path="/" element={<Home ismobile={ismobile} />} />
         <Route path="/whyus" element={<WhyUs ismobile={ismobile} />} />
         <Route path="/ourkids" element={<Ourkids ismobile={ismobile} />} />
-        <Route path="/engage" element={<Engage ismobile={ismobile} />} />
+        <Route path="/engage" element={<Engage ismobile={ismobile} />} >
+          <Route path="individuals" default element={<Cards type="individuals" />} />
+          <Route path="corporates" element={<Cards type="corporates" />} />
+          <Route path="" element={<Navigate replace to="individuals" />} />
+        </Route>
         <Route path="/*" element={<Navigate replace to="/" />} />
       </Routes>
       <Footer ismobile={ismobile} istablet={istablet} />

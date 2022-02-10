@@ -181,7 +181,7 @@ export const kidsdb=[
   img: kid22,
   name: "Sanjay Kumar",
   age: "16",
-  about: "Sanjay likes to watch TV shows. He is calm and quite and his favourite subject is English."
+  about: "Sanjay likes to watch TV shows. He is calm and quiet and his favourite subject is English."
  },
  {
   key: 23,
