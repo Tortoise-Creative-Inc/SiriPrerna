@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./WhyUs3.module.css";
 import PageTop from "../../../component/Whyus/PageTop/PageTop";
-import Three from "../../../assets/WhyUs/3.png";
+import Three from "../../../assets/WhyUs/3.webp";
 import Building_vector from "../../../assets/WhyUs/Building-vector.svg";
-import { PAGE3 } from "../../../container/WhyUs/Constants";
+import { PAGE3 } from "../Constants";
 import clsx from "clsx";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -12,8 +12,8 @@ import "slick-carousel/slick/slick-theme.css";
 
 const WhyUs3 = ({ isMOBILE }) => {
   const settings = {
-    infinite: false,
-    speed: 500,
+    infinite: true,
+    speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,

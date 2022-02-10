@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./WhyUs1.module.css";
-import One from "../../../assets/WhyUs/1.png";
-import { PAGE1 } from "../../../container/WhyUs/Constants";
+import One from "../../../assets/WhyUs/1.webp";
 import PageTop from "../PageTop/PageTop";
 import bulb from "../../../assets/WhyUs/Bulb.svg"
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { PAGE1 } from "../Constants";
 
 const WhyUs1 = ({ isMOBILE }) => {
   return (

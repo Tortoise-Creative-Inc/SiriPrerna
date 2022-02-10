@@ -8,7 +8,7 @@ import ScrollToTop from "react-scroll-to-top";
 const WhyUs = ({ ismobile }) => {
   return (
     <div className={styles.whyus_cnt}>
-      {ismobile && <ScrollToTop smooth className="scroll" />}
+      <ScrollToTop smooth className="scroll" />
       <h1 id={styles.Heading}>Why is Prerna Different?</h1>
       <WhyUs1 isMOBILE={ismobile} />
       <WhyUs2 isMOBILE={ismobile} />
