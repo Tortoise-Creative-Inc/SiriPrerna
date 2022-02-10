@@ -11,10 +11,10 @@ import f1 from "../../assets/home/sec3/founders/f1.webp";
 import f2 from "../../assets/home/sec3/founders/f2.webp";
 import f3 from "../../assets/home/sec3/founders/f3.webp";
 import f4 from "../../assets/home/sec3/founders/f4.webp";
-import i1 from "../../assets/home/sec5/i1.png";
-import i2 from "../../assets/home/sec5/i2.png";
-import i3 from "../../assets/home/sec5/i3.png";
-import i4 from "../../assets/home/sec5/i4.png";
+import i1 from "../../assets/home/sec5/i1.webp";
+import i2 from "../../assets/home/sec5/i2.webp";
+import i3 from "../../assets/home/sec5/i3.webp";
+import i4 from "../../assets/home/sec5/i4.webp";
 
 export const sec2 = [
   {

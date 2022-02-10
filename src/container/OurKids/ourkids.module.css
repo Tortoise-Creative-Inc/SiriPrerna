@@ -6,6 +6,7 @@
   background-position-y: 5vw;
   background-repeat: no-repeat;
   background-size: contain;
+  /* overflow-y: hidden; */
   background-size: 70vw;
 }
 .heading {

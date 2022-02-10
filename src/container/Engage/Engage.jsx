@@ -104,7 +104,7 @@ function Contact({ img, details, link, Icon }) {
       <a href={link}>
         {img && <img src={img} alt="" />}
         {Icon && <Icon id={s.icon} />}
-        <span>{details}</span>
+        <span className={s.span}>{details}</span>
       </a>
     </div>
   );

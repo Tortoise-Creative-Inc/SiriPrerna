@@ -1,7 +1,7 @@
 import Sports from "../../assets/WhyUs/sports.webp"
 import Music from "../../assets/WhyUs/music.webp"
 import Wellbeing from "../../assets/WhyUs/wellbeing.webp"
-import Building from "../../assets/WhyUs/Building.png"
+import Building from "../../assets/WhyUs/Building.webp"
 import Dining from "../../assets/WhyUs/Dining.png"
 import Indoor from "../../assets/WhyUs/Indoor.png"
 import Meditation from "../../assets/WhyUs/Meditation.png"
@@ -48,12 +48,12 @@ export const PAGE3=[
     },
     {
         id:4,
-        title:"Meditation/ Recreation room",
+        title:"Meditation Hall",
         img:Meditation,
     },
     {
         id:5,
-        title:"Study/ Computer Room",
+        title:"Study Hall",
         img:Study,
     },
     {

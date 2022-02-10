@@ -194,7 +194,9 @@ const Footer = ({ istablet, ismobile }) => {
                 [styles.mob]: istablet || ismobile,
               })}
             >
-              Prerna Children’s Home
+              <Link to="/" className={styles.linkheading}>
+                Prerna Children’s Home
+              </Link>
             </h2>
             <div
               className={clsx(styles.nav, {
@@ -206,46 +208,31 @@ const Footer = ({ istablet, ismobile }) => {
                   [styles.mob]: istablet || ismobile,
                 })}
               >
-                {NAVLINKS.map((e) => (
-                  e.title!=="Donate" &&
-                  <li className={styles.li} key={e.title}>
-                   { e.link?
-                   <a className={styles.Link} href={e.to} >
-                      <h4
-                        className={clsx(styles.Title, {
-                          [styles.mob]: istablet || ismobile,
-                        })}
-                      >
-                        {e.title}
-                      </h4>
-                    </a>
-                    :
-                    <Link className={styles.Link} to={e.to} alt="">
-                      <h4
-                        className={clsx(styles.Title, {
-                          [styles.mob]: istablet || ismobile,
-                        })}
-                      >
-                        {e.title}
-                      </h4>
-                    </Link>
-                    }
-                  </li>
-                ))}
-                {NAVLINKS.map((e) => (
-                  e.title==="Donate" &&
-                  <li className={styles.li} key={e.title}>
-                    <a className={styles.Link} to={e.to} alt="">
-                      <h4
-                        className={clsx(styles.Title, {
-                          [styles.mob]: istablet || ismobile,
-                        })}
-                      >
-                        {e.title}
-                      </h4>
-                    </a>
-                  </li>
-                ))}
+                {NAVLINKS.map(
+                  (e) =>
+                    (
+                      <li className={styles.li} key={e.title}>
+                        {e.title !== "Donate"?(
+                        <Link className={styles.Link} to={e.to} alt="">
+                          <h4
+                            className={clsx(styles.Title, {
+                              [styles.mob]: istablet || ismobile,
+                            })}
+                          >
+                            {e.title}
+                          </h4>
+                        </Link>): <a className={styles.Link} to={e.to} alt="">
+                          <h4
+                            className={clsx(styles.Title, {
+                              [styles.mob]: istablet || ismobile,
+                            })}
+                          >
+                            {e.title}
+                          </h4>
+                        </a> }
+                      </li>
+                    )
+                )}
               </ul>
             </div>
             <div

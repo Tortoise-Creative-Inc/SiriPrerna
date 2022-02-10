@@ -1,6 +1,6 @@
 import React, { useLayoutEffect, useState } from 'react';
 import './App.css';
-import { Headermob } from './component/header/Headermob';
+import { Header } from './component/header/Header';
 import { Route, Routes , Navigate } from "react-router-dom";
 import { Home } from './container/home/Home';
 import WhyUs from './container/WhyUs/WhyUs';
@@ -39,7 +39,7 @@ function App() {
 
   return (
     <div className="App">
-      <Headermob ismobile={ismobile} />
+      <Header ismobile={ismobile} />
       <Routes>
         <Route path="/" element={<Home ismobile={ismobile} />} />
         <Route path="/whyus" element={<WhyUs ismobile={ismobile} />} />

@@ -30,7 +30,7 @@ export const Home = ({ ismobile }) => {
           <img loading="eager" src={ismobile ? bg2 : bg} alt="" />
         </div>
 
-        {!ismobile && (<p><a href="https://goo.gl/maps/A9yJBod3gTNvEmVTA"><LazyLoadImage src={loc} alt="" /> Hyderabad, Telangana, India</a>s</p>)}
+        {!ismobile && (<p><a href="https://goo.gl/maps/A9yJBod3gTNvEmVTA"><LazyLoadImage src={loc} alt="" /> Hyderabad, Telangana, India</a></p>)}
 
        </section>
 

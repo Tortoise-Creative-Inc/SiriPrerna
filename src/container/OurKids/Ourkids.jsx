@@ -1,6 +1,6 @@
 import React from 'react'
 import s from './ourkids.module.css'
-import bg1 from '../../assets/Ourkids/bg1.png'
+import bg1 from '../../assets/Ourkids/bg1.webp'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { kidsdb } from './constants'
 import { Slide } from 'react-reveal';
