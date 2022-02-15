@@ -27,7 +27,7 @@ export const icons =[
     {
         icon:fb,
         alt:"",
-        to:"",
+        to:"https://www.facebook.com/109076893772565/posts/637617440918505/",
     },
     {
         icon:insta,
@@ -42,7 +42,7 @@ export const icons =[
     {
         icon:youtube,
         alt:"",
-        to:"",
+        to:"https://youtube.com/channel/UCTQc-fSkBgDSFeTDQzc0MQg",
     },
     
 ]

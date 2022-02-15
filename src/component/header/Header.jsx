@@ -87,7 +87,7 @@ const Navoptions = (e) => {
     <div  key={e.title} className="nav_links">
    {!e.ignore && <li>
       <NavLink to={e.to}>{e.title}</NavLink>
-      {isActive.pathname === e.to && <img src={pencil} alt="" />}
+      {isActive.pathname.split('/')[1] === e.to.split('/')[1] && <img src={pencil} alt="" />}
     </li>}
     </div>
   );

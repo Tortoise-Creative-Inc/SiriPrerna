@@ -221,7 +221,7 @@ const Footer = ({ istablet, ismobile }) => {
                           >
                             {e.title}
                           </h4>
-                        </Link>): <a className={styles.Link} to={e.to} alt="">
+                        </Link>): <a className={styles.Link} href={e.to} alt="">
                           <h4
                             className={clsx(styles.Title, {
                               [styles.mob]: istablet || ismobile,
@@ -241,7 +241,7 @@ const Footer = ({ istablet, ismobile }) => {
               })}
             >
               {ICONS.map((x, index) => (
-                <Link key={index} className={styles.Link_logo} to={x.to}>
+                <a key={index} className={styles.Link_logo} href={x.to}>
                   <img
                     className={clsx(styles.img, {
                       [styles.mob]: istablet || ismobile,
@@ -249,7 +249,7 @@ const Footer = ({ istablet, ismobile }) => {
                     src={x.Icon}
                     alt={x.alt}
                   />
-                </Link>
+                </a>
               ))}
             </div>
           </div>
