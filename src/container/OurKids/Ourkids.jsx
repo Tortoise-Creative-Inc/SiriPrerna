@@ -1,6 +1,6 @@
 import React from 'react'
 import s from './ourkids.module.css'
-import bg1 from '../../assets/Ourkids/bg1.webp'
+import bg1 from '../../assets/Ourkids/backgrounds/bg1.webp'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { kidsdb } from './constants'
 import { Slide } from 'react-reveal';
@@ -22,6 +22,7 @@ export const Ourkids = () => {
                     age={kid.age}
                     about={kid.about}
                     img={kid.img}
+                    bg={kid.bg}
                     />
                 ))}
             </div> 
@@ -30,12 +31,19 @@ export const Ourkids = () => {
     )
 }
 
-const Kids = ({name,age,about,img}) =>{
+const Kids = ({name,age,about,img,bg}) =>{
+    const style = { 
+        backgroundImage:`url(${bg})`,
+        backgroundPosition:'center',
+        backgroundRepeat:'no-repeat',
+        backgroundSize:'contain',
+
+    }
     return (
         <Slide bottom>
         <div className={s.kidprofile}>
         <LazyLoadImage src={img} alt="" />
-        <span>
+        <span style={style}>
             <h6>{name}, {age}</h6>
             <p>{about}</p>
         </span>

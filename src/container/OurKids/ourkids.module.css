@@ -108,26 +108,15 @@
     align-items: center;
     border-bottom: none;
   }
-  /* .kidprofile:first-child,.kidprofile:nth-child(2){
-    animation: popout 2s ease-in;
-    -webkit-animation: popout 1s ease;
-} */
-
 .kidprofile > span > h6 {
   margin: 6px 0;
 }
-/* @keyframes popout {
-    from{transform:scale(0); opacity: 0;}
-    to{transform:scale(1); opacity: 1;}
-}
-@-webkit-keyframes popout {
-    from{-webkit-transform:scale(0);opacity: 0;}
-    to{-webkit-transform:scale(1);opacity: 1;}
-} */
+
   .kidprofile > img {
     width: 100%;
   }
   .kidprofile > span {
+    background: none !important;;
     width: 100%;
     text-align: center;
   }

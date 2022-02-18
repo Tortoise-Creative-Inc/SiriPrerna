@@ -126,6 +126,9 @@
   height:1.2em;
   margin-right:.2em;
 }
+.hmbr>span>a>p {
+  white-space: nowrap;
+}
 
 
 
