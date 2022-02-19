@@ -37,16 +37,20 @@ const Kids = ({name,age,about,img,bg}) =>{
         backgroundPosition:'center',
         backgroundRepeat:'no-repeat',
         backgroundSize:'contain',
-
+    }
+    const style1={
+        backgroundColor: "rgba(255, 255, 255, 0.48)"
     }
     return (
         <Slide bottom>
         <div className={s.kidprofile}>
         <LazyLoadImage src={img} alt="" />
-        <span style={style}>
+        <div style={style}>
+        <span className={s.kid_desc} style={bg && style1}>
             <h6>{name}, {age}</h6>
             <p>{about}</p>
         </span>
+        </div>
     </div>
     </Slide>
     )

@@ -49,11 +49,14 @@
   flex-direction: row-reverse;
 }
 .kidprofile > img {
- height:clamp(280px,20vw,410px);
+  height:clamp(280px,20vw,410px);
   object-fit: contain;
 }
-.kidprofile > span {
-  width: 60ch;
+.kidprofile > div{
+  display:flex;
+}
+.kid_desc {
+  max-width: 60ch;
   font-weight: 700;
   min-width: 100px;
   letter-spacing: 0em;
@@ -62,14 +65,14 @@
   flex-direction: column;
   justify-content: center;
 }
-.kidprofile > span > h6 {
+.kid_desc > h6 {
   font-family: Gaegu;
   font-size: max(min(1.7vw, 34px), 16px);
   margin: max( 1.6em , 0px) 0;
   
 }
 
-.kidprofile > span > p {
+.kid_desc > p {
   font-family: Gaegu;
   font-size: max(min(1.7vw, 34px), 16px);
   line-height: max(min(5vw, 1.3em), 29px);
@@ -108,14 +111,14 @@
     align-items: center;
     border-bottom: none;
   }
-.kidprofile > span > h6 {
+.kid_desc > h6 {
   margin: 6px 0;
 }
 
   .kidprofile > img {
     width: 100%;
   }
-  .kidprofile > span {
+  .kid_desc {
     background: none !important;;
     width: 100%;
     text-align: center;
