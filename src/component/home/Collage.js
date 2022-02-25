@@ -36,8 +36,7 @@ export const Collage = ({
         )}
         <div className={s.collage} style={{ gridTemplateColumns: setting() }}>
           {db.map((e) => (
-            <div key={e.key}>
-              {(e.ignore && ismobile) || (
+            (e.ignore && ismobile) || (<div key={e.key}>
                 <div>
                   <LazyLoadImage src={e.img} alt="" />
                   <div id={s.overlay}>
@@ -57,8 +56,8 @@ export const Collage = ({
                     )}
                   </div>
                 </div>
-              )}
             </div>
+              )
           ))}
         </div>
         {ismobile && !founder && (
