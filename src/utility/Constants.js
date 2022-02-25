@@ -32,13 +32,13 @@ export const ICONS= [
         name: "Facebook",
         Icon: Fb,
         alt: "Facebook",
-        to: "",
+        to: "https://www.facebook.com/109076893772565/posts/637617440918505/",
     },
     {
         name: "Instagram",
         Icon: Insta,
         alt: "Instagram",
-        to: "",
+        to: "https://www.instagram.com/preranachildrenshome/",
     },
     {
         name: "LinkedIn",
@@ -50,7 +50,7 @@ export const ICONS= [
         name: "Youtube",
         Icon: Youtube,
         alt: "Youtube",
-        to: "",
+        to: "https://youtube.com/channel/UCTQc-fSkBgDSFeTDQzc0MQg",
     },
 
 ]

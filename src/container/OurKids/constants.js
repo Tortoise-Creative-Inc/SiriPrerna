@@ -27,11 +27,11 @@ import kid26 from '../../assets/Ourkids/kids_pic/kid26.webp'
 import kid27 from '../../assets/Ourkids/kids_pic/kid27.webp'
 import kid28 from '../../assets/Ourkids/kids_pic/kid28.webp'
 import kid29 from '../../assets/Ourkids/kids_pic/kid29.webp'
-import kbg1 from '../../assets/Ourkids/backgrounds/football.webp'
-import kbg2 from '../../assets/Ourkids/backgrounds/cook.webp'
-import kbg3 from '../../assets/Ourkids/backgrounds/cricket.webp'
-import kbg4 from '../../assets/Ourkids/backgrounds/art.webp'
-import kbg5 from '../../assets/Ourkids/backgrounds/badmintion.webp'
+import kbg1 from '../../assets/Ourkids/backgrounds/bgk1.webp'
+import kbg2 from '../../assets/Ourkids/backgrounds/bgk2.webp'
+import kbg3 from '../../assets/Ourkids/backgrounds/bgk3.webp'
+import kbg4 from '../../assets/Ourkids/backgrounds/bgk4.webp'
+
 
 
 export const kidsdb=[
@@ -48,7 +48,7 @@ export const kidsdb=[
   name: "Akhil",
   age: "9",
   about: "Akhil is super passionate about his studies. Apart from studying, he loves to sing.",
-  bg:kbg2,
+  bg:kbg1,
  },
  {
   key: 3,
@@ -56,7 +56,7 @@ export const kidsdb=[
   name: "Anil",
   age: "13",
   about: "Anil loves to play games, especially chess!",
-  bg:kbg3,
+  bg:kbg2,
  },
  {
   key: 4,
@@ -64,7 +64,7 @@ export const kidsdb=[
   name: "Ashok",
   age: "13",
   about: "Being a great singer, dancer and student, it's safe to say that Ashok is multi-talented!",
-  bg:kbg4,
+  bg:kbg3,
  },
  {
   key: 5,
@@ -72,7 +72,7 @@ export const kidsdb=[
   name: "Bunny",
   age: "13",
   about: "Bunny loves to dance and participate in dance competitions.",
-  bg:kbg5,
+  bg:kbg4,
  },
  {
   key: 6,
@@ -112,7 +112,7 @@ export const kidsdb=[
   name: "M. Ganesh",
   age: "12",
   about: "M. Ganesh is a polite and kind boy. His favourite subject is Telugu. ",
-  bg:kbg5,
+  bg:kbg1,
  },
  {
   key: 11,
@@ -120,7 +120,7 @@ export const kidsdb=[
   name: "Kamlesh",
   age: "12",
   about: "Kamlesh is a calm and quite boy. He loves to play games! His favourite subject is Hindi.",
-  bg:kbg1,
+  bg:kbg2,
  },
  {
   key: 12,
@@ -128,7 +128,7 @@ export const kidsdb=[
   name: "Sai Kartik",
   age: "10",
   about: "He loves to play football and his favourite subject is Telugu.",
-  bg:kbg2,
+  bg:kbg3,
  },
  {
   key: 13,
@@ -136,7 +136,7 @@ export const kidsdb=[
   name: "Mahesh",
   age: "10",
   about: "Mahesh loves to dance, play games and skate!",
-  bg:kbg3,
+  bg:kbg4,
  },
  {
   key: 14,
@@ -144,7 +144,7 @@ export const kidsdb=[
   name: "Mokshit",
   age: "9",
   about: "Mokshit loves to study. In his free time, he loves to watch the T.V. and play games and skate.",
-  bg:kbg4,
+  bg:kbg1,
  },
  {
   key: 15,
@@ -152,7 +152,7 @@ export const kidsdb=[
   name: "Nagendra",
   age: "10",
   about: "A master of impressions! Nagendra can impersonate others and make everyone laugh.",
-  bg:kbg5,
+  bg:kbg2,
  },
  {
   key: 16,
@@ -160,7 +160,7 @@ export const kidsdb=[
   name: "Nikhil",
   age: "10",
   about: "Nikhil is a great student and is always ready to help others. But don't be fooled, he loves bananas and will probably take yours.",
-  bg:kbg1,
+  bg:kbg3,
  },
  {
   key: 17,
@@ -168,7 +168,7 @@ export const kidsdb=[
   name: "Padu",
   age: "14",
   about: "Padu loves to play cricket. He likes to study Telugu.",
-  bg:kbg2,
+  bg:kbg4,
  },
  {
   key: 18,
@@ -176,7 +176,7 @@ export const kidsdb=[
   name: "Raja",
   age: "11",
   about: "Raja loves to act and do impersonation!",
-  bg:kbg3,
+  bg:kbg1,
  },
  {
   key: 19,
@@ -184,7 +184,7 @@ export const kidsdb=[
   name: "Ravi",
   age: "12",
   about: "Ravi is fluent in English and Telugu. His favourite subject is Mathematics. He likes to play badminton and cricket.",
-  bg:kbg4,
+  bg:kbg2,
  },
  {
   key: 20,
@@ -192,7 +192,7 @@ export const kidsdb=[
   name: "Ravendra",
   age: "13",
   about: "Ravendra likes to play all sort of games such as badminton, chess, cricket and football.",
-  bg:kbg5,
+  bg:kbg3,
  },
  {
   key: 21,
@@ -200,7 +200,7 @@ export const kidsdb=[
   name: "Sai Nath",
   age: "7",
   about: "Sai Nath is a great student and can speak the multiplication table of numbers upto 18!",
-  bg:kbg1,
+  bg:kbg4,
  },
  {
   key: 22,
@@ -208,7 +208,7 @@ export const kidsdb=[
   name: "Sanjay Kumar",
   age: "16",
   about: "Sanjay likes to watch TV shows. He is calm and quiet and his favourite subject is English.",
-  bg:kbg2,
+  bg:kbg1,
  },
  {
   key: 23,
@@ -216,7 +216,7 @@ export const kidsdb=[
   name: "Shiva",
   age: "7",
   about: "Shiva loves to study Telugu. His favourite activities include skating and playing carrom.",
-  bg:kbg3,
+  bg:kbg2,
  },
  {
   key: 24,
@@ -224,7 +224,7 @@ export const kidsdb=[
   name: "Sunil",
   age: "12",
   about: "Sunil is a natural performer! He loves to fool everyone with his magic tricks!",
-  bg:kbg4,
+  bg:kbg3,
  },
  {
   key: 25,
@@ -232,7 +232,7 @@ export const kidsdb=[
   name: "Sunny",
   age: "14",
   about: "Sunny loves to study. His favourite subjects are English and Mathematics.",
-  bg:kbg5,
+  bg:kbg4,
  },
  {
   key: 26,
