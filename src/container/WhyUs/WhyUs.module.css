@@ -2,7 +2,7 @@
     background-color: white;
 }
 #Heading {
-    width: fit-content;
+    width:fit-content;
     font-family: Noto Serif;
     font-style: normal;
     font-weight: 500;
@@ -17,5 +17,7 @@
 @media only screen and (max-width:650px) {
     #Heading {
         margin:25px auto;
+        padding-left:0;
+        text-align:center;
     }
 }

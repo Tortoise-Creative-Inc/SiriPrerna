@@ -286,6 +286,7 @@
   grid-column: 1/6;
   justify-content: center;
   align-items: start;
+
 }
 
 .h {
@@ -293,6 +294,7 @@
   justify-content: center;
   align-items: center;
   margin-left:15px;
+  gap: 5px;
 }
 
 
@@ -532,5 +534,6 @@
 .one {
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
+  gap: 5px;
 }

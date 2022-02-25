@@ -83,7 +83,7 @@ const Column = ({ istablet, ismobile }) => {
             <div className={styles.h}>
               <CopyrightIcon id={styles.copy} />
               <pre className={styles.pre}>
-                2019-2021 Prerna Children’s Home. All rights reserved.
+                2019-2022 Prerna Children’s Home. All rights reserved.
               </pre>
             </div>
           </div>
@@ -264,7 +264,7 @@ const Footer = ({ istablet, ismobile }) => {
           <div className={styles.copyright_m}>
             <div className={styles.one}>
               <CopyrightIcon id={styles.copy} />
-              <p className={styles.prem}>2019-2021</p>
+              <p className={styles.prem}>2019-2022</p>
             </div>
             <p className={styles.prem}> Prerna Children’s Home.</p>
             <p className={styles.prem}> All rights reserved.</p>
