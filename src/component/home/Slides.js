@@ -7,7 +7,7 @@ export const Slides =({slides})=>{
     <div id={s.tr}>
     <Carousel
     autoPlay={true}
-    // swipeable={false} 
+    swipeable={false} 
     infiniteLoop={true}
     interval={5000}
     stopOnHover={true}

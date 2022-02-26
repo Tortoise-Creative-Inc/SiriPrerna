@@ -23,7 +23,6 @@ export const NAVLINKS = [
     {
         title: "Donate",
         to: "https://payu.in/pay/4C3C214032599EAC6E35E8BCADBD7A53",
-        link:true,
     },
 ]
 

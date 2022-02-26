@@ -1,10 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Accordion.module.css";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import clsx from "clsx";
 
 const Accordionbtn = (props) => {
   const [active, setActive] = useState(false);
+  useEffect(() =>{
+    var acc = document.getElementsByClassName(styles.body)[props.index];
+    if (!acc) return;
+    if(active===false) acc.style.height = 0 ;
+    else acc.style.height = acc.scrollHeight + "px";
+  },[active])
   return (
     <div className={clsx(styles.main, { [styles.active]: active })}>
       <button

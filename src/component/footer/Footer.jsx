@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../../assets/footer/Logo_white.svg";
 import styles from "./Footer.module.css";
-import { ICONS, NAVLINKS } from "../../utility/Constants.js";
+import { ICONS, NAVLINKS } from "../../utility/constants.js";
 import Map from "../../assets/footer/map.svg";
 import { Link } from "react-router-dom";
 import CopyrightIcon from "@mui/icons-material/Copyright";
@@ -134,6 +134,7 @@ const ColumnTab = ({ istablet, ismobile }) => {
   return (
     <div className={styles.col_mob}>
       <Accordionbtn
+      index={0}
         className={styles.accord}
         Label="Address"
         Text={
@@ -145,8 +146,10 @@ const ColumnTab = ({ istablet, ismobile }) => {
           </p>
         }
         Img1={Map}
+        to="https://goo.gl/maps/FPcHhJ94Sa55HCpt6"
       />
       <Accordionbtn
+        index={1}
         className={styles.accord}
         Label="Contact Us"
         Text={
@@ -164,7 +167,7 @@ const ColumnTab = ({ istablet, ismobile }) => {
         Icon1={<WhatsAppIcon id={styles.Whatsapp} />}
         Icon2={<MailOutlineIcon id={styles.Mail} />}
       />
-      <div className={styles.copyright}>
+      <div className={`${styles.copyright} ${istablet && styles.tab}`}>
             <div className={styles.h}>
               <CopyrightIcon id={styles.copy} />
               <pre className={styles.pre}>
@@ -176,7 +179,6 @@ const ColumnTab = ({ istablet, ismobile }) => {
   );
 };
 const Footer = ({ istablet, ismobile }) => {
-  // console.log({ [styles.mob]: istablet || ismobile });
   return (
     <>
       <div
