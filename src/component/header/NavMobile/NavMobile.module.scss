@@ -24,7 +24,7 @@
 #Icon2,
 #Icon3 {
   color: black;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   margin: -9px 0;
   padding: 0;
   width: 25px !important;
