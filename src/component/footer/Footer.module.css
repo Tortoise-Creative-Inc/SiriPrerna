@@ -301,7 +301,7 @@
   gap: 5px;
 }
 
-@media (max-width: 1169px) {
+
   #copy {
     color: white;
     width: clamp(16px, 1.302vw + 0.01em, 25px);
@@ -329,7 +329,7 @@
     grid-column: 2/13;
     justify-self: start;
   }
-}
+
 @media (max-width: 1070px) {
   .footer_col_1 {
     padding-left: 0;
