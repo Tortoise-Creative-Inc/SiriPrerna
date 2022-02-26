@@ -6,7 +6,7 @@ import Dining from "../../assets/WhyUs/Dining.webp"
 import Indoor from "../../assets/WhyUs/Indoor.webp"
 import Meditation from "../../assets/WhyUs/Meditation.webp"
 import Playground from "../../assets/WhyUs/Playground.webp"
-import Study from "../../assets/WhyUs/study.webp"
+import Study from "../../assets/WhyUs/Study.webp"
 
 
 export const PAGE1 = [

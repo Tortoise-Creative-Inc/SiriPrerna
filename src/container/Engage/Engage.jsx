@@ -4,24 +4,20 @@ import d1 from "../../assets/Engage/Vector.svg";
 import clsx from "clsx";
 import earth from "../../assets/Engage/illus.png";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import Fade from 'react-reveal/Fade';
-import { Link, Navigate, Outlet, useLocation} from "react-router-dom";
+import { Link, Navigate, Outlet, useLocation } from "react-router-dom";
 
+export const Engage = ({ ismobile }) => {
+  const [individual, setIndividual] = useState(true);
+  const path = useLocation();
 
-export const Engage = ({ ismobile}) => {
-  const [individual, setIndividual] = useState(true);  
-  const path = useLocation()
-  
   function onIndividualClick() {
-  if(path.pathname === "/engage/individuals")
-  setIndividual(true);
-  else if(path.pathname === "/engage/corporates")
-    setIndividual(false);
+    if (path.pathname === "/engage/individuals") setIndividual(true);
+    else if (path.pathname === "/engage/corporates") setIndividual(false);
     // Navigate('/individual');
   }
   useEffect(() => {
     onIndividualClick();
-   }, [individual]);
+  }, [individual]);
   console.log(path.pathname);
 
   return (
@@ -42,8 +38,9 @@ export const Engage = ({ ismobile}) => {
         </div>
 
         <div className={s.engage__subheadings}>
-          <Link to="/engage/individuals"
-            onClick={()=>setIndividual(true)}
+          <Link
+            to="/engage/individuals"
+            onClick={() => setIndividual(true)}
             className={
               individual
                 ? clsx(s.subheading, s.active_subheading)
@@ -52,9 +49,10 @@ export const Engage = ({ ismobile}) => {
           >
             Individuals
           </Link>
-          
-          <Link to="/engage/corporates"
-            onClick={()=>setIndividual(false)}
+
+          <Link
+            to="/engage/corporates"
+            onClick={() => setIndividual(false)}
             className={
               !individual
                 ? clsx(s.subheading, s.active_subheading)
@@ -65,8 +63,8 @@ export const Engage = ({ ismobile}) => {
           </Link>
         </div>
       </div>
-  
-      <Outlet/>
+
+      <Outlet />
 
       <div className={s.eng_contact}>
         <h2>Contact Us</h2>
@@ -95,8 +93,6 @@ export const Engage = ({ ismobile}) => {
     </div>
   );
 };
-
-
 
 function Contact({ img, details, link, Icon }) {
   return (

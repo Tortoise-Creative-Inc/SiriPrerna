@@ -164,6 +164,14 @@ const ColumnTab = ({ istablet, ismobile }) => {
         Icon1={<WhatsAppIcon id={styles.Whatsapp} />}
         Icon2={<MailOutlineIcon id={styles.Mail} />}
       />
+      <div className={styles.copyright}>
+            <div className={styles.h}>
+              <CopyrightIcon id={styles.copy} />
+              <pre className={styles.pre}>
+                2019-2022 Prerna Children’s Home. All rights reserved.
+              </pre>
+            </div>
+          </div>
     </div>
   );
 };

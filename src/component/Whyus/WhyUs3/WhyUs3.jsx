@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import styles from "./WhyUs3.module.css";
 import PageTop from "../../../component/Whyus/PageTop/PageTop";
 import Three from "../../../assets/WhyUs/3.webp";
@@ -8,9 +8,21 @@ import clsx from "clsx";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import { useInViewport } from "react-in-viewport";
 
 const WhyUs3 = ({ isMOBILE }) => {
+  const view = useRef();
+  const { inViewport } = useInViewport(
+    view,
+    {},
+    {},
+    {
+      onEnterViewport: () => view.current.slickPlay(),
+      onLeaveViewport: () => view.current.slickPause(),
+    }
+  );
+  console.log(inViewport)
+  
   const settings = {
     infinite: true,
     speed: 300,
@@ -20,9 +32,9 @@ const WhyUs3 = ({ isMOBILE }) => {
     dots: true,
     adaptiveHeight: true,
     adaptiveWidth: true,
-    autoplay: true,
+    // autoplay: inview,
     vertical: false,
-    pauseOnHover: true,
+    pauseOnHover: false,
     swipeToSlide: false,
     responsive: [
       {
@@ -48,7 +60,7 @@ const WhyUs3 = ({ isMOBILE }) => {
         Heading_mob="High-quality facilities"
         className={styles.head}
       />
-      <Slider className={clsx(styles.slider)} {...settings}>
+      <Slider className={clsx(styles.slider)} {...settings} ref={view} >
         {PAGE3.map((e) => (
           <div className={styles.Items} key={e.id}>
             <div className={styles.items_head}>

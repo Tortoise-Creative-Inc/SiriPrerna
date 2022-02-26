@@ -1,19 +1,21 @@
-import React from 'react';
+import React from "react";
 import { INDIVIDUALS, CORPORATES } from "../../container/Engage/constant";
 import v1 from "../../assets/Engage/Vector (1).svg";
 import s from "../../container/Engage/Engage.module.scss";
-
-export const Cards = ({type}) => {
-  return ( 
+import Fade from "react-reveal/Fade";
+export const Cards = ({ type }) => {
+  return (
     <div className={s.grid}>
-       { type === 'individuals' && INDIVIDUALS.map((props) => <Donate key={props.head} {...props} />)}
-       { type ==='corporates' && CORPORATES.map((props) => <Donate key={props.head} {...props} />)}
-     </div>
-      )
-      
+      {type === "individuals" &&
+        INDIVIDUALS.map((props) => <Donate key={props.head} {...props} />)}
+      {type === "corporates" &&
+        CORPORATES.map((props) => <Donate key={props.head} {...props} />)}
+    </div>
+  );
 };
-function Donate({ head, desc, head2, rs, img, don,to }) {
-    return (
+function Donate({ head, desc, head2, rs, img, don, to }) {
+  return (
+    <Fade>
       <div>
         <div className={s.donate}>
           <img className={s.mainimg} src={img} alt="" />
@@ -25,13 +27,14 @@ function Donate({ head, desc, head2, rs, img, don,to }) {
           </div>
         </div>
         {don && (
-            <a href={to} style={{textDecoration:"none"}}>
-          <button className={s.d_btn} type="button">
-            Donate
-            <img src={v1} alt="" />
-          </button>
-            </a>
+          <a href={to} style={{ textDecoration: "none" }}>
+            <button className={s.d_btn} type="button">
+              Donate
+              <img src={v1} alt="" />
+            </button>
+          </a>
         )}
       </div>
-    );
-  }
+    </Fade>
+  );
+}
