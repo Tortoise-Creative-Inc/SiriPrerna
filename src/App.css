@@ -30,6 +30,14 @@ h1, h2, h3, h4, h5, h6, p, span {
 .scroll:active {
   opacity: 100%;
 }
+
+.control-arrow{
+  background-color: rgba(0, 0, 0, 0.14) !important;
+  height:200px !important;
+  top: 20px !important;
+  padding:0 !important;
+}
+
 @media(min-width:900px) {
   .scroll:hover {
     opacity: 100%;

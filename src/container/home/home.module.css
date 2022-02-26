@@ -228,13 +228,13 @@
 }
 
 .sec4 {
-  padding: 40px 5vw max(min(133px, 8vw), 20px);
+  padding: 40px 0 max(min(133px, 8vw), 20px);
   box-shadow: 2px 2px 15px rgb(95 93 93 / 30%);
   margin: auto;
   position: relative;
 }
 .head > h2 {
-  padding: 7vw 8vw;
+  padding: 7vw 13vw;
   font-family: Noto Serif;
   font-weight: 500;
   font-size: max(min(2.48vw, 48px), 20px);

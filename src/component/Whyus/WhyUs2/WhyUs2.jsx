@@ -4,7 +4,6 @@ import styles from "./WhyUs2.module.css";
 import Two from "../../../assets/WhyUs/2.webp";
 import Legislature from "../../../assets/WhyUs/legislature.webp";
 import hand from "../../../assets/WhyUs/hand.svg";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const WhyUs2 = ({ isMOBILE }) => {
   return (

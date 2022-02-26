@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 import styles from "./WhyUs3.module.css";
 import PageTop from "../../../component/Whyus/PageTop/PageTop";
 import Three from "../../../assets/WhyUs/3.webp";
