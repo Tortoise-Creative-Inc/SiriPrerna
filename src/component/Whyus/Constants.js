@@ -1,4 +1,4 @@
-import Sports from "../../assets/WhyUs/sports.webp"
+import Sports from "../../assets/WhyUs/sprt.webp"
 import Music from "../../assets/WhyUs/music.webp"
 import Wellbeing from "../../assets/WhyUs/wellbeing.webp"
 import Building from "../../assets/WhyUs/Building.webp"
@@ -6,7 +6,7 @@ import Dining from "../../assets/WhyUs/Dining.webp"
 import Indoor from "../../assets/WhyUs/Indoor.webp"
 import Meditation from "../../assets/WhyUs/Meditation.webp"
 import Playground from "../../assets/WhyUs/Playground.webp"
-import Study from "../../assets/WhyUs/Study.webp"
+import Study from "../../assets/WhyUs/stdy.webp"
 
 
 export const PAGE1 = [

@@ -4,7 +4,7 @@ import d1 from "../../assets/Engage/Vector.svg";
 import clsx from "clsx";
 import earth from "../../assets/Engage/illus.png";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import { Link, Navigate, Outlet, useLocation } from "react-router-dom";
+import { Link, Outlet, useLocation } from "react-router-dom";
 
 export const Engage = ({ ismobile }) => {
   const [individual, setIndividual] = useState(true);
