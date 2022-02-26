@@ -21,8 +21,6 @@ const WhyUs3 = ({ isMOBILE }) => {
       onLeaveViewport: () => view.current.slickPause(),
     }
   );
-  console.log(inViewport)
-  
   const settings = {
     infinite: true,
     speed: 300,
@@ -32,6 +30,7 @@ const WhyUs3 = ({ isMOBILE }) => {
     dots: true,
     adaptiveHeight: true,
     adaptiveWidth: true,
+    lazyload:'progressive',
     // autoplay: inview,
     vertical: false,
     pauseOnHover: false,
