@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../../assets/footer/Logo_white.svg";
 import styles from "./Footer.module.css";
-import { ICONS, NAVLINKS } from "../../utility/constants.js";
+import { ICONS, NAVLINKS } from "../../utility/Constants.js";
 import Map from "../../assets/footer/map.svg";
 import { Link } from "react-router-dom";
 import CopyrightIcon from "@mui/icons-material/Copyright";
