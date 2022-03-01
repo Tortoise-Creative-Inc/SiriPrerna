@@ -71,7 +71,7 @@ export const CONTACT = [
         title: "WhatsApp No.",
         content: "+91 94419 22022",
         Icon: <WhatsAppIcon />,
-        to: "https://wa.me/9441922022",
+        to: "https://wa.me/919441922022",
         delay: ".20",
 
     },

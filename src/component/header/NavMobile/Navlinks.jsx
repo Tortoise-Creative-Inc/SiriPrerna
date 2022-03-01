@@ -19,7 +19,7 @@ const Contact = [
         title: "WhatsApp No.",
         content: "+91 94419 22022",
         icon: <WhatsAppIcon />,
-        href: "https://wa.me/9441922022",
+        href: "https://wa.me/919441922022",
         delay: ".31",
 
     },

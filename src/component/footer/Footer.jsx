@@ -154,15 +154,15 @@ const ColumnTab = ({ istablet, ismobile }) => {
         Label="Contact Us"
         Text={
           <p className={clsx(styles.p, { [styles.mob]: istablet || ismobile })}>
-            +91 94419 22022
+            {CONTACT[1].content}
           </p>
         }
         Text2={
           <p className={clsx(styles.p, { [styles.mob]: istablet || ismobile })}>
-            siri.nonprofit@gmail.com
+            {CONTACT[2].content}
           </p>
         }
-        to="https://wa.me/9441922022"
+        to="https://wa.me/919441922022"
         to2="mailto:siri.nonprofit@gmail.com"
         Icon1={<WhatsAppIcon id={styles.Whatsapp} />}
         Icon2={<MailOutlineIcon id={styles.Mail} />}
