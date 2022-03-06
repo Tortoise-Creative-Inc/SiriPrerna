@@ -244,6 +244,7 @@
 #Mail,
 #Whatsapp {
   color: white;
+  fill:white;
   width: clamp(22px, 1.563vw + 0.01em, 30px);
   height: clamp(22px, 1.563vw + 0.01em, 30px);
   grid-column: 1/2;

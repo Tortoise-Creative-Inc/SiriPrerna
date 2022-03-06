@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../../assets/footer/Logo_white.svg";
 import styles from "./Footer.module.css";
-import { ICONS, NAVLINKS } from "../../utility/Constants.js";
+import {  ICONS, NAVLINKS } from "../../utility/Constants.js";
 import Map from "../../assets/footer/map.svg";
 import { Link } from "react-router-dom";
 import CopyrightIcon from "@mui/icons-material/Copyright";
@@ -154,18 +154,25 @@ const ColumnTab = ({ istablet, ismobile }) => {
         Label="Contact Us"
         Text={
           <p className={clsx(styles.p, { [styles.mob]: istablet || ismobile })}>
-            {CONTACT[1].content}
+            {CONTACT[0].content}
           </p>
         }
         Text2={
           <p className={clsx(styles.p, { [styles.mob]: istablet || ismobile })}>
+            {CONTACT[1].content}
+          </p>
+        }
+        Text3={
+          <p className={clsx(styles.p, { [styles.mob]: istablet || ismobile })}>
             {CONTACT[2].content}
           </p>
         }
-        to="https://wa.me/919441922022"
-        to2="mailto:siri.nonprofit@gmail.com"
-        Icon1={<WhatsAppIcon id={styles.Whatsapp} />}
-        Icon2={<MailOutlineIcon id={styles.Mail} />}
+        to1={CONTACT[0].to}
+        to2={CONTACT[1].to}
+        to3={CONTACT[2].to}
+        Icon1={CONTACT[0].Icon}
+        Icon2={CONTACT[1].Icon}
+        Icon3={CONTACT[2].Icon}
       />
       <div className={`${styles.copyright} ${istablet && styles.tab}`}>
             <div className={styles.h}>

@@ -31,7 +31,6 @@ const WhyUs3 = ({ isMOBILE }) => {
     adaptiveHeight: true,
     adaptiveWidth: true,
     lazyload:'progressive',
-    // autoplay: inview,
     vertical: false,
     pauseOnHover: false,
     swipeToSlide: false,

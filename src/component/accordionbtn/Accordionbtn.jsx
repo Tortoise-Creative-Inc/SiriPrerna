@@ -26,7 +26,7 @@ const Accordionbtn = (props) => {
         />
       </button>
       <div className={clsx(styles.body, { [styles.active]: active })}>
-        <a className={styles.link} href={props.to}>
+        <a className={styles.link} href={props.to1}>
           {props.Img1 ? (
             <img className={styles.img} src={props.Img1} alt="" />
           ) : (
@@ -37,11 +37,21 @@ const Accordionbtn = (props) => {
         {props.Text2 && (
           <a className={styles.link} href={props.to2}>
             {props.Img ? (
-              <img className={styles.img} src={props.Img} alt="" />
+              <img className={styles.img} src={props.Img2} alt="" />
             ) : (
               props.Icon2
             )}
             {props.Text2}
+          </a>
+        )}
+        {props.Text3 && (
+          <a className={styles.link} href={props.to3}>
+            {props.Img ? (
+              <img className={styles.img} src={props.Img3} alt="" />
+            ) : (
+              props.Icon3
+            )}
+            {props.Text3}
           </a>
         )}
       </div>
