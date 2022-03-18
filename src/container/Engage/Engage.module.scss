@@ -75,7 +75,7 @@
   margin-bottom: 20px;
 }
 
-.d_btn {
+.d_btn,.l_btn{
   height: 57.06px;
   font-size: 18px;
   font-family: Poppins;
@@ -93,6 +93,11 @@
     height: 24.75px !important;
     margin-left: 10px;
   }
+}
+.l_btn{
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding: 0 11%;
 }
 
 .grid {

@@ -8,19 +8,9 @@ import clsx from "clsx";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useInViewport } from "react-in-viewport";
 
 const WhyUs3 = ({ isMOBILE }) => {
   const view = useRef();
-  const { inViewport } = useInViewport(
-    view,
-    {},
-    {},
-    {
-      onEnterViewport: () => view.current.slickPlay(),
-      onLeaveViewport: () => view.current.slickPause(),
-    }
-  );
   const settings = {
     infinite: true,
     speed: 300,

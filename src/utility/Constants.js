@@ -2,7 +2,6 @@ import Fb from '../assets/footer/fb.svg'
 import Insta from '../assets/footer/insta.svg'
 import Linkedin from '../assets/footer/linkdin.svg'
 import Youtube from '../assets/footer/youtube.svg'
-import React from 'react';
 
 export const NAVLINKS = [
     {
