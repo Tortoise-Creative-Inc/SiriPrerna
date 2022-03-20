@@ -90,7 +90,6 @@
   -ms-flex-align: center;
   align-items: center;
   font-size: .8em;
-  width: 100px;
   height: 32px;
   padding: 1.4em 4.5em;
   font-weight: bold;
@@ -130,7 +129,22 @@
   white-space: nowrap;
 }
 
+.hlinks{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: .4em;
+}
+.hlinks img{
+  height:0.9em;
+  opacity: 89%;
+}
 
+@media (max-width:650px) {
+  .hmbr>a>button {
+    width:100px;
+  }
+}
 
 @media (max-width:900px) {
   .hm{

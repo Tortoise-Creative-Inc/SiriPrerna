@@ -3,16 +3,49 @@ import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import Logo from "../../assets/header/Logo.svg";
 import pencil from "../../assets/header/pencil.svg";
 import whatsapp from "../../assets/header/WhatsApp.svg";
+import mail from "../../assets/header/email.svg";
+import phone from "../../assets/header/phone.svg";
 import Home from "../../assets/header/icons/Home.svg";
 import Engage from "../../assets/header/icons/Engage.svg";
 import Kids from "../../assets/header/icons/Kids.svg";
 import Why from "../../assets/header/icons/Why.svg";
 import Donate from "../../assets/header/icons/Donate.svg";
+import {  ICONS } from "../../utility/Constants";
+import styles from "../../component/footer/Footer.module.css";
 import "./header.css";
 import NavMobile from "./NavMobile/NavMobile";
 
+
 export const Header = ({ ismobile }) => {
   const Navigate = useNavigate();
+
+  
+const CONTACT = [
+  {
+    id: 1,
+    title: "Phone No.",
+    content: "+91 94419 22022",
+    Icon: phone,
+    to: "tel:9441922022",
+    delay: ".18",
+  },
+  {
+    id: 2,
+    title: "WhatsApp No.",
+    content: "+91 94419 22022",
+    Icon: whatsapp,
+    to: "https://wa.me/919441922022",
+    delay: ".20",
+  },
+  {
+    id: 3,
+    title: "Mail",
+    content: "siri.nonprofit@gmail.com ",
+    Icon: mail,
+    delay: ".22",
+    to: "mailto:siri.nonprofit@gmail.com",
+  },
+];
 
   const nav = [
     {
@@ -69,12 +102,30 @@ export const Header = ({ ismobile }) => {
           <button>DONATE</button>
         </a>
         {!ismobile && (
-          <span>
-            <a href="https://api.whatsapp.com/send/?phone=919441922022&text&app_absent=0">
-              <img src={whatsapp} alt="" />
-              <p>+91 94419 22022</p>
-            </a>
-          </span>
+            <div className="hlinks">
+
+          {CONTACT.map((e) => (
+              <a key={e.id} className={styles.Link_logo} href={e.to}>
+                <img
+                  className="hlimg"
+                  src={e.Icon}
+                  alt={e.title}
+                />
+              </a>
+            ))}
+            <span> </span>
+          {ICONS.map((x, index) => (
+              <a key={index} className={styles.Link_logo} href={x.to}>
+                <img
+                  style={{filter:"invert(1)"}}
+                  className="hlimg"
+                  src={x.Icon}
+                  alt={x.alt}
+                />
+              </a>
+            ))}
+          </div>
+
         )}
       </div>
     </div>

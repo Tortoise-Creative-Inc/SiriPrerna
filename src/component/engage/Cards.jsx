@@ -5,6 +5,9 @@ import s from "../../container/Engage/Engage.module.scss";
 import Fade from "react-reveal/Fade";
 import {  ICONS } from "../../utility/Constants";
 import styles from "../../component/footer/Footer.module.css";
+import whatsapp from "../../assets/header/WhatsApp.svg";
+import mail from "../../assets/header/email.svg";
+import phone from "../../assets/header/phone.svg";
 
 export const Cards = ({ type }) => {
   return (
@@ -17,6 +20,32 @@ export const Cards = ({ type }) => {
   );
 };
 function Donate({ head, desc, head2, rs, img, don, to }) {
+  const CONTACT = [
+    {
+      id: 1,
+      title: "Mail",
+      content: "siri.nonprofit@gmail.com ",
+      Icon: mail,
+      delay: ".22",
+      to: "mailto:siri.nonprofit@gmail.com",
+    },
+    {
+      id: 2,
+      title: "Phone No.",
+      content: "+91 94419 22022",
+      Icon: phone,
+      to: "tel:9441922022",
+      delay: ".18",
+    },
+    {
+      id: 3,
+      title: "WhatsApp No.",
+      content: "+91 94419 22022",
+      Icon: whatsapp,
+      to: "https://wa.me/919441922022",
+      delay: ".20",
+    },
+  ];
   return (
     <Fade>
       <div>
@@ -38,13 +67,12 @@ function Donate({ head, desc, head2, rs, img, don, to }) {
           </a>
         ):(
           <div className={s.l_btn}>
-          {ICONS.map((x, index) => (
-              <a key={index} className={styles.Link_logo} href={x.to}>
+          {CONTACT.map((e) => (
+              <a key={e.id} className={styles.Link_logo} href={e.to}>
                 <img
-                  style={{filter:"invert(1)"}}
                   className={styles.img}
-                  src={x.Icon}
-                  alt={x.alt}
+                  src={e.Icon}
+                  alt={e.title}
                 />
               </a>
             ))}

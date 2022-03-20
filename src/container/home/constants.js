@@ -1,6 +1,6 @@
 import sicn1 from "../../assets/home/sec2/icon1.svg";
 import sicn1_2 from "../../assets/home/sec2/icon1_2.png";
-import sicn2 from "../../assets/home/sec2/icon2.svg";
+import sicn2 from "../../assets/home/sec2/puzzle.svg";
 import sicn3 from "../../assets/home/sec2/icon3.svg";
 import sicn4 from "../../assets/home/sec2/icon4.svg";
 import k1 from "../../assets/home/sec3/kids/k1.webp";
@@ -21,26 +21,26 @@ export const sec2 = [
     key: "1",
     icon: sicn1,
     icon2: sicn1_2,
-    text1: "30",
-    text2: "Kids under our shelter",
+    text1: "52",
+    text2: "Kids Impacted",
   },
   {
     key: "2",
     icon: sicn2,
-    text1: "2019",
-    text2: "Established in June at Balanagar, Hyd, India",
+    text1: "15",
+    text2: "Hobbies and interests our kids are engaged in.",
   },
   {
     key: "3",
     icon: sicn3,
     text1: "100+",
-    text2: "Plants planted by our kids",
+    text2: "Plants owned by our kids",
   },
   {
     key: "4",
     icon: sicn4,
-    text1: "3640",
-    text2: "Visitors so far",
+    text1: "360",
+    text2: "Visitors per month",
   },
 ];
 

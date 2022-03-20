@@ -37,7 +37,10 @@ const CONTACT = [
     to: "mailto:siri.nonprofit@gmail.com",
   },
 ];
-const Column = ({ istablet, ismobile }) => {
+
+
+
+const Column = ({ istablet, ismobile,date }) => {
   return (
     <>
       <div
@@ -83,7 +86,7 @@ const Column = ({ istablet, ismobile }) => {
             <div className={styles.h}>
               <CopyrightIcon id={styles.copy} />
               <pre className={styles.pre}>
-                2019-2022 Prerna Children’s Home. All rights reserved.
+                2019-{date.getFullYear()} Prerna Children’s Home. All rights reserved.
               </pre>
             </div>
           </div>
@@ -130,7 +133,7 @@ const Column = ({ istablet, ismobile }) => {
   );
 };
 
-const ColumnTab = ({ istablet, ismobile }) => {
+const ColumnTab = ({ istablet, ismobile,date}) => {
   return (
     <div className={styles.col_mob}>
       <Accordionbtn
@@ -178,7 +181,7 @@ const ColumnTab = ({ istablet, ismobile }) => {
             <div className={styles.h}>
               <CopyrightIcon id={styles.copy} />
               <pre className={styles.pre}>
-                2019-2022 Prerna Children’s Home. All rights reserved.
+                2019-{date.getFullYear()} Prerna Children’s Home. All rights reserved.
               </pre>
             </div>
           </div>
@@ -186,6 +189,7 @@ const ColumnTab = ({ istablet, ismobile }) => {
   );
 };
 const Footer = ({ istablet, ismobile }) => {
+  var date = new Date();
   return (
     <>
       <div
@@ -272,16 +276,16 @@ const Footer = ({ istablet, ismobile }) => {
           </div>
         </div>
         {istablet ? (
-          <ColumnTab istablet={istablet} ismobile={ismobile} />
+          <ColumnTab istablet={istablet} ismobile={ismobile} date={date}/>
         ) : (
-          <Column istablet={istablet} ismobile={ismobile} />
+          <Column istablet={istablet} ismobile={ismobile} date={date}/>
         )}
 
         {ismobile && (
           <div className={styles.copyright_m}>
             <div className={styles.one}>
               <CopyrightIcon id={styles.copy} />
-              <p className={styles.prem}>2019-2022</p>
+              <p className={styles.prem}>2019-{date.getFullYear()}</p>
             </div>
             <p className={styles.prem}> Prerna Children’s Home.</p>
             <p className={styles.prem}> All rights reserved.</p>

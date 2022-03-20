@@ -110,9 +110,6 @@
 .sec2 > div:nth-child(even) > p {
   width: 20ch;
 }
-.sec2 > div:nth-child(1) > p {
-  width: 10ch;
-}
 .collage_cnt {
   position: relative;
   min-height: 0vw;
