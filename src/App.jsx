@@ -8,6 +8,10 @@ import { Ourkids } from './container/OurKids/Ourkids';
 import { Engage } from './container/Engage/Engage';
 import Footer from './component/footer/Footer';
 import { Cards } from './component/engage/Cards';
+import {Donate} from './container/Donate/Donate'
+import { Card } from './component/donate/Cards';
+
+
 
 
 function App() {
@@ -47,6 +51,11 @@ function App() {
         <Route path="/engage" element={<Engage ismobile={ismobile} />} >
           <Route path="individuals" default element={<Cards type="individuals" />} />
           <Route path="corporates" element={<Cards type="corporates" />} />
+          <Route path="" element={<Navigate replace to="individuals" />} />
+        </Route>
+        <Route path="/donate" element={<Donate ismobile={ismobile} />} >
+          <Route path="individuals" default element={<Card type="individuals" />} />
+          <Route path="corporates" element={<Card type="corporates" />} />
           <Route path="" element={<Navigate replace to="individuals" />} />
         </Route>
         <Route path="/*" element={<Navigate replace to="/" />} />

@@ -12,30 +12,30 @@ import p12 from "../../assets/Engage/Image (11).png";
 import p13 from "../../assets/Engage/Image (12).png";
 
 export const INDIVIDUALS = [
-    {
-        head: "Sponsor Meal",
-        desc: "Onsite or Remote",
-        rs: "₹2000",
-        img: p2,
-        don: true,
-        to: 'https://payu.in/pay/4C3C214032599EAC6E35E8BCADBD7A53',
-    },
-    {
-        head: "Contribute cash",
-        desc: "Operational support ",
-        rs: "for the orphanage",
-        img: p1,
-        don: true,
-        to: 'https://payu.in/pay/4C3C214032599EAC6E35E8BCADBD7A53',
-    },
-    {
-        head: "Sponsor a child",
-        desc: "Child’s six months expenses",
-        rs: "₹1000 p/m",
-        img: p3,
-        don: true,
-        to: 'https://payu.in/pay/4C3C214032599EAC6E35E8BCADBD7A53',
-    },
+    // {
+    //     head: "Sponsor Meal",
+    //     desc: "Onsite or Remote",
+    //     rs: "₹2000",
+    //     img: p2,
+    //     don: true,
+    //     to: 'https://payu.in/pay/4C3C214032599EAC6E35E8BCADBD7A53',
+    // },
+    // {
+    //     head: "Contribute cash",
+    //     desc: "Operational support ",
+    //     rs: "for the orphanage",
+    //     img: p1,
+    //     don: true,
+    //     to: 'https://payu.in/pay/4C3C214032599EAC6E35E8BCADBD7A53',
+    // },
+    // {
+    //     head: "Sponsor a child",
+    //     desc: "Child’s six months expenses",
+    //     rs: "₹1000 p/m",
+    //     img: p3,
+    //     don: true,
+    //     to: 'https://payu.in/pay/4C3C214032599EAC6E35E8BCADBD7A53',
+    // },
     {
         head: "Spend time",
         desc: "with kids",
@@ -62,14 +62,15 @@ export const INDIVIDUALS = [
 ]
 
 export const CORPORATES = [
-    {
-        head: "Contribute cash",
-        desc: "Operational support",
-        rs: "for the orphanage",
-        img: p1,
-        don: true,
-        to: 'https://payu.in/pay/4C3C214032599EAC6E35E8BCADBD7A53',
-    }, {
+    // {
+    //     head: "Contribute cash",
+    //     desc: "Operational support",
+    //     rs: "for the orphanage",
+    //     img: p1,
+    //     don: true,
+    //     to: 'https://payu.in/pay/4C3C214032599EAC6E35E8BCADBD7A53',
+    // },
+     {
         head: "CSR enrollment",
         desc: "Gain Tax deductions",
         rs: "upto 50%",
