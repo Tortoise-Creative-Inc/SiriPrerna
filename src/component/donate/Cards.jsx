@@ -46,6 +46,13 @@ function Donate({ head, desc, head2, rs, img, don, to }) {
       to: "https://wa.me/919441922022",
       delay: ".20",
     },
+     { id: 4,
+      title: "WhatsApp No.",
+      content: "+91 94419 22022",
+      Icon: whatsapp,
+      to: "https://wa.me/919441922022",
+      delay: ".20",
+    }
   ];
   return (
     <Fade>
