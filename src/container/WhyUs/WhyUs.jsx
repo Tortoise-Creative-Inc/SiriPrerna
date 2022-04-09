@@ -1,9 +1,10 @@
 import React from "react";
+import ScrollToTop from "react-scroll-to-top";
 import WhyUs1 from "../../component/Whyus/WhyUs1/WhyUs1";
 import WhyUs2 from "../../component/Whyus/WhyUs2/WhyUs2";
 import WhyUs3 from "../../component/Whyus/WhyUs3/WhyUs3";
 import styles from "./WhyUs.module.css";
-import ScrollToTop from "react-scroll-to-top";
+// import ScrollToTop from "react-scroll-to-top";
 
 const WhyUs = ({ ismobile }) => {
   return (

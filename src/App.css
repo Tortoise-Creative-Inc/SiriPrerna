@@ -4,6 +4,24 @@ h1, h2, h3, h4, h5, h6, p, span {
   margin: 0;
   padding: 0;
 }
+.scroll{
+  cursor: pointer;
+  background-image: url(../src/assets/arrow.svg);
+  background-size: cover;
+  position: fixed;
+  height: 50px; 
+  width:  50px;
+  opacity: 30%;
+  z-index: 9;
+  border: none;
+  background-color:rgba(124, 124, 124, 0.103);
+  bottom:5%;
+  border-radius:50%;
+  left:40%; 
+}
+.scroll:hover{
+  opacity: 50%;
+}
 
 .scroll {
   cursor: pointer;

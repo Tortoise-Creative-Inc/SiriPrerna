@@ -14,6 +14,7 @@ import {  ICONS } from "../../utility/Constants";
 import styles from "../../component/footer/Footer.module.css";
 import "./header.css";
 import NavMobile from "./NavMobile/NavMobile";
+import {Link} from "react-router-dom"
 
 
 export const Header = ({ ismobile }) => {
@@ -74,7 +75,7 @@ const CONTACT = [
     },
     {
       title: "Donate",
-      to: "https://pmny.in/Xrz1Hou3Rfau",
+      to: "/donate",
       delay: ".18",
       ignore: true,
       icon: Donate,
@@ -97,10 +98,10 @@ const CONTACT = [
         <ul>{nav.map((e) => Navoptions(e))}</ul>
       </div>
       <div className="hmbr">
-        <a href="https://pmny.in/Xrz1Hou3Rfau">
+        <Link to="/donate">
           {" "}
           <button>DONATE</button>
-        </a>
+        </Link>
         {!ismobile && (
             <div className="hlinks">
 

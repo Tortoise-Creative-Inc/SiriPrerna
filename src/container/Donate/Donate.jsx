@@ -23,7 +23,7 @@ export const Donate = ({ ismobile }) => {
   return (
     <div className={s.engage}>
       <div className={s.headertop}>
-        <h1 className={s.heading}>Get Involved With Us !</h1>
+        <h1 className={s.heading}>Donate</h1>
         <div className={s.contact_container_mobile}>
           <Contact
             img={d1}
