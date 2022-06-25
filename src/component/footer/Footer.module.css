@@ -349,15 +349,15 @@
   .list_items:hover::before {
     transform: scaleX(1);
   }
-  :global(#phone):hover,
-  :global(#whatsApp):hover,
-  :global(#mail):hover,
-  :global(#phone):hover ~ .list_items,
-  :global(#mail):hover ~ .list_items,
-  :global(#whatsApp):hover ~ .list_items,
-  :global(#phone):hover ~ .list_items::before,
-  :global(#mail):hover ~ .list_items::before,
-  :global(#whatsApp):hover ~ .list_items::before,
+  .Links :global(#phone):hover,
+  .Links :global(#whatsApp):hover,
+  .Links :global(#mail):hover,
+  .Links :global(#phone):hover ~ .list_items,
+  .Links :global(#mail):hover ~ .list_items,
+  .Links :global(#whatsApp):hover ~ .list_items,
+  .Links :global(#phone):hover ~ .list_items::before,
+  .Links :global(#mail):hover ~ .list_items::before,
+  .Links :global(#whatsApp):hover ~ .list_items::before,
   .list_items:hover {
     transform: scale(1.02) translateY(-1.5px);
     cursor: pointer;

@@ -15,7 +15,10 @@ export const Header = ({ ismobile }) => {
     const items = document.querySelectorAll(`.${styles.nav_bar}`);
     const ind = document.getElementById(`${styles.pencil}`);
     const handleIndicator = (el) => {
-      if (ind?.style !== null) ind.style.left = el.offsetLeft - 9 + "px";
+      if (ind?.style !== null) {
+        ind.style.left = el.offsetLeft - 10 + "px";
+        ind.style.width = el.offsetWidth + 20 + "px";
+      }
     };
     items.forEach((element, index) => {
       element.addEventListener("pointermove", function (e) {

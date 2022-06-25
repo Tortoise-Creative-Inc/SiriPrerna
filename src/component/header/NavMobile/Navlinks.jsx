@@ -79,7 +79,7 @@ const Navlinks = ({ isMobile, closeMobileMenu, Open }) => {
               className={styles.li}
               key={index}
             >
-              <a className={styles.Link} href={x.href}>
+              <a className={styles.Link} href={x.to}>
                 {x.Icon}
                 <span className={styles.span}>{x.content}</span>
               </a>

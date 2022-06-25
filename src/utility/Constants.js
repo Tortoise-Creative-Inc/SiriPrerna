@@ -163,7 +163,7 @@ export const ICONS = [
         name: "LinkedIn",
         Icon: Linkedin,
         alt: "LinkedIn",
-        to: "",
+        to: "https://www.linkedin.com/in/prerna-orphanage-9bbb68233/",
     },
     {
         name: "Youtube",

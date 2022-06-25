@@ -162,19 +162,18 @@
       }
       .Link.active {
         position: relative;
-        .span{
+        .span {
           font-weight: 1000;
-          color:rgb(146, 0, 22);
+          color: rgb(146, 0, 22);
         }
-        &::before{
-          content:'';
-          position:absolute;
+        &::before {
+          content: "";
+          position: absolute;
           bottom: -10px;
           left: 0;
-          width:75%;
-          height:2.5px;
-          background:rgb(146, 0, 22);
-
+          width: 75%;
+          height: 2.5px;
+          background: rgb(146, 0, 22);
         }
       }
     }
@@ -199,7 +198,7 @@
       &:last-of-type {
         margin: bottom 0 !important;
         .Link {
-          .span {
+         .span {
             width: 80px !important;
             word-break: break-word !important;
           }
