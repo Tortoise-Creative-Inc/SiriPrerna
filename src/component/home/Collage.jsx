@@ -38,7 +38,7 @@ export const Collage = ({
           {db.map((e) => (
             (e.ignore && ismobile) || (<div key={e.key}>
                 <div>
-                  <LazyLoadImage src={e.img} alt="" />
+                  <LazyLoadImage src={e.img} alt="_img" />
                   <div id={s.overlay}>
                     {!ismobile && kids && (
                       <p id={s.kid}>
