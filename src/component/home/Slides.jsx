@@ -1,6 +1,6 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
-import s from "../../container/home/home.module.css";
+import s from "../../container/home/Home.module.css";
 
 export const Slides =({slides})=>{
     return(

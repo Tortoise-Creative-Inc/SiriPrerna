@@ -1,0 +1,113 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(313px, auto));
+  justify-content: center;
+  grid-gap: 100px 78px;
+  margin-top: 120px;
+}
+
+.donate {
+  max-width: 313.43px;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  box-shadow: 4px 4px 15px rgba(95, 93, 93, 0.3);
+  background-color: white;
+  margin-bottom: auto;
+  min-height: 299.8px;
+}
+.donate h6,
+p {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(11px, 0.9vw, 18px);
+  line-height: 1.385;
+}
+.mainimg {
+  align-self: center;
+  padding: 15px;
+  width: 156px;
+  height: 110px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.desc_don {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  margin-left: 31px;
+  margin-bottom: 20px;
+}
+.link {
+  text-decoration: none;
+}
+
+.d_btn,
+.l_btn {
+  height: 57.06px;
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 700;
+  width: 100%;
+  background: #ffc046;
+  border: none;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 4px 12px 15px rgba(95, 93, 93, 0.3);
+}
+.d_btn {
+  cursor: pointer;
+}
+.d_btn img,
+.l_btn > a > :global(#whatsApp),
+.l_btn > a > :global(#mail),
+.l_btn > a > :global(#phone) {
+  width: 24.75px !important;
+  height: 24.75px !important;
+  margin-left: 10px;
+  color: black !important;
+  fill: black !important;
+}
+
+.l_btn {
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding: 0 11%;
+}
+@media (hover: hover) {
+  .d_btn,
+  .l_btn > a > :global(#whatsApp),
+  .l_btn > a > :global(#mail),
+  .l_btn > a > :global(#phone) {
+    transition: all 0.3s ease-in-out;
+  }
+  .l_btn > a > :global(#whatsApp):hover,
+  .l_btn > a > :global(#mail):hover,
+  .l_btn > a > :global(#phone):hover {
+    transform: translateY(-1.5px) scale(1.02);
+  }
+  .d_btn:hover{
+    background:#ffb114;
+  }
+}
+@media (max-width: 650px) {
+  .grid {
+    gap: 20px;
+    margin-bottom: 100px;
+    margin-top: 40px;
+  }
+  .donate h6 {
+    font-size: clamp(22px, 1.2vw, 24px);
+  }
+  .donate p {
+    font-size: 16px;
+  }
+  .mainimg {
+    height: unset;
+  }
+}

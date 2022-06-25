@@ -1,107 +1,109 @@
 import React, { useEffect, useState } from "react";
 import s from "./Engage.module.scss";
-import d1 from "../../assets/Engage/Vector.svg";
 import clsx from "clsx";
-import earth from "../../assets/Engage/illus.png";
-import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import Earth from "../../assets/engage/illus.png";
 import { Link, Outlet, useLocation } from "react-router-dom";
+import { CONTACT_US } from "../../utility/constants";
+import { motion } from "framer-motion";
 
-export const Engage = ({ ismobile }) => {
-  const [individual, setIndividual] = useState(true);
-  const path = useLocation();
-
-  function onIndividualClick() {
-    if (path.pathname === "/engage/individuals") setIndividual(true);
-    else if (path.pathname === "/engage/corporates") setIndividual(false);
-    // Navigate('/individual');
-  }
-  useEffect(() => {
-    onIndividualClick();
-  }, [individual]);
-  console.log(path.pathname);
-
-  return (
-    <div className={s.engage}>
-      <div className={s.headertop}>
-        <h1 className={s.heading}>Get Involved With Us !</h1>
-        <div className={s.contact_container_mobile}>
-          <Contact
-            img={d1}
-            details="+91 94419 22022"
-            link="https://wa.me/919441922022"
-          />
-          <Contact
-            Icon={MailOutlineIcon}
-            details="siri.nonprofit@gmail.com"
-            link="mailto:siri.nonprofit@gmail.com"
-          />
-        </div>
-
-        <div className={s.engage__subheadings}>
-          <Link
-            to="/engage/individuals"
-            onClick={() => setIndividual(true)}
-            className={
-              individual
-                ? clsx(s.subheading, s.active_subheading)
-                : s.subheading
-            }
-          >
-            Individuals
-          </Link>
-
-          <Link
-            to="/engage/corporates"
-            onClick={() => setIndividual(false)}
-            className={
-              !individual
-                ? clsx(s.subheading, s.active_subheading)
-                : s.subheading
-            }
-          >
-            Corporates
-          </Link>
-        </div>
-      </div>
-
-      <Outlet />
-
-      <div className={s.eng_contact}>
-        <h2>Contact Us</h2>
-        <div className={s.contact_container}>
-          <Contact
-            img={d1}
-            details="+91 94419 22022"
-            link="https://wa.me/919441922022"
-          />
-          <Contact
-            Icon={MailOutlineIcon}
-            details="siri.nonprofit@gmail.com"
-            link="mailto:siri.nonprofit@gmail.com"
-          />
-        </div>
-      </div>
-      <div className={s.bottom_image}>
-        <img src={earth} alt="" />
-        <div className={s.bottom_text}>
-          <h3 className={s.bottom_text1}>
-            No matter the kind of contribution, <br />
-            we are grateful!
-          </h3>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-function Contact({ img, details, link, Icon }) {
+function Contact({ details, link, Icon }) {
   return (
     <div className={s.contact_details}>
-      <a href={link}>
-        {img && <img src={img} alt="" />}
-        {Icon && <Icon id={s.icon} />}
+      <a href={link} className={s.links}>
+        {Icon}
         <span className={s.span}>{details}</span>
       </a>
     </div>
   );
 }
+const Engage = ({ ismobile }) => {
+  const [individual, setIndividual] = useState(true);
+  const path = useLocation();
+  function onIndividualClick() {
+    if (path.pathname === "/engage/individuals") setIndividual(true);
+    else if (path.pathname === "/engage/corporates") setIndividual(false);
+  }
+  useEffect(() => {
+    onIndividualClick();
+  }, [individual]);
+  return (
+    <div className={s.container}>
+      <div className={s.headertop}>
+        <h1 className={s.heading}>Get Involved With Us !</h1>
+        {ismobile && (
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.65, type: "ease", ease: "easeInOut" }}
+            viewport={{ once: true }}
+            className={s.contact_container_mobile}
+          >
+            {CONTACT_US.map(
+              ({ id, content, Icon, to }) =>
+                id > 1 && (
+                  <Contact details={content} Icon={Icon} link={to} key={id} />
+                )
+            )}
+          </motion.div>
+        )}
+        <nav className={s.nav_bar}>
+          <Link
+            to="/engage/individuals"
+            onClick={() => setIndividual(true)}
+            className={individual ? clsx(s.subheading, s.active) : s.subheading}
+          >
+            Individuals
+          </Link>
+          <Link
+            to="/engage/corporates"
+            onClick={() => setIndividual(false)}
+            className={
+              !individual ? clsx(s.subheading, s.active) : s.subheading
+            }
+          >
+            Corporates
+          </Link>
+        </nav>
+      </div>
+      <Outlet />
+      {!ismobile && (
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.65, type: "ease", ease: "easeInOut" }}
+          viewport={{ once: true }}
+          className={s.contact_us}
+        >
+          <h3>Contact Us</h3>
+          <div className={s.contact_container}>
+            {CONTACT_US.map(
+              ({ id, content, Icon, to }) =>
+                id > 1 && (
+                  <Contact details={content} Icon={Icon} link={to} key={id} />
+                )
+            )}
+          </div>
+        </motion.div>
+      )}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{
+          delay: 0.2,
+          duration: 0.65,
+          type: "ease",
+          ease: "easeInOut",
+        }}
+        viewport={{ once: true }}
+        className={s.bottom}
+      >
+        <img src={Earth} alt="_img" draggable={false} />
+        <p>
+          No matter the kind of contribution, <br />
+          we are grateful!
+        </p>
+      </motion.div>
+    </div>
+  );
+};
+export default Engage;

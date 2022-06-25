@@ -1,5 +1,5 @@
 {
-  "name": "prerna-temp",
+  "name": "siri-prerna",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,7 +12,7 @@
     "@testing-library/user-event": "^13.5.0",
     "babel-loader": "^8.2.3",
     "clsx": "^1.1.1",
-    "framer-motion": "^4.1.17",
+    "framer-motion": "^6.3.15",
     "parent-module": "^3.0.0",
     "phosphor-icons": "^1.4.2",
     "react": "^17.0.2",
@@ -20,11 +20,10 @@
     "react-in-viewport": "^1.0.0-alpha.20",
     "react-lazy-load-image-component": "^1.5.1",
     "react-responsive-carousel": "^3.2.22",
-    "react-reveal": "^1.2.2",
     "react-router-dom": "^6.2.1",
     "react-scripts": "^5.0.0",
     "react-scroll-to-top": "^1.0.8",
-    "react-slick": "^0.28.1",
+    "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.3"
   },

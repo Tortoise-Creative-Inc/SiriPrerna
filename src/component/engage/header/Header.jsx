@@ -13,9 +13,9 @@ export const Header = ({ ismobile }) => {
 
   useEffect(() => {
     const items = document.querySelectorAll(`.${styles.nav_bar}`);
-    const ind = document.getElementById(`${styles.pencil}`);
+    const ind = document.querySelector(`#${styles.pencil}`);
     const handleIndicator = (el) => {
-      if (ind?.style !== null) ind.style.left = el.offsetLeft - 9 + "px";
+      ind.style.left = el.offsetLeft - 9 + "px";
     };
     items.forEach((element, index) => {
       element.addEventListener("pointermove", function (e) {
@@ -87,20 +87,22 @@ export const Header = ({ ismobile }) => {
 const Navoptions = (e) => {
   const isActive = useLocation();
   return (
-    !e.ignore && (
-      <li
-        key={e.title}
-        className={`${styles.navmenu} ${
-          isActive.pathname.split("/")[1] === e.to.split("/")[1]
-            ? styles.active
-            : ""
-        }`}
-      >
-        <NavLink to={e.to}>{e.title}</NavLink>
-        {isActive.pathname.split("/")[1] === e.to.split("/")[1] && (
-          <img src={pencil} alt="_img" draggable={false} />
-        )}
-      </li>
-    )
+    <>
+      {!e.ignore && (
+        <li
+          key={e.title}
+          className={`${styles.navmenu} ${
+            isActive.pathname.split("/")[1] === e.to.split("/")[1]
+              ? styles.active
+              : ""
+          }`}
+        >
+          <NavLink to={e.to}>{e.title}</NavLink>
+          {isActive.pathname.split("/")[1] === e.to.split("/")[1] && (
+            <img src={pencil} alt="_img" draggable={false} />
+          )}
+        </li>
+      )}
+    </>
   );
 };

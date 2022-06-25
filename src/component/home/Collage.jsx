@@ -1,7 +1,7 @@
 import React from "react";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Link } from "react-router-dom";
-import s from "../../container/home/home.module.css";
+import s from "../../container/home/Home.module.css";
 
 
 export const Collage = ({
@@ -38,7 +38,7 @@ export const Collage = ({
           {db.map((e) => (
             (e.ignore && ismobile) || (<div key={e.key}>
                 <div>
-                  <LazyLoadImage src={e.img} alt="" />
+                  <LazyLoadImage src={e.img} alt="_img" />
                   <div id={s.overlay}>
                     {!ismobile && kids && (
                       <p id={s.kid}>

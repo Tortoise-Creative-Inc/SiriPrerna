@@ -1,6 +1,6 @@
 .container {
   background-color: white;
-  padding: 30px min(13vw ,236px);
+  padding: 0 min(13vw, 236px);
   padding-bottom: unset;
   background-position: center;
   background-position-y: 5vw;
@@ -10,35 +10,34 @@
   background-size: 70vw;
 }
 .heading {
-  height: 200px;
-  padding: 40px 0;
   text-align: left;
-  margin-bottom:8vw;
+  margin: 6.5vw 0;
+  box-sizing: border-box;
 }
 .heading > h1 {
   font-family: Noto Serif;
   font-size: max(min(4vw, 48px), 28px);
-  line-height: max(min(5vw, 52px), 79px);
-  margin: 1em 0;
+  line-height: 1.5;
   font-style: normal;
   font-weight: 500;
+  margin-bottom: 2.552vw;
+  box-sizing: border-box;
 }
 .heading > p {
   color: rgba(89, 86, 86, 1);
   font-family: Nunito Sans;
   font-size: max(min(1.7vw, 28px), 16px);
-  line-height: max(min(5vw, 30px), 25px);
+  line-height: 1.5;
   font-style: normal;
   font-weight: 400;
 }
 
 .list {
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
 }
 .kidprofile {
-  padding-top: 30px;
+  padding-top: 1.5vw;
   display: flex;
   justify-content: center;
   gap: 4vw;
@@ -49,11 +48,11 @@
   flex-direction: row-reverse;
 }
 .kidprofile > img {
-  height:clamp(280px,20vw,410px);
+  height: clamp(280px, 20vw, 410px);
   object-fit: contain;
 }
-.kidprofile > div{
-  display:flex;
+.kidprofile > div {
+  display: flex;
 }
 .kid_desc {
   max-width: 60ch;
@@ -68,8 +67,8 @@
 .kid_desc > h6 {
   font-family: Gaegu;
   font-size: max(min(1.7vw, 34px), 16px);
-  margin: max( 1.6em , 0px) 0;
-  
+  line-height: 1.5;
+  margin: max(1.6em, 0px) 0;
 }
 
 .kid_desc > p {
@@ -85,7 +84,7 @@
     padding-bottom: 60px;
     background-image: unset !important;
   }
-  
+
   .heading {
     text-align: center;
     height: fit-content;
@@ -104,22 +103,22 @@
     padding: 20px 20px 20px 20px;
     gap: unset;
     background-color: white;
-    filter: drop-shadow(2px 2px 15px rgba(95, 93, 93, 0.3));
+    filter: drop-shadow(2px 1px 12px rgba(192, 192, 192, 0.344));
     width: 90%;
     margin: auto;
     flex-direction: column !important;
     align-items: center;
     border-bottom: none;
   }
-.kid_desc > h6 {
-  margin: 6px 0;
-}
+  .kid_desc > h6 {
+    margin: 6px 0;
+  }
 
   .kidprofile > img {
     width: 100%;
   }
   .kid_desc {
-    background: none !important;;
+    background: none !important;
     width: 100%;
     text-align: center;
   }

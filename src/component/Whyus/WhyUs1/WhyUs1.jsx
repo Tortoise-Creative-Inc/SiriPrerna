@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./WhyUs1.module.css";
-import One from "../../../assets/WhyUs/1.webp";
-import PageTop from "../PageTop/PageTop";
-import bulb from "../../../assets/WhyUs/Bulb.svg"
+import One from "../../../assets/whyUs/1.webp";
+import PageTop from "../pageTop/PageTop";
+import Bulb from "../../../assets/whyUs/Bulb.svg"
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { PAGE1 } from "../Constants";
+import { WHY_US_SECTION1 } from "../../../utility/constants";
 
 const WhyUs1 = ({ isMOBILE }) => {
   return (
@@ -16,14 +16,14 @@ const WhyUs1 = ({ isMOBILE }) => {
         Heading2="to become self-reliant, aware and inspiring"
         Heading3="citizens."
         Heading_mob="Raising self-reliant Kids"
-        Vector={bulb}
+        Vector={Bulb}
         className={styles.head}
       />
       <div className={styles.body}>
-        {PAGE1.map((e) => (
+        {WHY_US_SECTION1.map((e) => (
           <div className={styles.item} key={e.id}>
             <div className={styles.item_head}>
-              <LazyLoadImage className={styles.img} src={e.img} alt="" />
+              <LazyLoadImage className={styles.img} src={e.img} alt="_img" />
             </div>
             <div className={styles.item_body}>
               <h3 className={styles.title}>{e.title}</h3>

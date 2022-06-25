@@ -1,13 +1,13 @@
 import React, { useRef } from "react";
 import styles from "./WhyUs3.module.css";
-import PageTop from "../../../component/Whyus/PageTop/PageTop";
-import Three from "../../../assets/WhyUs/3.webp";
-import Building_vector from "../../../assets/WhyUs/Building-vector.svg";
-import { PAGE3 } from "../Constants";
+import PageTop from "../pageTop/PageTop";
+import Three from "../../../assets/whyUs/3.webp";
+import Building_vector from "../../../assets/whyUs/Building-vector.svg";
 import clsx from "clsx";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { WHY_US_SECTION3 } from "../../../utility/constants";
 
 const WhyUs3 = ({ isMOBILE }) => {
   const view = useRef();
@@ -20,7 +20,7 @@ const WhyUs3 = ({ isMOBILE }) => {
     dots: true,
     adaptiveHeight: true,
     adaptiveWidth: true,
-    lazyload:'progressive',
+    lazyload: "progressive",
     vertical: false,
     pauseOnHover: false,
     swipeToSlide: false,
@@ -48,11 +48,16 @@ const WhyUs3 = ({ isMOBILE }) => {
         Heading_mob="High-quality facilities"
         className={styles.head}
       />
-      <Slider className={clsx(styles.slider)} {...settings} ref={view} >
-        {PAGE3.map((e) => (
+      <Slider className={clsx(styles.slider)} {...settings} ref={view}>
+        {WHY_US_SECTION3.map((e) => (
           <div className={styles.Items} key={e.id}>
             <div className={styles.items_head}>
-              <img className={styles.img} src={e.img} alt="" />
+              <img
+                className={styles.img}
+                src={e.img}
+                alt="_img"
+                draggable={false}
+              />
             </div>
             <div className={styles.items_body}>
               <h3 className={styles.title}>{e.title}</h3>
