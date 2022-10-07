@@ -1,0 +1,218 @@
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 0 20px;
+}
+.heading {
+  font-family: Noto Serif;
+  font-weight: 500;
+  font-size: clamp(40px, 2.44vw, 48px);
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+.nav_bar {
+  display: flex;
+  margin-top: 20px;
+  font-size: clamp(16px, 1.2vw, 18.76px);
+  line-height: 36px;
+  justify-content: space-evenly;
+}
+.nav_bar > a {
+  text-decoration: none;
+  color: black;
+}
+.subheading {
+  font-family: Poppins;
+  cursor: pointer;
+  flex-grow: 1;
+  position: relative;
+  text-align: center;
+}
+.contact_us {
+  h3 {
+    font-family: Noto Serif;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 51px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+}
+.bottom {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 190px;
+  > img {
+    width: clamp(100px, 25vw, 349px);
+    width: 272.9px;
+    height: 77.61px;
+  }
+  > p {
+    margin: 30px auto;
+    padding-bottom: 45px;
+    line-height: 2.3rem;
+    font-size: 24px;
+  }
+}
+.contact_details {
+  margin-right: 40px;
+  font-family: Poppins;
+  font-style: normal;
+  font-size: 19px;
+  box-sizing: border-box;
+  height: 30px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  a {
+    text-decoration: none;
+    color: #630600;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-family: inherit;
+    :global(#whatsApp),
+    :global(#mail) {
+      width: 25px;
+      color: #630600 !important;
+      fill: #630600 !important;
+      height: 25px;
+      margin-right: 10px;
+    }
+    .span {
+      margin: 0 5px;
+      font-family: inherit;
+    }
+  }
+}
+.active.subheading {
+  border-bottom: 2.5px solid rgba(149, 0, 36, 0.3);
+}
+.contact_container {
+  display: flex;
+}
+.contact_container_mobile {
+  display: none;
+}
+#icon {
+  margin-right: 10px;
+  height: 25px;
+}
+@media (hover: hover) {
+  .subheading {
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      width: 100%;
+      height: 2.5px;
+      background: rgba(149, 0, 36, 0.3);
+      border-radius: 100px;
+      transform: scaleX(0);
+      transition: all 0.3s ease-in-out;
+    }
+    &:hover::before {
+      transform: scaleX(0.8);
+    }
+  }
+  .active.subheading:hover::before {
+    bottom: -2.5px;
+    transition: all 0s linear !important ;
+  }
+
+  .contact_details {
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: #630600;
+      border-radius: 100px;
+      transform: scaleX(0);
+      transition: all 0.3s ease-in-out;
+    }
+    &:hover {
+      transform: scale(1.02);
+    }
+    &:hover::before {
+      transform: scaleX(1);
+    }
+    a {
+      :global(#whatsApp):hover,
+      :global(#mail):hover {
+        transform: none;
+      }
+    }
+  }
+}
+
+// MEDIA QUERY
+@media (max-width: 1135px) {
+  .heading {
+    text-align: center;
+    font-size: clamp(25px, 3.5vw, 40px);
+  }
+}
+@media (max-width: 650px) {
+  .container {
+    margin-top: 0;
+    padding: 0;
+  }
+  .heading {
+    margin: 0 0 10px 0;
+  }
+  .contact_us {
+    display: none;
+  }
+  .bottom {
+    display: none;
+  }
+  .subheading {
+    font-size: 20px;
+  }
+  .contact_container_mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 375px) {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 20px;
+    }
+  }
+  .headertop {
+    position: sticky;
+    top: 69px;
+    background: white;
+    padding-top: 32px;
+    z-index: 9;
+  }
+  .contact_details {
+    border: none;
+    font-size: 12px;
+    margin-right: unset;
+    a {
+      text-decoration: none;
+      color: #630600;
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      margin: 0 5px;
+      .span {
+        margin: 0px;
+      }
+    }
+  }
+  .nav_bar {
+    margin: 20px 0;
+    padding: 20px;
+    font-weight: 500;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  }
+}
