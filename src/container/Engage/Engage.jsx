@@ -4,8 +4,7 @@ import clsx from "clsx";
 import Earth from "../../assets/engage/illus.png";
 import { Link, Outlet, useLocation } from "react-router-dom";
 import { CONTACT_US } from "../../utility/constants";
-import { motion } from "framer-motion";
-
+import {motion} from 'framer-motion';
 function Contact({ details, link, Icon }) {
   return (
     <div className={s.contact_details}>
@@ -16,6 +15,7 @@ function Contact({ details, link, Icon }) {
     </div>
   );
 }
+
 const Engage = ({ ismobile }) => {
   const [individual, setIndividual] = useState(true);
   const path = useLocation();
@@ -40,9 +40,7 @@ const Engage = ({ ismobile }) => {
           >
             {CONTACT_US.map(
               ({ id, content, Icon, to }) =>
-                id > 1 && (
-                  <Contact details={content} Icon={Icon} link={to} key={id} />
-                )
+                id > 1 && <Contact details={content} Icon={Icon} link={to} key={id}/>
             )}
           </motion.div>
         )}
@@ -78,9 +76,7 @@ const Engage = ({ ismobile }) => {
           <div className={s.contact_container}>
             {CONTACT_US.map(
               ({ id, content, Icon, to }) =>
-                id > 1 && (
-                  <Contact details={content} Icon={Icon} link={to} key={id} />
-                )
+                id > 1 && <Contact details={content} Icon={Icon} link={to} key={id} />
             )}
           </div>
         </motion.div>

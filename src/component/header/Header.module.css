@@ -82,7 +82,7 @@
 #pencil {
   position: absolute;
   bottom: 18%;
-  height:.5em;
+  height: .5em;
   transition: all 0.3s ease-in-out;
   transform: scaleX(0);
   transform: scaleY(0);

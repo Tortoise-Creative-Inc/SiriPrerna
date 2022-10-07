@@ -27,7 +27,8 @@ const Donate = ({ ismobile }) => {
   useEffect(() => {
     onIndividualClick();
   }, [individual]);
-  
+  console.log(path.pathname);
+
   return (
     <div className={s.container}>
       <div className={s.headertop}>
@@ -42,7 +43,9 @@ const Donate = ({ ismobile }) => {
           >
             {CONTACT_US.map(
               ({ id, content, Icon, to }) =>
-                id > 1 && <Contact details={content} Icon={Icon} link={to} key={id}/>
+                id > 1 && (
+                  <Contact details={content} Icon={Icon} link={to} key={id} />
+                )
             )}
           </motion.div>
         )}
@@ -78,7 +81,9 @@ const Donate = ({ ismobile }) => {
           <div className={s.contact_container}>
             {CONTACT_US.map(
               ({ id, content, Icon, to }) =>
-                id > 1 && <Contact details={content} Icon={Icon} link={to} key={id}/>
+                id > 1 && (
+                  <Contact details={content} Icon={Icon} link={to} key={id} />
+                )
             )}
           </div>
         </motion.div>
